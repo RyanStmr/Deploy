@@ -1,0 +1,37 @@
+.nav-links {
+  list-style-type: none;
+}
+
+.button-links {
+  float: left;
+  margin: 5px;
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.HeaderInfo {
+  color: rgb(0, 0, 0);
+  padding-left: 50px;
+  height: 20px;
+  display: flex;
+  width: 900px;
+}
+
+.entireClient {
+  background-color: #f1f1f1;
+  width: 980px;
+  height: 850px;
+  margin: 0 auto;
+  font-size: medium;
+  border: 1px solid black;
+}
+
+.NavBar {
+  height: 70px;
+  position: fixed;
+}
+
+.ProfileBox {
+  width: 150px;
+  height: 60px;
+}

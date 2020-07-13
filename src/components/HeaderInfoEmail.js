@@ -4,13 +4,18 @@ import "./HeaderInfoEmail.css";
 
 class HeaderInfoEmail extends Component {
   state = {};
+
+  log(whichP) {
+    console.log(whichP);
+  }
+
   render() {
     return (
       <div className="AllHeaders">
         <div className="Wrapper">
           <Avatar
             style={{
-              backgroundColor: "grey",
+              backgroundColor: `${this.props.Email.mail.defaultProps.avatarColor}`,
               top: "10px",
               marginLeft: "10px",
             }}
@@ -19,7 +24,7 @@ class HeaderInfoEmail extends Component {
           </Avatar>
         </div>
         <div>
-          <p className="HeaderText">
+          <p className="HeaderText" onMouseOver={() => this.log("From")}>
             <strong>From: </strong> {this.props.Email.mail.defaultProps.sender}{" "}
           </p>
           <p className="HeaderText">

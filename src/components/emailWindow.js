@@ -14,6 +14,10 @@ class EmailWindow extends Component {
     this.props.onNewEmail(undefined);
   };
 
+  log() {
+    console.log("hovering emailInfo");
+  }
+
   render() {
     const SpecificEmail = this.props.Email.mail;
     let email = this.props.Email;
@@ -27,11 +31,16 @@ class EmailWindow extends Component {
     };
 
     return (
-      <div>
+      <div
+        style={{
+          border: "1px solid black",
+        }}
+      >
         <div
           style={{
             backgroundColor: "rgb(238, 235, 238)",
           }}
+          onMouseOver={this.log}
         >
           <div>
             <Button

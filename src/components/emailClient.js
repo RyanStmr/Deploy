@@ -10,7 +10,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import ErrorIcon from "@material-ui/icons/Error";
 import InboxIcon from "@material-ui/icons/Inbox";
 import EmailIcon from "@material-ui/icons/Email";
-import Inbox from "./constants.js";
+import Inbox from "./emailsToImplement.js";
 import Badge from "@material-ui/core/Badge";
 import "./EmailClient.css";
 import ProfileBox from "./ProfileBox";
@@ -19,8 +19,40 @@ class EmailClient extends Component {
     currentInbox: "AllInbox",
     currentEmail: 0,
     inbox: Inbox,
-    mailNrBadge: Inbox.length,
+    mailNrBadge: 0,
     events: [],
+  };
+
+  //Fisher Yates Array shuffle algorithm
+  shuffleArray = (a) => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
+  };
+
+  componentWillMount = () => {
+    let copy = this.state;
+    let usersInbox = [];
+
+    copy.inbox.map((email) => {
+      if (email.visible) usersInbox.push(email);
+    });
+
+    usersInbox.map((email) => {
+      //give each Email an ID for adressing in App
+      email["id"] = copy.inbox.indexOf(email);
+      email["type"] = "AllInbox";
+    });
+
+    this.shuffleArray(usersInbox);
+    copy.inbox = usersInbox;
+    this.setState(copy);
+    this.countEmails();
   };
 
   handleEmailChange = (emailNr) => {
@@ -75,6 +107,8 @@ class EmailClient extends Component {
     });
     let copy = this.state;
     copy.mailNrBadge = counter;
+
+    if (counter === 0) alert("Done with study!");
 
     this.setState(copy);
   };

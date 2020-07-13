@@ -46,6 +46,7 @@ Mail10.defaultProps = {
   date: "June 21, 2020, 4:35",
   subject: "You MailBox Compromissed",
   capital: "A",
+  keyID: 2,
 };
 
 export default Mail10;

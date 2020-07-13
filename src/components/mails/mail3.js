@@ -59,6 +59,7 @@ Mail3.defaultProps = {
   date: "June 1, 2020, 08:03",
   subject: "Breaking News",
   capital: "N",
+  keyID: 3,
 };
 
 export default Mail3;

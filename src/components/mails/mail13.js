@@ -64,6 +64,7 @@ Mail13.defaultProps = {
   date: "Mai 4, 2020, 6:58",
   subject: "Payment Request",
   capital: "I",
+  keyID: 2,
 };
 
 export default Mail13;

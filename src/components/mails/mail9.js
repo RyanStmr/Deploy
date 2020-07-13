@@ -70,6 +70,7 @@ Mail9.defaultProps = {
   date: "June 1, 2020, 08:03",
   subject: "Invitation Reminder",
   capital: "L",
+  keyID: 2,
 };
 
 export default Mail9;

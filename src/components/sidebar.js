@@ -71,7 +71,7 @@ export default function VerticalTabs(props) {
     if (newValue > props.Mails.length - 1 || newValue < 0) {
       props.onNewEmail(undefined);
     } else {
-      let selectedEmailName = props.Mails[newValue].mail.defaultProps.subject;
+      let selectedEmailName = props.Mails[newValue].mail.defaultProps.keyID;
       props.onNewEmail(selectedEmailName);
     }
   };

@@ -120,16 +120,29 @@ export default function VerticalTabs(props) {
                 }}
                 label={
                   <div style={{ width: "170px" }}>
-                    <p
-                      style={{
-                        fontWeight: "bolder",
-                        textAlign: "left",
-                        fontSize: "12px",
-                        margin: "0",
-                      }}
-                    >
-                      {email.mail.defaultProps.sender}
-                    </p>
+                    {email.mail.defaultProps.senderName ? (
+                      <p
+                        style={{
+                          fontWeight: "bolder",
+                          textAlign: "left",
+                          fontSize: "12px",
+                          margin: "0",
+                        }}
+                      >
+                        {email.mail.defaultProps.senderName}
+                      </p>
+                    ) : (
+                      <p
+                        style={{
+                          fontWeight: "bolder",
+                          textAlign: "left",
+                          fontSize: "12px",
+                          margin: "0",
+                        }}
+                      >
+                        {email.mail.defaultProps.sender}
+                      </p>
+                    )}
                     <p style={{ textAlign: "left", margin: "0" }}>
                       {email.mail.defaultProps.subject}
                     </p>

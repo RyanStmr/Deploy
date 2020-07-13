@@ -42,6 +42,7 @@ class Mail10 extends Component {
 }
 
 Mail10.defaultProps = {
+  senderName: "AcountWebmail",
   sender: "acount@webmail.com",
   date: "June 21, 2020, 4:35",
   subject: "You MailBox Compromissed",

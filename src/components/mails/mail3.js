@@ -55,6 +55,7 @@ class Mail3 extends Component {
 }
 
 Mail3.defaultProps = {
+  senderName: "NewsTeam",
   sender: "NewsTeam@company.com",
   date: "June 1, 2020, 08:03",
   subject: "Breaking News",

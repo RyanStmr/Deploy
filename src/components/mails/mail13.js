@@ -60,6 +60,7 @@ class Mail13 extends Component {
 }
 
 Mail13.defaultProps = {
+  senderName: "Skype",
   sender: "info@skype.com",
   date: "Mai 4, 2020, 6:58",
   subject: "Payment Request",

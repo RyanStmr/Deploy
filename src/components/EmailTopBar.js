@@ -33,6 +33,10 @@ class EmailTopBar extends Component {
         backgroundColor: "#A4A4A4",
         marginLeft: "10px",
       },
+
+      buttonIcons: {
+        marginLeft: "10px",
+      },
     };
 
     return (
@@ -46,7 +50,7 @@ class EmailTopBar extends Component {
         <Button
           style={styles.buttonsTopBar}
           variant="contained"
-          startIcon={<LabelIcon />}
+          startIcon={<LabelIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
           <Snackbar
@@ -63,7 +67,7 @@ class EmailTopBar extends Component {
         <Button
           style={styles.buttonsTopBar}
           variant="contained"
-          startIcon={<PrintIcon />}
+          startIcon={<PrintIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
           <Snackbar
@@ -81,7 +85,7 @@ class EmailTopBar extends Component {
         <Button
           style={styles.buttonsTopBar}
           variant="contained"
-          startIcon={<InfoIcon />}
+          startIcon={<InfoIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
           {" "}
@@ -100,13 +104,13 @@ class EmailTopBar extends Component {
         <Button
           style={styles.navButton}
           variant="contained"
-          startIcon={<KeyboardArrowLeftIcon />}
+          startIcon={<KeyboardArrowLeftIcon style={styles.buttonIcons} />}
           onClick={this.props.onMoveEmailBackward}
         ></Button>
         <Button
           style={styles.navButton}
           variant="contained"
-          startIcon={<KeyboardArrowRightIcon />}
+          startIcon={<KeyboardArrowRightIcon style={styles.buttonIcons} />}
           onClick={this.props.onMoveEmailForward}
         ></Button>
       </div>

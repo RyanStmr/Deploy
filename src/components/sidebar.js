@@ -49,8 +49,7 @@ const useStyles = makeStyles((theme) => ({
     display: "inline-flex",
     width: 980,
     height: 700,
-    position: "fixed",
-    top: "120px",
+    marginTop: "35px",
   },
   tabs: {},
 }));

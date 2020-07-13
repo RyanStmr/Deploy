@@ -10,17 +10,20 @@ class ProfileBox extends Component {
   render() {
     return (
       <div style={{ marginLeft: "auto" }}>
-        <Button style={{ backgroundColor: "#bab6b6", margin: "5px" }}>
+        <Button variant="contained" style={{ margin: "5px" }}>
           {" "}
-          <SettingsIcon size="large" style={{ color: "black" }}></SettingsIcon>
+          <SettingsIcon></SettingsIcon>
         </Button>
-        <Button style={{ backgroundColor: "#bab6b6", margin: "5px" }}>
+        <Button variant="contained" style={{ margin: "5px" }}>
           {" "}
-          <InfoIcon style={{ color: "black" }}></InfoIcon>
+          <InfoIcon></InfoIcon>
         </Button>
-        <Button style={{ backgroundColor: "#75c974", margin: "5px" }}>
+        <Button
+          variant="contained"
+          style={{ backgroundColor: "#75c974", margin: "10px" }}
+        >
           {" "}
-          <ExitToAppIcon style={{ color: "black" }}></ExitToAppIcon>Logout
+          <ExitToAppIcon></ExitToAppIcon>Logout
         </Button>
       </div>
     );

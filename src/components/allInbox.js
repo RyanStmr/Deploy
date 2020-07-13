@@ -28,7 +28,7 @@ class AllInbox extends Component {
 
   render() {
     return (
-      <div style={{ position: "fixed", height: "762px" }}>
+      <div style={{ height: "762px" }}>
         <Sidebar
           Mails={this.state.allInbox}
           InboxType="AllInbox"

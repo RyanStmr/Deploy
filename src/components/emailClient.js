@@ -185,8 +185,8 @@ class EmailClient extends Component {
             <p>Welcome to your Email Client, {this.props.UserInfo.userName}</p>
             <ProfileBox className="ProfileBox"></ProfileBox>
           </div>
-          <nav>
-            <ul className="nav-links">
+          <nav className="nav-links">
+            <ul>
               <Link
                 to="/EmailClient/AllMails"
                 onClick={() => this.handleInboxChange("AllInbox")}

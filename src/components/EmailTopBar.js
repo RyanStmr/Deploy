@@ -23,19 +23,18 @@ class EmailTopBar extends Component {
 
     var styles = {
       buttonsTopBar: {
-        color: "#f2f3f2",
-        backgroundColor: "#A4A4A4",
         marginLeft: "10px",
+        backgroundColor: "#f2f3f2",
       },
 
       navButton: {
-        color: "#f2f3f2",
-        backgroundColor: "#A4A4A4",
         marginLeft: "10px",
+        backgroundColor: "#f2f3f2",
       },
 
       buttonIcons: {
         marginLeft: "10px",
+        backgroundColor: "#f2f3f2",
       },
     };
 
@@ -44,7 +43,6 @@ class EmailTopBar extends Component {
         style={{
           width: "750px",
           marginBottom: "10px",
-          justifyContent: "center",
         }}
       >
         <Button

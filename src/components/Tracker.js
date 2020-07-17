@@ -67,6 +67,7 @@ class Tracker extends Component {
   };
 
   startCalibration = () => {
+    window.GazeCloudAPI.APIKey = "GazeBehavior_NonCommercialUse";
     window.GazeCloudAPI.StartEyeTracking();
     window.GazeCloudAPI.OnCalibrationComplete = () => {
       this.startTracking();

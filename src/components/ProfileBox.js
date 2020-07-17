@@ -21,6 +21,7 @@ class ProfileBox extends Component {
         <Button
           variant="contained"
           style={{ backgroundColor: "#75c974", margin: "10px" }}
+          onClick={this.props.setInboxResult}
         >
           {" "}
           <ExitToAppIcon></ExitToAppIcon>Logout

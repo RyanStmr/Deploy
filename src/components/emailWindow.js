@@ -11,7 +11,7 @@ class EmailWindow extends Component {
 
   resetSelectedTab = () => {
     this.props.resetSelectedTab();
-    this.props.onNewEmail(undefined);
+    //this.props.onNewEmail(undefined);
   };
 
   log() {
@@ -25,7 +25,6 @@ class EmailWindow extends Component {
     var styles = {
       buttonsSidebar: {
         color: "#2E2E2E",
-        backgroundColor: "#f2f3f2",
         margin: "10px",
       },
     };
@@ -33,20 +32,18 @@ class EmailWindow extends Component {
     return (
       <div
         style={{
-          border: "1px solid black",
+          border: "1px solid grey",
+          backgroundColor: "white",
+          height: "850px",
+          borderRadius: "5px",
         }}
       >
-        <div
-          style={{
-            backgroundColor: "rgb(238, 235, 238)",
-          }}
-          onMouseOver={this.log}
-        >
+        <div style={{}} onMouseOver={this.log}>
           <div>
             <Button
               style={styles.buttonsSidebar}
               startIcon={<EmailIcon />}
-              variant="contained"
+              variant="outlined"
               onClick={() => {
                 this.props.onMoveToImportant(email.id);
                 this.resetSelectedTab();
@@ -57,7 +54,7 @@ class EmailWindow extends Component {
             <Button
               startIcon={<ErrorIcon />}
               style={styles.buttonsSidebar}
-              variant="contained"
+              variant="outlined"
               onClick={() => {
                 this.props.onMoveToSpam(email.id);
                 this.resetSelectedTab();
@@ -68,7 +65,7 @@ class EmailWindow extends Component {
             <Button
               style={styles.buttonsSidebar}
               startIcon={<DeleteIcon />}
-              variant="contained"
+              variant="outlined"
               onClick={() => {
                 this.props.onMoveToBin(email.id);
                 this.resetSelectedTab();
@@ -85,6 +82,7 @@ class EmailWindow extends Component {
           <HeaderInfoEmail
             Email={email}
             emailAdress={this.props.emailAdress}
+            HeaderInfo={this.props.HeaderInfo}
           ></HeaderInfoEmail>
         </div>
         <div
@@ -99,6 +97,7 @@ class EmailWindow extends Component {
           <SpecificEmail
             userName={this.props.userName}
             emailAdress={this.props.emailAdress}
+            inEmailText={this.props.inEmailText}
           ></SpecificEmail>
         </div>
       </div>

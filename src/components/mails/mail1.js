@@ -5,9 +5,9 @@ class Mail1 extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <div onMouseOver={this.props.inEmailText}>
         <img src={pic}></img>
-      </React.Fragment>
+      </div>
     );
   }
 }

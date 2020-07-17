@@ -24,20 +24,40 @@ class HeaderInfoEmail extends Component {
           </Avatar>
         </div>
         <div>
-          <p className="HeaderText" onMouseOver={() => this.log("From")}>
+          <p
+            className="HeaderText"
+            onMouseOver={() => {
+              this.props.HeaderInfo("From:");
+            }}
+          >
             <strong>From: </strong> {this.props.Email.mail.defaultProps.sender}{" "}
           </p>
-          <p className="HeaderText">
+          <p
+            className="HeaderText"
+            onMouseOver={() => {
+              this.props.HeaderInfo("To:");
+            }}
+          >
             {" "}
             <strong>To: </strong>
             {this.props.emailAdress}{" "}
           </p>
-          <p className="HeaderText">
+          <p
+            className="HeaderText"
+            onMouseOver={() => {
+              this.props.HeaderInfo("Date:");
+            }}
+          >
             {" "}
             <strong>Date: </strong>
             {this.props.Email.mail.defaultProps.date}
           </p>
-          <p className="HeaderText">
+          <p
+            className="HeaderText"
+            onMouseOver={() => {
+              this.props.HeaderInfo("Subject:");
+            }}
+          >
             {" "}
             <strong>Subject: </strong>{" "}
             {this.props.Email.mail.defaultProps.subject}

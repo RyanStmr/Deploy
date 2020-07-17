@@ -24,17 +24,14 @@ class EmailTopBar extends Component {
     var styles = {
       buttonsTopBar: {
         marginLeft: "10px",
-        backgroundColor: "#f2f3f2",
       },
 
       navButton: {
         marginLeft: "10px",
-        backgroundColor: "#f2f3f2",
       },
 
       buttonIcons: {
         marginLeft: "10px",
-        backgroundColor: "#f2f3f2",
       },
     };
 
@@ -47,7 +44,7 @@ class EmailTopBar extends Component {
       >
         <Button
           style={styles.buttonsTopBar}
-          variant="contained"
+          variant="outlined"
           startIcon={<LabelIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
@@ -64,7 +61,7 @@ class EmailTopBar extends Component {
         </Button>
         <Button
           style={styles.buttonsTopBar}
-          variant="contained"
+          variant="outlined"
           startIcon={<PrintIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
@@ -82,7 +79,7 @@ class EmailTopBar extends Component {
 
         <Button
           style={styles.buttonsTopBar}
-          variant="contained"
+          variant="outlined"
           startIcon={<InfoIcon style={styles.buttonIcons} />}
           onClick={handleClick}
         >
@@ -101,13 +98,13 @@ class EmailTopBar extends Component {
 
         <Button
           style={styles.navButton}
-          variant="contained"
+          variant="outlined"
           startIcon={<KeyboardArrowLeftIcon style={styles.buttonIcons} />}
           onClick={this.props.onMoveEmailBackward}
         ></Button>
         <Button
           style={styles.navButton}
-          variant="contained"
+          variant="outlined"
           startIcon={<KeyboardArrowRightIcon style={styles.buttonIcons} />}
           onClick={this.props.onMoveEmailForward}
         ></Button>

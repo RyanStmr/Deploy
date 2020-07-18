@@ -38,6 +38,8 @@ app.get("/connect", (req, res) => {
       if (error) {
         throw error;
       }
+
+      console.log("database works");
     }
   );
   res.send(newUser);
@@ -81,7 +83,7 @@ app.post("/data", (req, res) => {
     
     pool.query(`INSERT INTO USER${userId} (userId, currentEmail, x) VALUES (${userId}, ${currentEmail}, ${x} )`) //SET ?;
     */
-
+    /*
     pool.query(
       `INSERT INTO USER${element.userId} (MOUSEPOSX) VALUES (${element.mousePosXPlain})`,
       (error, results) => {
@@ -89,7 +91,7 @@ app.post("/data", (req, res) => {
           throw error;
         }
       }
-    );
+    );*/
   });
   res.send(userData);
 

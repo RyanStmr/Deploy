@@ -7,6 +7,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 
 const fs = require("fs");
+const { json } = require("express");
 const data = fs.readFileSync("users.json");
 const users = JSON.parse(data);
 
@@ -32,18 +33,51 @@ app.get("/connect", (req, res) => {
   let browser = req.headers["user-agent"];
   const newUser = createNewUser(newId, browser);
 
+  //Create Table On connection
   pool.query(
-    `CREATE TABLE USER${newUser.userID}(ID SERIAL PRIMARY KEY NOT NULL, MOUSEPOSX INT NOT NULL)`,
+    `CREATE TABLE USER${newUser.userID}(
+      ID SERIAL PRIMARY KEY NOT NULL, 
+      USERINFO json
+      )`,
     (error, results) => {
       if (error) {
         throw error;
       }
-
-      console.log("database works");
     }
   );
   res.send(newUser);
 });
+
+/*
+CURRENTEMAIL INT,
+      CURRENTINBOX TEXT,
+      HEADERINFO INT,
+      INEAMILTEXT BOOLEAN,
+      MOUSEPOSXPLAIN INT,
+      MOUSEPOSYPLAIN INT,
+      MOUSEPOSXTRANSFORM INT,
+      MOUSEPOSYTRANSFORM INT,
+      CLICK INT,
+      CLICKPOSXTRANSFORM INT,
+      CLICKPOSYTRANSFORM INT,
+      TIMESTAMP INT,
+      GAZEX INT,
+      GAZEY INT,
+      GAZEXTRANSFORM INT,
+      GAZEYTRANSFORM INT,
+      VALIDATIONGAZE INT,
+      USERID INT,
+      USERNICKNAME TEXT;
+      PAGESCROLLY INT,
+      PAGESCROLLX INT,
+      BRWOSERWIDTH INT,
+      BROWSERHEIGHT INT,
+      MARGINTOSCREENTOP INT,
+      MARGINTOSCREENLEFT INT,
+      MOUSEGENERALFIELD INT,
+      MOUSEEMAILFIELD INT,
+      RESUL
+       */
 
 function createNewUser(id, browser) {
   let newUser = {
@@ -58,9 +92,6 @@ function createNewUser(id, browser) {
   console.log(
     "Added new User. User: " + users.allUsers[newUser.userID - 1].userID
   );
-  //tableNamePart = newUser.userID;
-
-  //let newTable = `CREATE TABLE  USER${newUser.userID}(userId INT, currentEmail INT, x INT)`; //keyID INT AUTO_INCREMENT PRIMARY KEY
 
   return newUser;
 }
@@ -77,15 +108,11 @@ app.post("/data", (req, res) => {
     console.log(element.userId);
 
     if (element.userId === 0) return;
-    //let userDataAll = ({ browserHeight, browserWidth, ...rest } = element);
 
-    /*let userDataProto = ({ userId, currentEmail, x } = element);
-    
-    pool.query(`INSERT INTO USER${userId} (userId, currentEmail, x) VALUES (${userId}, ${currentEmail}, ${x} )`) //SET ?;
-    */
+    let jsonObject = JSON.stringify(element);
 
     pool.query(
-      `INSERT INTO USER${element.userId} (MOUSEPOSX) VALUES (${element.mousePosXPlain})`,
+      `INSERT INTO USER${element.userId} (USERINFO) VALUES ('${jsonObject}')`,
       (error, results) => {
         if (error) {
           throw error;
@@ -94,16 +121,6 @@ app.post("/data", (req, res) => {
     );
   });
   res.send(userData);
-
-  /*pool.query(
-    `INSERT INTO USER${userId} (author, title) VALUES ($1, $2)`,
-    [author, title],
-    (error) => {
-      if (error) {
-        throw error;
-      }
-    }
-  );*/
 });
 
 //Serving React

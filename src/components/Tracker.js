@@ -7,7 +7,7 @@ class Tracker extends Component {
     this.handleMouseMove = this.handleMouseMove.bind(this);
     this.handleMouseClick = this.handleMouseClick.bind(this);
     this.state = {
-      currentEmail: undefined, //event dependant
+      currentEmail: 0, //event dependant
       currentInbox: "AllInbox",
       headerInfo: [],
       inEmailText: false, //event dependant

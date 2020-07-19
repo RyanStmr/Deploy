@@ -121,7 +121,7 @@ class Tracker extends Component {
 
   setTimestamp = () => {
     let currentTimeLoc = Date.now();
-    let newDate = new Date(currentTimeLoc).toLocaleDateString("en-US");
+    let newDate = new Date(currentTimeLoc).toLocaleString("de-DE");
     this.setState({ timeStamp: newDate });
   };
 

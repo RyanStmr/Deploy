@@ -73,7 +73,6 @@ class Tracker extends Component {
       this.startTracking();
       console.log("gaze Calibration Complete");
     };
-    this.startTracking();
   };
 
   startTracking = () => {

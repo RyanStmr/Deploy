@@ -7,7 +7,7 @@ class Tracker extends Component {
     this.handleMouseMove = this.handleMouseMove.bind(this);
     this.handleMouseClick = this.handleMouseClick.bind(this);
     this.state = {
-      currentEmail: 0, //event dependant
+      currentEmail: undefined, //event dependant
       currentInbox: "AllInbox",
       headerInfo: [],
       inEmailText: false, //event dependant
@@ -121,7 +121,8 @@ class Tracker extends Component {
 
   setTimestamp = () => {
     let currentTimeLoc = Date.now();
-    this.setState({ timeStamp: currentTimeLoc });
+    let newDate = new Date(currentTimeLoc).toLocaleDateString("en-US");
+    this.setState({ timeStamp: newDate });
   };
 
   fillCollector = () => {
@@ -139,7 +140,10 @@ class Tracker extends Component {
       click: false,
       clickPosXTransform: 0,
       clickPosYTransform: 0,
+      clickPosX: 0,
+      clickPosY: 0,
       headerInfo: [],
+      inEmailText: false,
     });
   };
 
@@ -204,7 +208,7 @@ class Tracker extends Component {
   handleNewCurrentInbox = (inboxType) => {
     let copy = this.state;
     copy.currentInbox = inboxType;
-    copy.currentEmail = undefined;
+    copy.currentEmail = 0;
     this.setState(copy);
   };
 

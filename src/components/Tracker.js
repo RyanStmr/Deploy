@@ -18,6 +18,8 @@ class Tracker extends Component {
       click: false,
       clickPosXTransform: 0,
       clickPosYTransform: 0,
+      clickPosX: 0,
+      clickPosY: 0,
       timeStamp: 0,
       gazeX: 0,
       gazeY: 0,
@@ -70,9 +72,9 @@ class Tracker extends Component {
     window.GazeCloudAPI.APIKey = "GazeBehavior_NonCommercialUse";
     window.GazeCloudAPI.StartEyeTracking();
     window.GazeCloudAPI.OnCalibrationComplete = () => {
-      this.startTracking();
       console.log("gaze Calibration Complete");
     };
+    this.startTracking();
   };
 
   startTracking = () => {

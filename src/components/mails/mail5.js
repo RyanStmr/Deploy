@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class Mail5 extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <div>
         <body>
           <p style={{ marginLeft: "13.5pt" }}>
             Hi {this.props.userName},<br />
@@ -48,7 +49,7 @@ class Mail5 extends Component {
 
           <p style={{ marginLeft: "13.7pt" }}>{}</p>
         </body>
-      </React.Fragment>
+      </div>
     );
   }
 }

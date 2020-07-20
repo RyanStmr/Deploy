@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class Mail4 extends Component {
   state = {};

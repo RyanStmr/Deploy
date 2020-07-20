@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class DefaultMail extends Component {
   state = {};
@@ -8,6 +9,7 @@ class DefaultMail extends Component {
 }
 
 DefaultMail.defaultProps = {
+  senderName: "xxxx",
   sender: "xxxxx",
   date: "xxxxx",
   subject: "xxxxx",

@@ -16,7 +16,7 @@ class HeaderInfoEmail extends Component {
           <Avatar
             style={{
               backgroundColor: `${this.props.Email.mail.defaultProps.avatarColor}`,
-              top: "10px",
+              top: "25px",
               marginLeft: "10px",
             }}
           >
@@ -63,6 +63,7 @@ class HeaderInfoEmail extends Component {
             {this.props.Email.mail.defaultProps.subject}
           </p>
         </div>
+        <hr />
       </div>
     );
   }

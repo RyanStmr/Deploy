@@ -14,6 +14,33 @@ import Mail13 from "./mails/mail13";
 import Mail14 from "./mails/mail14";
 import Mail15 from "./mails/mail15";
 import Mail16 from "./mails/mail16";
+import Mail17 from "./mails/mail17";
+import Mail18 from "./mails/mail18";
+import Mail19 from "./mails/mail19";
+import mail20 from "./mails/mail20";
+import Mail20 from "./mails/mail20";
+import Mail21 from "./mails/mail21";
+import Mail22 from "./mails/mail22";
+import Mail23 from "./mails/mail23";
+import Mail24 from "./mails/mail24";
+import Mail25 from "./mails/mail25";
+import Mail26 from "./mails/mail26";
+import Mail27 from "./mails/mail27";
+import Mail28 from "./mails/mail28";
+import Mail29 from "./mails/mail29";
+import Mail30 from "./mails/mail30";
+import Mail31 from "./mails/mail31";
+import Mail32 from "./mails/mail32";
+import Mail33 from "./mails/mail33";
+import Mail34 from "./mails/mail34";
+import Mail35 from "./mails/mail35";
+import Mail36 from "./mails/mail36";
+import Mail37 from "./mails/mail37";
+import Mail38 from "./mails/mail38";
+import Mail39 from "./mails/mail39";
+import Mail40 from "./mails/mail40";
+import Mail41 from "./mails/mail41";
+import Mail42 from "./mails/mail42";
 
 const Inbox = [
   {
@@ -22,7 +49,7 @@ const Inbox = [
   },
   {
     mail: Mail2,
-    visible: false,
+    visible: true,
   },
   {
     mail: Mail3,
@@ -34,7 +61,7 @@ const Inbox = [
   },
   {
     mail: Mail5,
-    visible: false,
+    visible: true,
   },
   {
     mail: Mail6,
@@ -78,6 +105,113 @@ const Inbox = [
   },
   {
     mail: Mail16,
+    visible: true,
+  },
+  {
+    mail: Mail17,
+    visible: true,
+  },
+  {
+    mail: Mail18,
+    visible: true,
+  },
+  {
+    mail: Mail19,
+    visible: true,
+  },
+  {
+    mail: Mail20,
+    visible: true,
+  },
+  {
+    mail: Mail21,
+    visible: true,
+  },
+  {
+    mail: Mail22,
+    visible: true,
+  },
+  {
+    mail: Mail23,
+    visible: true,
+  },
+  {
+    mail: Mail24,
+    visible: true,
+  },
+  {
+    mail: Mail25,
+    visible: true,
+  },
+  ,
+  {
+    mail: Mail26,
+    visible: true,
+  },
+  {
+    mail: Mail27,
+    visible: true,
+  },
+  {
+    mail: Mail28,
+    visible: true,
+  },
+  {
+    mail: Mail29,
+    visible: true,
+  },
+  {
+    mail: Mail30,
+    visible: true,
+  },
+  {
+    mail: Mail31,
+    visible: true,
+  },
+  ,
+  {
+    mail: Mail32,
+    visible: true,
+  },
+  {
+    mail: Mail33,
+    visible: true,
+  },
+  {
+    mail: Mail34,
+    visible: true,
+  },
+  {
+    mail: Mail35,
+    visible: true,
+  },
+  {
+    mail: Mail36,
+    visible: true,
+  },
+  {
+    mail: Mail37,
+    visible: true,
+  },
+  ,
+  {
+    mail: Mail38,
+    visible: true,
+  },
+  {
+    mail: Mail39,
+    visible: true,
+  },
+  {
+    mail: Mail40,
+    visible: true,
+  },
+  {
+    mail: Mail41,
+    visible: true,
+  },
+  {
+    mail: Mail42,
     visible: true,
   },
 ];

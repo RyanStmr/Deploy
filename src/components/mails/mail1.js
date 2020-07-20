@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import pic from "./mail1.jpg";
+import "./MailsDefault.css";
 
 class Mail1 extends Component {
   state = {};

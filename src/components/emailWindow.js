@@ -32,9 +32,8 @@ class EmailWindow extends Component {
     return (
       <div
         style={{
-          border: "1px solid grey",
-          backgroundColor: "#fafafa",
-          height: "850px",
+          border: "0.5px solid grey",
+          height: "950px",
           borderRadius: "5px",
         }}
       >
@@ -85,13 +84,14 @@ class EmailWindow extends Component {
             HeaderInfo={this.props.HeaderInfo}
           ></HeaderInfoEmail>
         </div>
+        <hr />
         <div
           style={{
             marginLeft: "30px",
             marginTop: "5px",
-            //overflow: "scroll",
+            overflow: "auto",
             width: "710px",
-            height: "450px",
+            height: "700px",
           }}
         >
           <SpecificEmail

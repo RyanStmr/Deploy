@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: "1px solid grey",
     display: "inline-flex",
     width: 980,
-    height: 900,
+    height: 1000,
     marginTop: "20px",
   },
   tabs: {},
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function VerticalTabs(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(undefined);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class Mail6 extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <div>
         <p>
           <img
             alt=""
@@ -33,7 +34,7 @@ class Mail6 extends Component {
         <p>&nbsp;</p>
 
         <p>&nbsp;</p>
-      </React.Fragment>
+      </div>
     );
   }
 }

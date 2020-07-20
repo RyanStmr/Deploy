@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class Mail14 extends Component {
   state = {};
@@ -58,7 +59,7 @@ Mail14.defaultProps = {
   date: "November 13, 2019, 7:47",
   subject: "Your Spotify Account Verification",
   capital: "S",
-  keyID: 2,
+  keyID: 14,
 };
 
 export default Mail14;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MailsDefault.css";
 
 class Mail13 extends Component {
   state = {};
@@ -65,7 +66,7 @@ Mail13.defaultProps = {
   date: "Mai 4, 2020, 6:58",
   subject: "Payment Request",
   capital: "I",
-  keyID: 2,
+  keyID: 13,
 };
 
 export default Mail13;

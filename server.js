@@ -39,7 +39,7 @@ app.get("/connect", (req, res) => {
       )`,
     (error, results) => {
       if (error) {
-        throw error;
+        console.log("error when creating new user");
       }
     }
   );

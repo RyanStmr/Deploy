@@ -113,7 +113,7 @@ app.post("/data", (req, res) => {
       `INSERT INTO USER${element.userId} (USERINFO) VALUES ('${jsonObject}')`,
       (error, results) => {
         if (error) {
-          throw error;
+          console.log("table not available");
         }
       }
     );

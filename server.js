@@ -3,7 +3,6 @@ const app = express(); //Initiate the appconst bodyParser = require('body-parser
 const path = require("path"); //Navigate to build folder
 const bodyParser = require("body-parser");
 const { pool } = require("./config");
-const cors = require("cors");
 const helmet = require("helmet");
 
 const fs = require("fs");
@@ -15,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
 app.use(bodyParser.json());
-app.use(cors());
 app.use(helmet());
 
 app.use(express.static(path.join(__dirname, "build")));

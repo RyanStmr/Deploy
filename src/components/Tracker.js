@@ -110,6 +110,7 @@ class Tracker extends Component {
     window.GazeCloudAPI.OnResult = function (GazeData) {
       console.log(GazeData.docX);
       console.log(GazeData.docY);
+      console.log(GazeData.docY);
 
       /*let gazeXLoc = GazeData.docX;
       let gazeYLoc = GazeData.docY;

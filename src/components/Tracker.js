@@ -110,7 +110,7 @@ class Tracker extends Component {
     window.GazeCloudAPI.OnResult = function (GazeData) {
       window.gazeDataX = GazeData.docX;
       window.gazeDataY = GazeData.docY;
-      window.validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated
+      window.validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated!
     };
     this.setState({
       gazeX: window.gazeDataX,

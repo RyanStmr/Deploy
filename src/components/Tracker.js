@@ -108,16 +108,17 @@ class Tracker extends Component {
 
   setGazeData = () => {
     window.GazeCloudAPI.OnResult = function (GazeData) {
-      let gazeXLoc = GazeData.docX;
-      let gazeYLoc = GazeData.docY;
-      let validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated
-      this.setState({
-        gazeX: gazeXLoc,
-        gazeY: gazeYLoc,
-        validationGaze: validation,
-      });
-      this.setTransformedGazePos(gazeXLoc, gazeYLoc);
+      window.gazeDataX = GazeData.docX;
+      window.gazeDataY = GazeData.docY;
+      window.validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated
     };
+    this.setState({
+      gazeX: window.gazeDataX,
+      gazeY: window.gazeDataY,
+      validationGaze: window.validation,
+    });
+
+    //this.setTransformedGazePos(gazeXLoc, gazeYLoc);
   };
 
   setTimestamp = () => {

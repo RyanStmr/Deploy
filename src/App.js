@@ -4,6 +4,7 @@ import EmailClient from "./components/emailClient.js";
 import StartPage from "./components/startPage.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tracker from "./components/Tracker";
+import Survey from "./components/Survey";
 
 function App() {
   let userInfo = {
@@ -30,6 +31,10 @@ function App() {
             <Tracker userInfo={userInfo}></Tracker>
             //<EmailClient UserInfo={userInfo}></EmailClient>
           )}
+        />
+        <Route
+          path="/Survey"
+          render={() => <Survey userInfo={userInfo}></Survey>}
         />
       </Switch>
     </Router>

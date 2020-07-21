@@ -45,6 +45,7 @@ Mail6.defaultProps = {
   subject: "Droppbox Notification",
   capital: "D",
   keyID: 6,
+  unseen: true,
 };
 
 export default Mail6;

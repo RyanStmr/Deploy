@@ -15,8 +15,21 @@ class EmailWindow extends Component {
   };
 
   log() {
-    console.log("hovering emailInfo");
+    console.log("in/out emailInfo");
   }
+
+  componentDidMount() {
+    this.collectionInterval = setInterval(this.getScrollAmount, 500);
+  }
+
+  componentWillUnmount = () => {
+    clearInterval(this.collectionInterval);
+  };
+
+  getScrollAmount = () => {
+    let scrollAmount = document.getElementById("scrollContainer").scrollTop;
+    this.props.inEmailScrollAmount(scrollAmount);
+  };
 
   render() {
     const SpecificEmail = this.props.Email.mail;
@@ -31,13 +44,19 @@ class EmailWindow extends Component {
 
     return (
       <div
+        onMouseEnter={() => {
+          this.props.insideEmailInfo(true, "InEmailWindow");
+        }}
+        onMouseLeave={() => {
+          this.props.insideEmailInfo(false, "InEmailWindow");
+        }}
         style={{
           border: "0.5px solid grey",
           height: "950px",
           borderRadius: "5px",
         }}
       >
-        <div style={{}} onMouseOver={this.log}>
+        <div>
           <div>
             <Button
               style={styles.buttonsSidebar}
@@ -46,6 +65,12 @@ class EmailWindow extends Component {
               onClick={() => {
                 this.props.onMoveToImportant(email.id);
                 this.resetSelectedTab();
+              }}
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InMoveToImportantButton");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InMoveToImportantButton");
               }}
             >
               Move to Important
@@ -58,6 +83,12 @@ class EmailWindow extends Component {
                 this.props.onMoveToSpam(email.id);
                 this.resetSelectedTab();
               }}
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InMoveToSpamButton");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InMoveToSpamButton");
+              }}
             >
               Move to Spam
             </Button>
@@ -68,6 +99,12 @@ class EmailWindow extends Component {
               onClick={() => {
                 this.props.onMoveToBin(email.id);
                 this.resetSelectedTab();
+              }}
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InMoveToBinButton");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InMoveToBinButton");
               }}
             >
               Move to Bin
@@ -81,23 +118,32 @@ class EmailWindow extends Component {
           <HeaderInfoEmail
             Email={email}
             emailAdress={this.props.emailAdress}
-            HeaderInfo={this.props.HeaderInfo}
+            insideEmailInfo={this.props.insideEmailInfo}
           ></HeaderInfoEmail>
         </div>
         <hr />
         <div
+          id="scrollContainer"
           style={{
             marginLeft: "30px",
             marginTop: "5px",
             overflow: "auto",
             width: "710px",
             height: "700px",
+            backgroundColor: "white",
+          }}
+          onMouseEnter={() => {
+            this.props.insideEmailInfo(true, "InEmailBody");
+          }}
+          onMouseLeave={() => {
+            this.props.insideEmailInfo(false, "InEmailBody");
           }}
         >
           <SpecificEmail
             userName={this.props.userName}
             emailAdress={this.props.emailAdress}
             inEmailText={this.props.inEmailText}
+            clickedLink={this.props.clickedLink}
           ></SpecificEmail>
         </div>
       </div>

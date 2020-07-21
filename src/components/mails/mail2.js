@@ -54,6 +54,7 @@ Mail2.defaultProps = {
   subject: "RE: CASE # 97540486",
   capital: "M",
   keyID: 2,
+  unseen: true,
 };
 
 export default Mail2;

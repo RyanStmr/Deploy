@@ -66,10 +66,9 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "SpamInbox";
     });
-
+    this.props.clickedButton("SpamInboxButtonClicked");
     this.setState(copy);
     this.forceUpdate();
-    this.countEmails();
   };
 
   onMoveToBin = (emailID) => {
@@ -77,10 +76,9 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "BinInbox";
     });
-
+    this.props.clickedButton("BinInboxButtonClicked");
     this.setState(copy);
     this.forceUpdate();
-    this.countEmails();
   };
 
   onMoveToImportant = (emailID) => {
@@ -88,21 +86,21 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "ImportantInbox";
     });
-
+    this.props.clickedButton("ImportantInboxButtonClicked");
     this.setState(copy);
     this.forceUpdate();
-    this.countEmails();
   };
 
   countEmails = () => {
     let counter = 0;
     this.state.inbox.forEach((element) => {
-      counter = element.type === "AllInbox" ? counter + 1 : counter;
+      counter =
+        element.mail.defaultProps.unseen === true ? counter + 1 : counter;
     });
     let copy = this.state;
     copy.mailNrBadge = counter;
 
-    if (counter === 0) alert("Done with study!");
+    if (counter === 0) alert("You have viewed all Emails");
 
     this.setState(copy);
   };
@@ -114,6 +112,19 @@ class EmailClient extends Component {
     this.setState(copy);
   };
 
+  handleNewEmail = (emailNr) => {
+    this.props.onNewEmail(emailNr);
+    this.state.inbox.forEach((element) => {
+      if (element.mail.defaultProps.keyID === emailNr) {
+        let index = this.state.inbox.indexOf(element);
+        let copy = this.state.inbox;
+        copy[index].mail.defaultProps.unseen = false;
+        this.setState({ inbox: copy });
+      }
+    });
+    this.countEmails();
+  };
+
   render() {
     const currentInbox = this.state.currentInbox;
     let inbox;
@@ -121,65 +132,70 @@ class EmailClient extends Component {
     if (currentInbox === "BinInbox") {
       inbox = (
         <BinInbox
+          inEmailScrollAmount={this.props.inEmailScrollAmount}
           Mails={this.state.inbox}
           onMoveToSpam={this.onMoveToSpam}
           onMoveToBin={this.onMoveToBin}
           onMoveToImportant={this.onMoveToImportant}
-          Response={this.hanldeResponse}
-          onNewEmail={this.props.onNewEmail}
+          onNewEmail={this.handleNewEmail}
           Recipient={this.props.UserInfo.emailAdress}
           userName={this.props.UserInfo.userName}
-          HeaderInfo={this.props.HeaderInfo}
+          insideEmailInfo={this.props.insideEmailInfo}
           inEmailText={this.props.inEmailText}
+          outsideEmailInfo={this.props.outsideEmailInfo}
         ></BinInbox>
       );
     } else if (currentInbox === "AllInbox") {
       inbox = (
         <AllInbox
+          inEmailScrollAmount={this.props.inEmailScrollAmount}
           Mails={this.state.inbox}
           onMoveToSpam={this.onMoveToSpam}
           onMoveToBin={this.onMoveToBin}
           onMoveToImportant={this.onMoveToImportant}
-          Response={this.hanldeResponse}
-          onNewEmail={this.props.onNewEmail}
+          onNewEmail={this.handleNewEmail}
           Recipient={this.props.UserInfo.emailAdress}
           userName={this.props.UserInfo.userName}
-          HeaderInfo={this.props.HeaderInfo}
+          insideEmailInfo={this.props.insideEmailInfo}
           inEmailText={this.props.inEmailText}
+          outsideEmailInfo={this.props.outsideEmailInfo}
         ></AllInbox>
       );
     } else if (currentInbox === "SpamInbox") {
       inbox = (
         <SpamInbox
+          inEmailScrollAmount={this.props.inEmailScrollAmount}
           Mails={this.state.inbox}
           onMoveToSpam={this.onMoveToSpam}
           onMoveToBin={this.onMoveToBin}
           onMoveToImportant={this.onMoveToImportant}
-          Response={this.hanldeResponse}
-          onNewEmail={this.props.onNewEmail}
+          onNewEmail={this.handleNewEmail}
           Recipient={this.props.UserInfo.emailAdress}
           userName={this.props.UserInfo.userName}
-          HeaderInfo={this.props.HeaderInfo}
+          insideEmailInfo={this.props.insideEmailInfo}
           inEmailText={this.props.inEmailText}
+          outsideEmailInfo={this.props.outsideEmailInfo}
         ></SpamInbox>
       );
     } else if (currentInbox === "ImportantInbox") {
       inbox = (
         <ImportantInbox
+          inEmailScrollAmount={this.props.inEmailScrollAmount}
           Mails={this.state.inbox}
           onMoveToSpam={this.onMoveToSpam}
           onMoveToBin={this.onMoveToBin}
           onMoveToImportant={this.onMoveToImportant}
-          Response={this.hanldeResponse}
-          onNewEmail={this.props.onNewEmail}
+          onNewEmail={this.handleNewEmail}
           Recipient={this.props.UserInfo.emailAdress}
           userName={this.props.UserInfo.userName}
-          HeaderInfo={this.props.HeaderInfo}
+          insideEmailInfo={this.props.insideEmailInfo}
           inEmailText={this.props.inEmailText}
+          outsideEmailInfo={this.props.outsideEmailInfo}
         ></ImportantInbox>
       );
     }
-
+    /* this.props.onNewEmail;
+            this.handleEmailChange;*/
     return (
       <div className="entireClient">
         <div className="HeaderInfo">

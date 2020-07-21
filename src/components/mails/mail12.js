@@ -27,6 +27,7 @@ Mail12.defaultProps = {
   subject: "Your Email Account Size",
   capital: "O",
   keyID: 12,
+  unseen: true,
 };
 
 export default Mail12;

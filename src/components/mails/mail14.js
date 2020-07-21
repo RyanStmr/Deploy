@@ -60,6 +60,7 @@ Mail14.defaultProps = {
   subject: "Your Spotify Account Verification",
   capital: "S",
   keyID: 14,
+  unseen: true,
 };
 
 export default Mail14;

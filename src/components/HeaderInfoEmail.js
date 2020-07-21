@@ -26,40 +26,53 @@ class HeaderInfoEmail extends Component {
         <div>
           <p
             className="HeaderText"
-            onMouseOver={() => {
-              this.props.HeaderInfo("From:");
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InFrom");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InFrom");
             }}
           >
-            <strong>From: </strong> {this.props.Email.mail.defaultProps.sender}{" "}
+            <strong className="HeadingInfo">From: </strong>{" "}
+            {this.props.Email.mail.defaultProps.sender}{" "}
           </p>
           <p
             className="HeaderText"
-            onMouseOver={() => {
-              this.props.HeaderInfo("To:");
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InTo");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InTo");
             }}
           >
             {" "}
-            <strong>To: </strong>
+            <strong className="HeadingInfo">To: </strong>
             {this.props.emailAdress}{" "}
           </p>
           <p
             className="HeaderText"
-            onMouseOver={() => {
-              this.props.HeaderInfo("Date:");
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InDate");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InDate");
             }}
           >
             {" "}
-            <strong>Date: </strong>
+            <strong className="HeadingInfo">Date: </strong>
             {this.props.Email.mail.defaultProps.date}
           </p>
           <p
             className="HeaderText"
-            onMouseOver={() => {
-              this.props.HeaderInfo("Subject:");
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InSubject");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InSubject");
             }}
           >
             {" "}
-            <strong>Subject: </strong>{" "}
+            <strong className="HeadingInfo">Subject: </strong>{" "}
             {this.props.Email.mail.defaultProps.subject}
           </p>
         </div>

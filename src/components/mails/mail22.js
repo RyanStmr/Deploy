@@ -39,6 +39,7 @@ Mail22.defaultProps = {
   capital: "A",
   keyID: 22,
   avatarColor: "orange",
+  unseen: true,
 };
 
 export default Mail22;

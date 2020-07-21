@@ -67,6 +67,7 @@ Mail13.defaultProps = {
   subject: "Payment Request",
   capital: "I",
   keyID: 13,
+  unseen: true,
 };
 
 export default Mail13;

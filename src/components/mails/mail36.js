@@ -51,6 +51,7 @@ Mail36.defaultProps = {
   capital: "J",
   keyID: 36,
   avatarColor: "orange",
+  unseen: true,
 };
 
 export default Mail36;

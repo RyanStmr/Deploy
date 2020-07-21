@@ -60,6 +60,7 @@ Mail5.defaultProps = {
   subject: "Delivery Confirmation",
   capital: "DHL",
   keyID: 5,
+  unseen: true,
 };
 
 export default Mail5;

@@ -9,8 +9,8 @@ class Tracker extends Component {
     this.state = {
       currentEmail: 0, //event dependant
       currentInbox: "AllInbox",
-      headerInfo: [],
-      inEmailText: false, //event dependant
+      insideEmailInfo: [],
+      outsideEmailInfo: [], //event dependant
       mousePosXPlain: 0,
       mousePosYPlain: 0,
       mousePosXTransform: 0,
@@ -29,13 +29,14 @@ class Tracker extends Component {
       userId: 0,
       userNickname: "",
       pageScrollY: 0,
-      pageScrollX: 0,
       browserWidth: 0,
       browserHeight: 0,
       marginToScreenTop: 0,
       marginToScreenLeft: 0,
       mouseGeneralField: 0,
       mouseEmailField: 0,
+      inEmailScrollAmount: 0,
+      inEmailPositionY: 0,
 
       //To be sent at end of study
       resultInbox: [],
@@ -112,6 +113,7 @@ class Tracker extends Component {
       window.gazeDataY = GazeData.docY;
       window.validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated!
     };
+
     this.setState({
       gazeX: window.gazeDataX,
       gazeY: window.gazeDataY,
@@ -144,8 +146,6 @@ class Tracker extends Component {
       clickPosYTransform: 0,
       clickPosX: 0,
       clickPosY: 0,
-      headerInfo: [],
-      inEmailText: false,
     });
   };
 
@@ -153,7 +153,6 @@ class Tracker extends Component {
     let x = event.clientX;
     let y = event.clientY;
     this.setState({ mousePosXPlain: x, mousePosYPlain: y });
-    this.setTransformedMousePos(x, y);
   }
 
   settingsChecker = () => {
@@ -170,7 +169,7 @@ class Tracker extends Component {
     let marginTop = window.screenTop;
     let marginLeft = window.screenLeft;
 
-    let yScroll = window.scrollY;
+    let yScroll = Math.round(window.scrollY);
 
     this.setState({
       browserWidth: width,
@@ -179,6 +178,24 @@ class Tracker extends Component {
       marginToScreenTop: marginTop,
       pageScrollY: yScroll,
     });
+
+    this.setTransformedMousePos(
+      this.state.mousePosXPlain,
+      this.state.mousePosYPlain
+    );
+
+    this.setinEmailPositionY();
+  };
+
+  setinEmailPositionY = () => {
+    let inEmailPositionY =
+      this.state.mousePosYPlain + this.state.inEmailScrollAmount;
+    this.setState({ inEmailPositionY: inEmailPositionY });
+  };
+
+  SetInEmailScrollAmount = (scrollAmount) => {
+    let roundScrollAmount = Math.round(scrollAmount);
+    this.setState({ inEmailScrollAmount: roundScrollAmount });
   };
 
   setTransformedMousePos = (x, y) => {
@@ -195,9 +212,14 @@ class Tracker extends Component {
 
   handleMouseClick(event) {
     let copy = this.state;
+    this.handleMouseMove(event);
+    this.setTransformedMousePos(
+      this.state.mousePosXPlain,
+      this.state.mousePosYPlain
+    );
     copy.click = true;
-    copy.clickPosX = event.clientX;
-    copy.clickPosY = event.clientY;
+    copy.clickPosX = this.state.mousePosXPlain;
+    copy.clickPosY = this.state.mousePosYPlain;
     this.setState(copy);
   }
 
@@ -220,142 +242,63 @@ class Tracker extends Component {
     this.setState(copy);
   };
 
-  handleHeaderInfo = (whichPart) => {
-    let copy = this.state;
-    copy.headerInfo.push(whichPart);
-    this.setState(copy);
-  };
-
-  handleInEmailText = () => {
-    let copy = this.state;
-    copy.inEmailText = true;
-    this.setState(copy);
-  };
-  /*
-  collectStates = () => {
-    this.stateCollector.push(this.state);
-    console.log(this.stateCollector);
-    this.setState({ clickPosX: 0, clickPosY: 0 });
-    this.startGazeHandling();
-  };
-
-  startCalib = () => {
-    window.GazeCloudAPI.StartEyeTracking();
-  };
-
-  startGazeHandling = () => {
-    var gazeInterval = setInterval(this.handleGaze, 1000);
-  };
-
-  handleEmailChange = (emailNr) => {
-    let copy = this.state;
-    copy.currentEmail = emailNr;
-    this.setState(copy);
-  };
-
-  handleMouseMove(event) {
-    let copy = this.state;
-    copy.x = event.clientX;
-    copy.y = event.clientY;
-
-    this.setState(copy);
-  }
-
-  handleGaze = () => {
-    window.GazeCloudAPI.OnResult = (GazeData) => {
+  handleInsideEmailInfo = (InOrOutput, whichPart) => {
+    if (InOrOutput === true) {
       let copy = this.state;
-      GazeData.docX = 3;
-      GazeData.docY = 5;
-      copy.gazeX = GazeData.docX;
-      copy.gazeY = GazeData.docY;
+      copy.insideEmailInfo.push(whichPart);
       this.setState(copy);
-    };
+    } else {
+      this.deletefromInsideEmailInfo(whichPart);
+    }
   };
 
-  handleMouseClick(event) {
+  handleOutsideEmailInfo = (InOrOutput, whichPart) => {
+    if (InOrOutput === true) {
+      let copy = this.state;
+      copy.outsideEmailInfo.push(whichPart);
+      this.setState(copy);
+    } else {
+      this.deletefromOutsideEmailInfo(whichPart);
+    }
+  };
+
+  deletefromInsideEmailInfo = (whichToDelete) => {
     let copy = this.state;
-    copy.click = true;
-    copy.clickPosX = event.clientX;
-    copy.clickPosY = event.clientY;
-
-    this.setState(copy);
-  }
-
-  componentDidMount() {
-    var collectionInterval = setInterval(this.collectStates, 5000);
-    var windowSettingsInterval = setInterval(this.settingsChecker, 1000);
-    var timerInterval = setInterval(this.timer, 1000);
-
-    const requestOptions = {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    };
-
-    fetch("/connect", requestOptions)
-      .then((response) => response.json())
-      .then((data) => this.setState({ userId: data.userID }));
-  }
-
-  settingsChecker = () => {
-    var width =
-      window.innerWidth ||
-      document.documentElement.clientWidth ||
-      document.body.clientWidth;
-
-    var height =
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.body.clientHeight;
-
-    var marginTop = window.screenTop;
-    var marginLeft = window.screenLeft;
-
-    this.setState({
-      browserWidth: width,
-      browserHeight: height,
-      marginToScreenLeft: marginLeft,
-      marginToScreenTop: marginTop,
-    });
+    const index = copy.insideEmailInfo.indexOf(whichToDelete);
+    if (index > -1) {
+      copy.insideEmailInfo.splice(index, 1);
+    }
   };
 
-  timer = () => {
+  deletefromOutsideEmailInfo = (whichToDelete) => {
     let copy = this.state;
-    let currentTime = Date.now();
-    copy.currentTime = currentTime;
+    const index = copy.outsideEmailInfo.indexOf(whichToDelete);
+    if (index > -1) {
+      copy.outsideEmailInfo.splice(index, 1);
+    }
+  };
 
+  handleClickedInboxButton = (whichButton) => {
+    let copy = this.state;
+    copy.insideEmailInfo.push(whichButton);
     this.setState(copy);
+    const timer = setTimeout(() => {
+      this.deletefromInsideEmailInfo(whichButton);
+    }, 1500);
   };
 
-  tester = () => {
-    console.log(this.state);
-
-    const data = this.stateCollector;
-
-    const response = fetch("/data", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }).then(this.resetCollector);
-  };
-
-  resetCollector = () => {
-    this.stateCollector = [];
-    console.log("resetted");
-  };
-*/
   render() {
     return (
       <div onMouseMove={this.handleMouseMove} onClick={this.handleMouseClick}>
         <EmailClient
+          clickedButton={this.handleClickedInboxButton}
+          inEmailScrollAmount={this.SetInEmailScrollAmount}
           UserInfo={this.props.userInfo}
           onNewEmail={this.handleNewCurrentEmail}
           onNewInbox={this.handleNewCurrentInbox}
           setInboxResult={this.handleInboxResult}
-          HeaderInfo={this.handleHeaderInfo}
-          inEmailText={this.handleInEmailText}
+          insideEmailInfo={this.handleInsideEmailInfo}
+          outsideEmailInfo={this.handleOutsideEmailInfo}
         ></EmailClient>
       </div>
     );

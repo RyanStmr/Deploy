@@ -208,6 +208,7 @@ Mail24.defaultProps = {
   capital: "A",
   keyID: 24,
   avatarColor: "grey",
+  unseen: true,
 };
 
 export default Mail24;

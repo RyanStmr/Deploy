@@ -77,6 +77,7 @@ Mail25.defaultProps = {
   capital: "S",
   keyID: 25,
   avatarColor: "green",
+  unseen: true,
 };
 
 export default Mail25;

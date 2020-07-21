@@ -77,6 +77,7 @@ Mail21.defaultProps = {
   capital: "M",
   keyID: 21,
   avatarColor: "blue",
+  unseen: true,
 };
 
 export default Mail21;

@@ -52,6 +52,7 @@ Mail19.defaultProps = {
   capital: "L",
   keyID: 19,
   avatarColor: "green",
+  unseen: true,
 };
 
 export default Mail19;

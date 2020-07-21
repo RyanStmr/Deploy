@@ -58,6 +58,7 @@ Mail7.defaultProps = {
   subject: "Shared document",
   capital: "G",
   keyID: 7,
+  unseen: true,
 };
 
 export default Mail7;

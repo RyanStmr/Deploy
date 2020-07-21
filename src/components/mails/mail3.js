@@ -62,6 +62,7 @@ Mail3.defaultProps = {
   subject: "Breaking News",
   capital: "N",
   keyID: 3,
+  unseen: true,
 };
 
 export default Mail3;

@@ -30,6 +30,7 @@ Mail26.defaultProps = {
   capital: "FB",
   keyID: 26,
   avatarColor: "blue",
+  unseen: true,
 };
 
 export default Mail26;

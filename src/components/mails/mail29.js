@@ -50,6 +50,7 @@ Mail29.defaultProps = {
   capital: "J",
   keyID: 29,
   avatarColor: "grey",
+  unseen: true,
 };
 
 export default Mail29;

@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import EmailWindow from "./emailWindow";
+import { grey } from "@material-ui/core/colors";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -95,6 +96,37 @@ export default function VerticalTabs(props) {
     passNewValue(newTab);
   };
 
+  const styles = {
+    largeParUnseen: {
+      fontWeight: "bolder",
+      textAlign: "left",
+      fontSize: "12px",
+      margin: "0",
+      color: "black",
+    },
+    largeParSeen: {
+      fontWeight: "bolder",
+      textAlign: "left",
+      fontSize: "12px",
+      margin: "0",
+      color: "grey",
+    },
+
+    smallParUnseen: {
+      textAlign: "left",
+      margin: "0",
+      fontSize: "8px",
+      color: "black",
+    },
+
+    smallParSeen: {
+      textAlign: "left",
+      margin: "0",
+      fontSize: "8px",
+      color: "grey",
+    },
+  };
+
   return (
     <div>
       <div className={classes.root}>
@@ -110,8 +142,21 @@ export default function VerticalTabs(props) {
           }}
         >
           {props.Mails.map((email) => {
+            let unseen = email.mail.defaultProps.unseen;
             return (
               <Tab
+                onMouseEnter={() => {
+                  props.outsideEmailInfo(
+                    true,
+                    `InTab ${email.mail.defaultProps.keyID}`
+                  );
+                }}
+                onMouseLeave={() => {
+                  props.outsideEmailInfo(
+                    false,
+                    `InTab ${email.mail.defaultProps.keyID}`
+                  );
+                }}
                 style={{
                   fontSize: "10px",
                   textTransform: "none",
@@ -121,39 +166,35 @@ export default function VerticalTabs(props) {
                   width: "180px",
                 }}
                 label={
-                  <div style={{ width: "170px" }}>
+                  <div style={{ width: "175px" }}>
                     {email.mail.defaultProps.senderName ? (
                       <p
-                        style={{
-                          fontWeight: "bolder",
-                          textAlign: "left",
-                          fontSize: "12px",
-                          margin: "0",
-                        }}
+                        style={
+                          unseen ? styles.largeParUnseen : styles.largeParSeen
+                        }
                       >
                         {email.mail.defaultProps.senderName}
                       </p>
                     ) : (
                       <p
-                        style={{
-                          fontWeight: "bolder",
-                          textAlign: "left",
-                          fontSize: "12px",
-                          margin: "0",
-                        }}
+                        style={
+                          unseen ? styles.largeParUnseen : styles.largeParSeen
+                        }
                       >
                         {email.mail.defaultProps.sender}
                       </p>
                     )}
-                    <p style={{ textAlign: "left", margin: "0" }}>
+                    <p
+                      style={
+                        unseen ? styles.largeParUnseen : styles.largeParSeen
+                      }
+                    >
                       {email.mail.defaultProps.subject}
                     </p>
                     <p
-                      style={{
-                        textAlign: "left",
-                        margin: "0",
-                        fontSize: "8px",
-                      }}
+                      style={
+                        unseen ? styles.smallParUnseen : styles.smallParSeen
+                      }
                     >
                       {email.mail.defaultProps.date}
                     </p>
@@ -180,6 +221,7 @@ export default function VerticalTabs(props) {
                 }}
               >
                 <EmailWindow
+                  inEmailScrollAmount={props.inEmailScrollAmount}
                   emailAdress={props.Recipient}
                   userName={props.userName}
                   resetSelectedTab={resetSelectedTab}
@@ -190,7 +232,7 @@ export default function VerticalTabs(props) {
                   onMoveToImportant={props.onMoveToImportant}
                   onMoveEmailForward={forwardSelectedTab}
                   onMoveEmailBackward={backSelectedTab}
-                  HeaderInfo={props.HeaderInfo}
+                  insideEmailInfo={props.insideEmailInfo}
                   inEmailText={props.inEmailText}
                 ></EmailWindow>
               </div>

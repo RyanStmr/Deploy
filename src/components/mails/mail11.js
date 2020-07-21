@@ -34,6 +34,7 @@ Mail11.defaultProps = {
   subject: "Microsoft Account Issues",
   capital: "O",
   keyID: 11,
+  unseen: true,
 };
 
 export default Mail11;

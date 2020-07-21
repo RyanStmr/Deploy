@@ -41,6 +41,7 @@ Mail4.defaultProps = {
   subject: "Crime Report",
   capital: "P",
   keyID: 4,
+  unseen: true,
 };
 
 export default Mail4;

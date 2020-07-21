@@ -31,8 +31,9 @@ Mail40.defaultProps = {
   date: "June 12, 2020, 01:39",
   subject: "Ankündigung/Announcement Studentenwerk München",
   capital: "B",
-  keyID: 39,
+  keyID: 40,
   avatarColor: "blue",
+  unseen: true,
 };
 
 export default Mail40;

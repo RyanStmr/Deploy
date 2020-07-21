@@ -165,6 +165,7 @@ Mail16.defaultProps = {
   subject: "Your sensative data",
   capital: "A",
   keyID: 16,
+  unseen: true,
 };
 
 export default Mail16;

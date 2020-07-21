@@ -20,6 +20,7 @@ Mail1.defaultProps = {
   capital: "H",
   keyID: 1,
   avatarColor: "blue",
+  unseen: true,
 };
 
 export default Mail1;

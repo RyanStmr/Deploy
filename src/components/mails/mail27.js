@@ -185,6 +185,7 @@ Mail27.defaultProps = {
   capital: "A",
   keyID: 27,
   avatarColor: "black",
+  unseen: true,
 };
 
 export default Mail27;

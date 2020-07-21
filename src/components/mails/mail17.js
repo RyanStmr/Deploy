@@ -43,10 +43,11 @@ Mail17.defaultProps = {
   senderName: "LMU Munich",
   sender: "lmu@campus.de",
   date: "Mai 13, 2020, 09:28",
-  subject: "Complete lmu.de Survey Now ( Important )",
+  subject: "Complete lmu.de Survey Now  (Important)",
   capital: "L",
   keyID: 17,
   avatarColor: "green",
+  unseen: true,
 };
 
 export default Mail17;

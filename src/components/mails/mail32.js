@@ -51,6 +51,7 @@ Mail32.defaultProps = {
   capital: "S",
   keyID: 32,
   avatarColor: "red",
+  unseen: true,
 };
 
 export default Mail32;

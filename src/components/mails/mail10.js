@@ -49,6 +49,7 @@ Mail10.defaultProps = {
   subject: "You MailBox Compromissed",
   capital: "A",
   keyID: 10,
+  unseen: true,
 };
 
 export default Mail10;

@@ -33,6 +33,7 @@ Mail35.defaultProps = {
   capital: "H",
   keyID: 35,
   avatarColor: "green",
+  unseen: true,
 };
 
 export default Mail35;

@@ -38,6 +38,7 @@ Mail41.defaultProps = {
   capital: "F",
   keyID: 41,
   avatarColor: "black",
+  unseen: true,
 };
 
 export default Mail41;

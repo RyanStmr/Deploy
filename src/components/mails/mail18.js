@@ -42,6 +42,7 @@ Mail18.defaultProps = {
   capital: "L",
   keyID: 18,
   avatarColor: "green",
+  unseen: true,
 };
 
 export default Mail18;

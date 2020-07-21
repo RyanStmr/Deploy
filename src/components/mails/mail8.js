@@ -37,6 +37,7 @@ Mail8.defaultProps = {
   subject: "Issues with your Email Account",
   capital: "IT",
   keyID: 8,
+  unseen: true,
 };
 
 export default Mail8;

@@ -52,8 +52,9 @@ Mail31.defaultProps = {
   date: "June 12, 2020, 03:43",
   subject: "Ihre Bestätigung ist erforderlich",
   capital: "S",
-  keyID: 32,
+  keyID: 31,
   avatarColor: "red",
+  unseen: true,
 };
 
 export default Mail31;

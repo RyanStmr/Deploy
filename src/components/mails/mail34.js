@@ -31,6 +31,7 @@ Mail34.defaultProps = {
   capital: "M",
   keyID: 34,
   avatarColor: "",
+  unseen: true,
 };
 
 export default Mail34;

@@ -63,6 +63,7 @@ Mail9.defaultProps = {
   subject: "Invitation Reminder",
   capital: "L",
   keyID: 9,
+  unseen: true,
 };
 
 export default Mail9;

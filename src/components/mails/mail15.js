@@ -37,6 +37,7 @@ Mail15.defaultProps = {
   subject: "Upgrade WebMail",
   capital: "IT",
   keyID: 15,
+  unseen: true,
 };
 
 export default Mail15;

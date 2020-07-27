@@ -10,21 +10,126 @@ class SurveyComponent extends Component {
   json = {
     elements: [
       {
+        type: "radiogroup",
+        name: "gender",
+        title: "Please select your gender?",
+        isRequired: true,
+        colCount: 3,
+        choices: ["male", "female", "other"],
+      },
+      {
         type: "text",
         name: "customerName",
-        title: "What is your name?",
+        title: "What was your alias name?",
         isRequired: true,
       },
       {
         type: "text",
-        name: "customerName1",
-        title: "What is your name?",
+        name: "age",
+        title: "What is your age?",
         isRequired: true,
       },
       {
         type: "text",
-        name: "customerName2",
-        title: "What is your name?",
+        name: "profession",
+        title: "What is your profession?",
+        isRequired: true,
+      },
+      {
+        type: "text",
+        name: "emailClient",
+        title: "Which email-clients do you use?",
+        isRequired: false,
+      },
+      {
+        type: "text",
+        name: "Time Browsing",
+        title: "How much time do you spend browsing the internet per day?",
+        isRequired: false,
+      },
+      {
+        type: "matrix",
+        name: "Quality",
+        title:
+          "Please indicate if you agree or disagree with the following statements",
+        columns: [
+          {
+            value: 1,
+            text: "Strongly Disagree",
+          },
+          {
+            value: 2,
+            text: "Disagree",
+          },
+          {
+            value: 3,
+            text: "Neutral",
+          },
+          {
+            value: 4,
+            text: "Agree",
+          },
+          {
+            value: 5,
+            text: "Strongly Agree",
+          },
+        ],
+        rows: [
+          {
+            value: "Experience IT Security",
+            text: "I have experience with IT Security ",
+          },
+          {
+            value: "Experience Eye Tracking",
+            text: "I have experience with Eye Tracking",
+          },
+          {
+            value: "Information presented enough",
+            text:
+              "The information presented on the interface was enough to make me come to a decision on categorizing the email ",
+          },
+          {
+            value: "Information presented enough",
+            text:
+              "The information presented on the interface was enough to make me come to a decision on categorizing the email ",
+          },
+        ],
+      },
+      {
+        type: "text",
+        name: "Important aspects",
+        title:
+          "What aspects of the email made you categorize it as Important? (key words are enough)",
+        isRequired: true,
+      },
+      {
+        type: "text",
+        name: "Spam aspects",
+        title:
+          "What aspects of the email made you categorize it as Spam? (key words are enough)",
+        isRequired: true,
+      },
+      {
+        type: "text",
+        name: "Bin aspects",
+        title:
+          "What aspects of the email made you categorize it as Bin? (key words are enough)",
+        isRequired: true,
+      },
+      {
+        type: "rating",
+        name: "Client",
+        title:
+          "Were you sure when making your decision while categorizing the emails?",
+        minRateDescription: "Not sure",
+        maxRateDescription: "Completely sure",
+      },
+
+      {
+        type: "boolean",
+        name: "bool",
+        title: "Please answer the question",
+        label: "Are you 21 or older?",
         isRequired: true,
       },
     ],

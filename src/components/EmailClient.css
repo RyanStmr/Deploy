@@ -29,3 +29,9 @@
   width: 150px;
   height: 60px;
 }
+
+a {
+}
+a:hover {
+  border-bottom: none;
+}

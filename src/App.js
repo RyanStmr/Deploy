@@ -1,20 +1,25 @@
 import React from "react";
-import "./App.css";
 import EmailClient from "./components/emailClient.js";
 import StartPage from "./components/startPage.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tracker from "./components/Tracker";
-import Survey from "./components/Survey";
+import Survey from "./components/SurveyComponent";
+import SurveyComponent from "./components/SurveyComponent";
 
 function App() {
   let userInfo = {
     userName: "max mustermann",
     emailAdress: "max_mustermann@example.com",
+    userID: 0,
   };
 
   const updateUserInfo = (adress, name) => {
     userInfo.userName = name;
     userInfo.emailAdress = adress;
+  };
+
+  const setUserID = (userID) => {
+    userInfo.userID = userID;
   };
 
   return (
@@ -28,13 +33,13 @@ function App() {
         <Route
           path="/EmailClient"
           render={() => (
-            <Tracker userInfo={userInfo}></Tracker>
+            <Tracker userInfo={userInfo} userID={setUserID}></Tracker>
             //<EmailClient UserInfo={userInfo}></EmailClient>
           )}
         />
         <Route
-          path="/Survey"
-          render={() => <Survey userInfo={userInfo}></Survey>}
+          path="/SurveyComponent"
+          render={() => <SurveyComponent userInfo={userInfo}></SurveyComponent>}
         />
       </Switch>
     </Router>

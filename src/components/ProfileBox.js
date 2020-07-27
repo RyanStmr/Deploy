@@ -29,7 +29,9 @@ class ProfileBox extends Component {
               onClick={() => {
                 this.props.setInboxResult();
                 this.setState({ submitted: true });
-                alert("submitted: Click Continue to proceed");
+                alert(
+                  "submitted: Click Continue to proceed, any changes to your Inbox won't be registered anymore"
+                );
               }}
             >
               {" "}
@@ -38,13 +40,21 @@ class ProfileBox extends Component {
           </div>
         ) : (
           <div>
-            <Link to="/Survey">
+            <Link
+              to="/SurveyComponent"
+              activeClassName="active"
+              style={{ width: "380px" }}
+            >
               <Button
                 variant="contained"
-                style={{ backgroundColor: "#75c974", margin: "10px" }}
+                style={{
+                  backgroundColor: "#75c974",
+                  margin: "10px",
+                  width: "400px",
+                }}
               >
                 {" "}
-                <ExitToAppIcon></ExitToAppIcon>Continue
+                <ExitToAppIcon></ExitToAppIcon>Continue to Survey
               </Button>
             </Link>
           </div>

@@ -35,7 +35,8 @@ app.get("/connect", (req, res) => {
   pool.query(
     `CREATE TABLE USER${newUser.userID}(
       ID SERIAL PRIMARY KEY NOT NULL, 
-      USERINFO json
+      USERINFO json,
+      USERSURVEYINFO json,
       )`,
     (error, results) => {
       if (error) {
@@ -117,6 +118,24 @@ app.post("/data", (req, res) => {
       }
     );
   });
+  res.send(userData);
+});
+
+app.post("/SurveyData", (req, res) => {
+  //userData Array of Json Objects
+  let userData = req.body;
+  console.log(userData);
+  let jsonObject = JSON.stringify(userData);
+
+  pool.query(
+    `INSERT INTO USER${userData.userID} (USERSURVEYINFO) VALUES ('${jsonObject}')`,
+    (error, results) => {
+      if (error) {
+        console.log(`error whe inserting surveyData ${error}`);
+      }
+    }
+  );
+
   res.send(userData);
 });
 

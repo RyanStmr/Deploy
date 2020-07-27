@@ -26,7 +26,7 @@ class Tracker extends Component {
       gazeXTransform: 0,
       gazeYTransform: 0,
       validationGaze: 0,
-      userId: 0,
+      userId: 10,
       userNickname: "",
       pageScrollY: 0,
       browserWidth: 0,
@@ -50,6 +50,7 @@ class Tracker extends Component {
     this.getUserID();
     this.getNickname();
     this.startCalibration();
+    this.props.userID(this.state.userId);
   }
 
   getUserID = () => {
@@ -60,7 +61,8 @@ class Tracker extends Component {
 
     fetch("/connect", requestOptions)
       .then((response) => response.json())
-      .then((data) => this.setState({ userId: data.userID }));
+      .then((data) => this.setState({ userId: data.userID }))
+      .then((data) => this.props.userID(this.state.userId));
   };
 
   getNickname = () => {
@@ -99,6 +101,7 @@ class Tracker extends Component {
   collectStates = () => {
     this.setAllInfo();
     this.fillCollector();
+    this.resetStates();
   };
 
   setAllInfo = () => {
@@ -131,7 +134,6 @@ class Tracker extends Component {
 
   fillCollector = () => {
     this.stateCollector.push(this.state);
-    this.resetStates();
   };
 
   resetCollector = () => {
@@ -240,12 +242,16 @@ class Tracker extends Component {
     let copy = this.state;
     copy.resultInbox = finalInboxLoc;
     this.setState(copy);
+    this.sendData();
   };
 
   handleInsideEmailInfo = (InOrOutput, whichPart) => {
     if (InOrOutput === true) {
       let copy = this.state;
-      copy.insideEmailInfo.push(whichPart);
+      if (!copy.insideEmailInfo.includes(whichPart)) {
+        copy.insideEmailInfo.push(whichPart);
+      } else {
+      }
       this.setState(copy);
     } else {
       this.deletefromInsideEmailInfo(whichPart);
@@ -268,6 +274,7 @@ class Tracker extends Component {
     if (index > -1) {
       copy.insideEmailInfo.splice(index, 1);
     }
+    this.setState(copy);
   };
 
   deletefromOutsideEmailInfo = (whichToDelete) => {
@@ -276,15 +283,19 @@ class Tracker extends Component {
     if (index > -1) {
       copy.outsideEmailInfo.splice(index, 1);
     }
+    this.setState(copy);
   };
 
-  handleClickedInboxButton = (whichButton) => {
+  handleClickedInboxButton = (whichButton, insideWhichButton) => {
     let copy = this.state;
     copy.insideEmailInfo.push(whichButton);
+    console.log(copy);
     this.setState(copy);
+    //this.deletefromInsideEmailInfo(insideWhichButton);
+
     const timer = setTimeout(() => {
       this.deletefromInsideEmailInfo(whichButton);
-    }, 1500);
+    }, 1100);
   };
 
   render() {

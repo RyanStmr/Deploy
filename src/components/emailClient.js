@@ -66,7 +66,7 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "SpamInbox";
     });
-    this.props.clickedButton("SpamInboxButtonClicked");
+    this.props.clickedButton("SpamInboxButtonClicked", "InMoveToSpamButton");
     this.setState(copy);
     this.forceUpdate();
   };
@@ -76,7 +76,7 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "BinInbox";
     });
-    this.props.clickedButton("BinInboxButtonClicked");
+    this.props.clickedButton("BinInboxButtonClicked", "InMoveToBinButton");
     this.setState(copy);
     this.forceUpdate();
   };
@@ -86,7 +86,10 @@ class EmailClient extends Component {
     copy.inbox.map((email) => {
       if (email.id === emailID) email.type = "ImportantInbox";
     });
-    this.props.clickedButton("ImportantInboxButtonClicked");
+    this.props.clickedButton(
+      "ImportantInboxButtonClicked",
+      "InMoveToImportantButton"
+    );
     this.setState(copy);
     this.forceUpdate();
   };

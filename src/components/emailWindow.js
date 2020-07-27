@@ -50,6 +50,9 @@ class EmailWindow extends Component {
         onMouseLeave={() => {
           this.props.insideEmailInfo(false, "InEmailWindow");
         }}
+        onMouseOver={() => {
+          this.props.insideEmailInfo(true, "InEmailWindow");
+        }}
         style={{
           border: "0.5px solid grey",
           height: "950px",
@@ -72,6 +75,9 @@ class EmailWindow extends Component {
               onMouseLeave={() => {
                 this.props.insideEmailInfo(false, "InMoveToImportantButton");
               }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InMoveToImportantButton");
+              }}
             >
               Move to Important
             </Button>
@@ -89,6 +95,9 @@ class EmailWindow extends Component {
               onMouseLeave={() => {
                 this.props.insideEmailInfo(false, "InMoveToSpamButton");
               }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InMoveToSpamButton");
+              }}
             >
               Move to Spam
             </Button>
@@ -105,6 +114,9 @@ class EmailWindow extends Component {
               }}
               onMouseLeave={() => {
                 this.props.insideEmailInfo(false, "InMoveToBinButton");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InMoveToBinButton");
               }}
             >
               Move to Bin
@@ -137,6 +149,9 @@ class EmailWindow extends Component {
           }}
           onMouseLeave={() => {
             this.props.insideEmailInfo(false, "InEmailBody");
+          }}
+          onMouseOver={() => {
+            this.props.insideEmailInfo(true, "InEmailBody");
           }}
         >
           <SpecificEmail

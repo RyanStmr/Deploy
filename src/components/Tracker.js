@@ -62,7 +62,7 @@ class Tracker extends Component {
     fetch("/connect", requestOptions)
       .then((response) => response.json())
       .then((data) => this.setState({ userId: data.userID }))
-      .then((data) => this.props.userID(this.state.userId));
+      .then(() => this.props.userID(this.state.userId));
   };
 
   getNickname = () => {

@@ -36,7 +36,7 @@ app.get("/connect", (req, res) => {
     `CREATE TABLE USER${newUser.userID}(
       ID SERIAL PRIMARY KEY NOT NULL, 
       USERINFO json,
-      USERSURVEYINFO json,
+      USERSURVEYINFO json
       )`,
     (error, results) => {
       if (error) {
@@ -105,6 +105,7 @@ app.post("/data", (req, res) => {
   let userData = req.body;
   console.log(`receiving data from ${userData[0].userId} `);
   userData.forEach((element) => {
+    console.log(element.userId);
     if (element.userId === 0) return;
 
     let jsonObject = JSON.stringify(element);
@@ -113,7 +114,7 @@ app.post("/data", (req, res) => {
       `INSERT INTO USER${element.userId} (USERINFO) VALUES ('${jsonObject}')`,
       (error, results) => {
         if (error) {
-          console.log("table not available");
+          throw error;
         }
       }
     );
@@ -131,7 +132,7 @@ app.post("/SurveyData", (req, res) => {
     `INSERT INTO USER${userData.userID} (USERSURVEYINFO) VALUES ('${jsonObject}')`,
     (error, results) => {
       if (error) {
-        console.log(`error whe inserting surveyData ${error}`);
+        console.log(`error when inserting surveyData ${error}`);
       }
     }
   );

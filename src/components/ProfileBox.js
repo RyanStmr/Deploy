@@ -23,20 +23,22 @@ class ProfileBox extends Component {
               {" "}
               <InfoIcon></InfoIcon>
             </Button>
-            <Button
-              variant="contained"
-              style={{ backgroundColor: "#75c974", margin: "10px" }}
-              onClick={() => {
-                this.props.setInboxResult();
-                this.setState({ submitted: true });
-                alert(
-                  "submitted: Click Continue to proceed, any changes to your Inbox won't be registered anymore"
-                );
-              }}
+            <Link
+              to="/SurveyComponent"
+              activeClassName="active"
+              style={{ width: "380px" }}
             >
-              {" "}
-              <ExitToAppIcon></ExitToAppIcon>Submit
-            </Button>
+              <Button
+                variant="contained"
+                style={{ backgroundColor: "#75c974", margin: "10px" }}
+                onClick={() => {
+                  this.props.setInboxResult();
+                  this.setState({ submitted: true });
+                }}
+              >
+                <ExitToAppIcon></ExitToAppIcon>Submit
+              </Button>
+            </Link>
           </div>
         ) : (
           <div>

@@ -3,8 +3,8 @@ import EmailClient from "./components/emailClient.js";
 import StartPage from "./components/startPage.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tracker from "./components/Tracker";
-import Survey from "./components/SurveyComponent";
 import SurveyComponent from "./components/SurveyComponent";
+import ConsentPage from "./components/ConsentPage";
 
 function App() {
   let userInfo = {
@@ -25,21 +25,22 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route
-          path="/"
-          exact
-          render={() => <StartPage updatedData={updateUserInfo} />}
-        />
+        <Route path="/" exact render={() => <StartPage />} />
         <Route
           path="/EmailClient"
           render={() => (
             <Tracker userInfo={userInfo} userID={setUserID}></Tracker>
-            //<EmailClient UserInfo={userInfo}></EmailClient>
           )}
         />
         <Route
           path="/SurveyComponent"
           render={() => <SurveyComponent userInfo={userInfo}></SurveyComponent>}
+        />
+        <Route
+          path="/ConsentPage"
+          render={() => (
+            <ConsentPage updatedData={updateUserInfo}></ConsentPage>
+          )}
         />
       </Switch>
     </Router>

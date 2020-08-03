@@ -197,8 +197,7 @@ class EmailClient extends Component {
         ></ImportantInbox>
       );
     }
-    /* this.props.onNewEmail;
-            this.handleEmailChange;*/
+
     return (
       <div className="entireClient">
         <div className="HeaderInfo">

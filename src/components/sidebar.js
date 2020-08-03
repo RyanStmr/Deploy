@@ -105,11 +105,11 @@ export default function VerticalTabs(props) {
       color: "black",
     },
     largeParSeen: {
-      fontWeight: "bolder",
+      fontWeight: "300",
       textAlign: "left",
       fontSize: "12px",
       margin: "0",
-      color: "grey",
+      color: "black",
     },
 
     smallParUnseen: {

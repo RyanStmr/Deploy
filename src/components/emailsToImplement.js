@@ -143,7 +143,6 @@ const Inbox = [
     mail: Mail25,
     visible: true,
   },
-  ,
   {
     mail: Mail26,
     visible: true,
@@ -168,7 +167,6 @@ const Inbox = [
     mail: Mail31,
     visible: true,
   },
-  ,
   {
     mail: Mail32,
     visible: true,
@@ -193,7 +191,7 @@ const Inbox = [
     mail: Mail37,
     visible: true,
   },
-  ,
+
   {
     mail: Mail38,
     visible: true,

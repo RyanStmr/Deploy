@@ -1,27 +1,24 @@
 import React, { Component } from "react";
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
+import "./Survey.css";
 
 class SurveyComponent extends Component {
   state = {
     userID: 0,
   };
+
   //Define Survey JSON
   json = {
+    showQuestionNumbers: "off",
     elements: [
       {
         type: "radiogroup",
         name: "gender",
-        title: "Please select your gender?",
+        title: "Please select your gender",
         isRequired: true,
-        colCount: 3,
-        choices: ["male", "female", "other"],
-      },
-      {
-        type: "text",
-        name: "customerName",
-        title: "What was your alias name?",
-        isRequired: true,
+        colCount: 4,
+        choices: ["male", "female", "other", "prefer not to say"],
       },
       {
         type: "text",
@@ -38,20 +35,29 @@ class SurveyComponent extends Component {
       {
         type: "text",
         name: "emailClient",
-        title: "Which email-clients do you use?",
-        isRequired: false,
+        title: "Which email-clients do you use? (eg. Gmail, Outlook etc.)",
+        isRequired: true,
+      },
+      {
+        type: "checkbox",
+        name: "email device",
+        title: "Which device do you use to check your Emails?",
+        isRequired: true,
+        colCount: 5,
+        choices: ["Desktop", "Laptop", "Smartphone", "Tablet", "other"],
       },
       {
         type: "text",
-        name: "Time Browsing",
-        title: "How much time do you spend browsing the internet per day?",
+        name: "Time Social Media",
+        title:
+          "How much time do you spend on Social Media per day? (eg. Instagram, Facebook etc.)",
         isRequired: false,
       },
       {
         type: "matrix",
-        name: "Quality",
+        name: "User Experience",
         title:
-          "Please indicate if you agree or disagree with the following statements",
+          "Please indicate if you agree or disagree with the following statements.",
         columns: [
           {
             value: 1,
@@ -86,51 +92,64 @@ class SurveyComponent extends Component {
           {
             value: "Information presented enough",
             text:
-              "The information presented on the interface was enough to make me come to a decision on categorizing the email ",
-          },
-          {
-            value: "Information presented enough",
-            text:
-              "The information presented on the interface was enough to make me come to a decision on categorizing the email ",
+              "I used information provided in the interface to categorize the emails.",
           },
         ],
       },
+
       {
         type: "text",
         name: "Important aspects",
         title:
           "What aspects of the email made you categorize it as Important? (key words are enough)",
-        isRequired: true,
       },
       {
         type: "text",
         name: "Spam aspects",
         title:
           "What aspects of the email made you categorize it as Spam? (key words are enough)",
-        isRequired: true,
       },
       {
         type: "text",
         name: "Bin aspects",
         title:
           "What aspects of the email made you categorize it as Bin? (key words are enough)",
-        isRequired: true,
       },
       {
-        type: "rating",
-        name: "Client",
+        type: "radiogroup",
+        name: "Reimbursement",
         title:
-          "Were you sure when making your decision while categorizing the emails?",
-        minRateDescription: "Not sure",
-        maxRateDescription: "Completely sure",
-      },
-
-      {
-        type: "boolean",
-        name: "bool",
-        title: "Please answer the question",
-        label: "Are you 21 or older?",
+          "How to you want to reimbursed? (Any information given here will not be connected to the study data) ",
         isRequired: true,
+        colCount: 3,
+        choices: ["MMI-Points", "5€ (PayPal or Amazon)", "None"],
+      },
+      {
+        name: "email",
+        type: "text",
+        inputType: "email",
+        visibleIf:
+          "{Reimbursement}='MMI-Points' or {Reimbursement}='5€ (PayPal or Amazon)' ",
+        title: "Your E-mail:",
+        placeHolder: "your-email@domain.org",
+
+        validators: [
+          {
+            type: "email",
+          },
+        ],
+      },
+      {
+        type: "text",
+        name: "MMI Name",
+        visibleIf: "{Reimbursement}='MMI-Points'",
+        title: "Please insert your first and last name here.",
+      },
+      {
+        type: "text",
+        name: "MMI Matrikelnummer",
+        visibleIf: "{Reimbursement}='MMI-Points'",
+        title: "Please insert your enrolement number (Matrikelnummer) here.",
       },
     ],
   };

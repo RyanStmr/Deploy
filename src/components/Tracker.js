@@ -72,11 +72,11 @@ class Tracker extends Component {
   };
 
   startCalibration = () => {
-    /*window.GazeCloudAPI.APIKey = "GazeBehavior_NonCommercialUse";
+    window.GazeCloudAPI.APIKey = "GazeBehavior_NonCommercialUse";
     window.GazeCloudAPI.StartEyeTracking();
     window.GazeCloudAPI.OnCalibrationComplete = () => {
       console.log("gaze Calibration Complete");
-    };*/
+    };
     this.startTracking();
   };
 
@@ -111,11 +111,11 @@ class Tracker extends Component {
   };
 
   setGazeData = () => {
-    /* window.GazeCloudAPI.OnResult = function (GazeData) {
+    window.GazeCloudAPI.OnResult = function (GazeData) {
       window.gazeDataX = GazeData.docX;
       window.gazeDataY = GazeData.docY;
       window.validation = GazeData.state; // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated!
-    };*/
+    };
 
     this.setState({
       gazeX: window.gazeDataX,
@@ -141,7 +141,6 @@ class Tracker extends Component {
   };
 
   resetStates = () => {
-    //containers???
     this.setState({
       click: false,
       clickPosXTransform: 0,
@@ -291,7 +290,6 @@ class Tracker extends Component {
     copy.insideEmailInfo.push(whichButton);
     console.log(copy);
     this.setState(copy);
-    //this.deletefromInsideEmailInfo(insideWhichButton);
 
     const timer = setTimeout(() => {
       this.deletefromInsideEmailInfo(whichButton);

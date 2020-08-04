@@ -26,7 +26,7 @@ class Tracker extends Component {
       gazeXTransform: 0,
       gazeYTransform: 0,
       validationGaze: 0,
-      userId: 10,
+      userId: 0,
       userNickname: "",
       pageScrollY: 0,
       browserWidth: 0,
@@ -307,10 +307,9 @@ class Tracker extends Component {
   handleClickedInboxButton = (whichButton, insideWhichButton) => {
     let copy = this.state;
     copy.insideEmailInfo.push(whichButton);
-    console.log(copy);
     this.setState(copy);
 
-    const timer = setTimeout(() => {
+    const timer2 = setTimeout(() => {
       this.deletefromInsideEmailInfo(whichButton);
     }, 1050);
   };

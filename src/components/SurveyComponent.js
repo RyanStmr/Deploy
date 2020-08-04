@@ -47,15 +47,25 @@ class SurveyComponent extends Component {
         choices: ["Desktop", "Laptop", "Smartphone", "Tablet", "other"],
       },
       {
-        type: "text",
-        name: "Time Social Media",
+        type: "dropdown",
+        name: "car",
         title:
-          "How much time do you spend on Social Media per day? (eg. Instagram, Facebook etc.)",
-        isRequired: false,
+          "How much time to you spend on Social Media per day? (eg. Facebook, Instagram, Snapchat, TikTok)",
+        isRequired: true,
+        colCount: 0,
+        choices: [
+          "None",
+          "Up to 30 minutes per day",
+          "Up to 1 hour per day",
+          "Up to 1 1/2 hours per day",
+          "Up to 2 hours per day",
+          "More than 2 hours per day",
+        ],
       },
       {
         type: "matrix",
         name: "User Experience",
+        isRequired: true,
         title:
           "Please indicate if you agree or disagree with the following statements.",
         columns: [

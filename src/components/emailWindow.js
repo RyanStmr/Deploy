@@ -139,7 +139,7 @@ class EmailWindow extends Component {
           style={{
             marginLeft: "30px",
             marginTop: "5px",
-            overflow: "auto",
+            overflowY: "scroll",
             width: "710px",
             height: "700px",
             backgroundColor: "white",

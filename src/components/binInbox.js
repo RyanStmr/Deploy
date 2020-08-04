@@ -42,6 +42,7 @@ class BinInbox extends Component {
           userName={this.props.userName}
           insideEmailInfo={this.props.insideEmailInfo}
           inEmailText={this.props.inEmailText}
+          outsideEmailInfo={this.props.outsideEmailInfo}
         />
       </div>
     );

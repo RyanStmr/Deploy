@@ -95,15 +95,15 @@ class SurveyComponent extends Component {
               "I used information provided in the interface to categorize the emails.",
           },
           {
-            value: "Information presented enough",
+            value: "Categorize Important",
             text: " I found it easy to categorize the emails as 'important'",
           },
           {
-            value: "Information presented enough",
+            value: "Categorize Spam",
             text: "I found it easy to categorize the emails as 'spam'",
           },
           {
-            value: "Information presented enough",
+            value: "Categorize Bin",
             text: "I found it easy to categorize the emails as 'bin'",
           },
         ],

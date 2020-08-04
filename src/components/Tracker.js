@@ -256,6 +256,7 @@ class Tracker extends Component {
     let copy = this.state;
     copy.resultInbox = finalInboxLoc;
     this.setState(copy);
+    this.fillCollector();
     this.sendData();
     clearInterval(this.collectionInterval);
     clearInterval(this.sendingIntervall);

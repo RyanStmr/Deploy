@@ -44,6 +44,8 @@ class Tracker extends Component {
     };
 
     this.stateCollector = [];
+    this.collectionInterval = undefined;
+    this.sendingInterval = undefined;
   }
 
   componentDidMount() {
@@ -76,13 +78,13 @@ class Tracker extends Component {
     window.GazeCloudAPI.StartEyeTracking();
     window.GazeCloudAPI.OnCalibrationComplete = () => {
       console.log("gaze Calibration Complete");
+      this.startTracking();
     };
-    this.startTracking();
   };
 
   startTracking = () => {
-    var collectionInterval = setInterval(this.collectStates, 1000);
-    var sendingIntervall = setInterval(this.sendData, 5000);
+    this.collectionInterval = setInterval(this.collectStates, 1000);
+    this.sendingIntervall = setInterval(this.sendData, 5000);
   };
 
   sendData = () => {
@@ -123,7 +125,7 @@ class Tracker extends Component {
       validationGaze: window.validation,
     });
 
-    //this.setTransformedGazePos(gazeXLoc, gazeYLoc);
+    this.setTransformedGazePos(this.state.gazeX, this.state.gazeY);
   };
 
   setTimestamp = () => {
@@ -211,6 +213,19 @@ class Tracker extends Component {
     this.setState({ mousePosXTransform: xTran, mousePosYTransform: yTran });
   };
 
+  setTransformedGazePos = (x, y) => {
+    let clientWidth = 980;
+    if (x > this.state.browserWidth / 2 + clientWidth / 2) {
+      var xGazeTran =
+        (x - (this.state.browserWidth / 2 + clientWidth / 2)) * -1;
+      var yGazeTran = y + this.state.pageScrollY;
+    } else {
+      var xGazeTran = (this.state.browserWidth / 2 - clientWidth / 2 - x) * -1;
+      var yGazeTran = y + this.state.pageScrollY;
+    }
+    this.setState({ gazeXTransform: xGazeTran, gazeYTransform: yGazeTran });
+  };
+
   handleMouseClick(event) {
     let copy = this.state;
     this.handleMouseMove(event);
@@ -242,6 +257,9 @@ class Tracker extends Component {
     copy.resultInbox = finalInboxLoc;
     this.setState(copy);
     this.sendData();
+    clearInterval(this.collectionInterval);
+    clearInterval(this.sendingIntervall);
+    window.GazeCloudAPI.StopEyeTracking();
   };
 
   handleInsideEmailInfo = (InOrOutput, whichPart) => {
@@ -293,7 +311,7 @@ class Tracker extends Component {
 
     const timer = setTimeout(() => {
       this.deletefromInsideEmailInfo(whichButton);
-    }, 1100);
+    }, 1050);
   };
 
   render() {

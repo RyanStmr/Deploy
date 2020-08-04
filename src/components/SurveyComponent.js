@@ -94,6 +94,18 @@ class SurveyComponent extends Component {
             text:
               "I used information provided in the interface to categorize the emails.",
           },
+          {
+            value: "Information presented enough",
+            text: " I found it easy to categorize the emails as 'important'",
+          },
+          {
+            value: "Information presented enough",
+            text: "I found it easy to categorize the emails as 'spam'",
+          },
+          {
+            value: "Information presented enough",
+            text: "I found it easy to categorize the emails as 'bin'",
+          },
         ],
       },
 
@@ -101,19 +113,19 @@ class SurveyComponent extends Component {
         type: "text",
         name: "Important aspects",
         title:
-          "What aspects of the email made you categorize it as Important? (key words are enough)",
+          "Which aspects of the email made you categorize it as Important? (key words are enough)",
       },
       {
         type: "text",
         name: "Spam aspects",
         title:
-          "What aspects of the email made you categorize it as Spam? (key words are enough)",
+          "Which aspects of the email made you categorize it as Spam? (key words are enough)",
       },
       {
         type: "text",
         name: "Bin aspects",
         title:
-          "What aspects of the email made you categorize it as Bin? (key words are enough)",
+          "Which aspects of the email made you categorize it as Bin? (key words are enough)",
       },
       {
         type: "radiogroup",

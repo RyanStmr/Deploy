@@ -165,7 +165,7 @@ const Inbox = [
   },
   {
     mail: Mail31,
-    visible: true,
+    visible: false,
   },
   {
     mail: Mail32,
@@ -173,7 +173,7 @@ const Inbox = [
   },
   {
     mail: Mail33,
-    visible: true,
+    visible: false,
   },
   {
     mail: Mail34,

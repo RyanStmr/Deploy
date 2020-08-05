@@ -66,7 +66,7 @@ class EmailWindow extends Component {
               startIcon={<EmailIcon />}
               variant="outlined"
               onClick={() => {
-                this.props.onMoveToImportant(email.id);
+                this.props.onMoveToImportant(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
               }}
               onMouseEnter={() => {
@@ -86,7 +86,7 @@ class EmailWindow extends Component {
               style={styles.buttonsSidebar}
               variant="outlined"
               onClick={() => {
-                this.props.onMoveToSpam(email.id);
+                this.props.onMoveToSpam(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
               }}
               onMouseEnter={() => {
@@ -106,7 +106,7 @@ class EmailWindow extends Component {
               startIcon={<DeleteIcon />}
               variant="outlined"
               onClick={() => {
-                this.props.onMoveToBin(email.id);
+                this.props.onMoveToBin(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
               }}
               onMouseEnter={() => {

@@ -53,6 +53,7 @@ const StartPage = (props) => {
           style={{
             width: "300px",
             marginBottom: "40px",
+            backgroundColor: "#04B45F",
           }}
         >
           Continue

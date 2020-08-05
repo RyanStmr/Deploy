@@ -115,7 +115,11 @@ const ConsentPage = (props) => {
       >
         <Button
           onClick={updateProp}
-          style={{ width: "300px", marginBottom: "40px" }}
+          style={{
+            width: "300px",
+            marginBottom: "40px",
+            backgroundColor: "#04B45F",
+          }}
         >
           I agree
         </Button>

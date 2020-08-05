@@ -105,7 +105,6 @@ app.post("/data", (req, res) => {
   let userData = req.body;
   console.log(`receiving data from ${userData[0].userId} `);
   userData.forEach((element) => {
-    console.log(element.userId);
     if (element.userId === 0) return;
 
     let jsonObject = JSON.stringify(element);

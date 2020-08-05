@@ -17,10 +17,9 @@ import ProfileBox from "./ProfileBox";
 class EmailClient extends Component {
   state = {
     currentInbox: "AllInbox",
-    currentEmail: 0,
     inbox: Inbox,
     mailNrBadge: 0,
-    events: [],
+    alerted: false,
   };
 
   //Fisher Yates Array shuffle algorithm
@@ -44,8 +43,6 @@ class EmailClient extends Component {
     });
 
     usersInbox.map((email) => {
-      //give each Email an ID for adressing in App
-      email["id"] = copy.inbox.indexOf(email);
       email["type"] = "AllInbox";
     });
 
@@ -64,7 +61,7 @@ class EmailClient extends Component {
   onMoveToSpam = (emailID) => {
     let copy = this.state;
     copy.inbox.map((email) => {
-      if (email.id === emailID) email.type = "SpamInbox";
+      if (email.mail.defaultProps.keyID === emailID) email.type = "SpamInbox";
     });
     this.props.clickedButton("SpamInboxButtonClicked", "InMoveToSpamButton");
     this.setState(copy);
@@ -74,7 +71,7 @@ class EmailClient extends Component {
   onMoveToBin = (emailID) => {
     let copy = this.state;
     copy.inbox.map((email) => {
-      if (email.id === emailID) email.type = "BinInbox";
+      if (email.mail.defaultProps.keyID === emailID) email.type = "BinInbox";
     });
     this.props.clickedButton("BinInboxButtonClicked", "InMoveToBinButton");
     this.setState(copy);
@@ -84,7 +81,8 @@ class EmailClient extends Component {
   onMoveToImportant = (emailID) => {
     let copy = this.state;
     copy.inbox.map((email) => {
-      if (email.id === emailID) email.type = "ImportantInbox";
+      if (email.mail.defaultProps.keyID === emailID)
+        email.type = "ImportantInbox";
     });
     this.props.clickedButton(
       "ImportantInboxButtonClicked",
@@ -103,7 +101,10 @@ class EmailClient extends Component {
     let copy = this.state;
     copy.mailNrBadge = counter;
 
-    if (counter === 0) alert("You have viewed all Emails");
+    if (counter === 0 && this.state.alerted === false) {
+      alert("You have viewed all Emails");
+      copy.alerted = true;
+    }
 
     this.setState(copy);
   };

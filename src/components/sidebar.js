@@ -68,7 +68,7 @@ export default function VerticalTabs(props) {
 
   //hand over current Email into sidebar props for Ryan x)
   const passNewValue = (newValue) => {
-    if (newValue === undefined) {
+    if (newValue === undefined || props.Mails[newValue] === undefined) {
       props.onNewEmail(0);
     } else {
       let selectedEmailID = props.Mails[newValue].mail.defaultProps.keyID;

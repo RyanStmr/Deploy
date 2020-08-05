@@ -14,8 +14,8 @@ const StartPage = (props) => {
         <strong>30 minutes</strong> of time spare. Due to the serious situation
         of Corona, the study will be held online, and consists of 4 stages.
         <p>
-          A participant can exit the study at any time. Participants will be
-          reimbursed with 5 Euros (PayPal or Amazon Voucher) or 1 MMI point.{" "}
+          You can exit the study at any time. Participants will be reimbursed
+          with 5 Euros (PayPal or Amazon Voucher) or 1 MMI point.{" "}
         </p>
         Please note that the reward will be obtained at the end of study, more
         information will be provided at the end.

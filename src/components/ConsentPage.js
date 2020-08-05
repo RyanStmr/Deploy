@@ -19,7 +19,6 @@ const ConsentPage = (props) => {
 
   return (
     <div className="StartPage">
-      <hr></hr>
       <h2>The study</h2>
       <p>
         In this study, we are trying to understand how users experience and
@@ -59,9 +58,14 @@ const ConsentPage = (props) => {
         name="email"
         value={values.email}
         onChange={handleChange}
-        style={{ width: 400, marginRight: "20px" }}
+        style={{ width: "20%", marginRight: "20px" }}
       ></input>
-      <input name="name" value={values.name} onChange={handleChange}></input>
+      <input
+        name="name"
+        style={{ width: "20%", marginRight: "20px" }}
+        value={values.name}
+        onChange={handleChange}
+      ></input>
       <hr></hr>
       <h2>Consent:</h2>
       <p>

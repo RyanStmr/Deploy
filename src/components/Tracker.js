@@ -255,12 +255,17 @@ class Tracker extends Component {
   handleInboxResult = (finalInboxLoc) => {
     let copy = this.state;
     copy.resultInbox = finalInboxLoc;
+    copy.resultInbox.forEach((element) => {
+      element.keyID = element.mail.defaultProps.keyID;
+      element.unseen = element.mail.defaultProps.unseen;
+    });
     this.setState(copy);
     this.collectStates();
     this.sendData();
     clearInterval(this.collectionInterval);
     clearInterval(this.sendingIntervall);
     window.GazeCloudAPI.StopEyeTracking();
+    console.log(this.state.resultInbox);
   };
 
   handleInsideEmailInfo = (InOrOutput, whichPart) => {

@@ -12,20 +12,37 @@ const StartPage = (props) => {
       <p>
         Welcome to our study, please make sure you have about{" "}
         <strong>30 minutes</strong> of time spare. Due to the serious situation
-        of Corona, the study will be held online, and consists of 4 stages.
+        of Corona, the study will be held online, and consists of{" "}
+        <strong> 4 stages.</strong>
         <p>
-          You can exit the study at any time. Participants will be reimbursed
-          with 5 Euros (PayPal or Amazon Voucher) or 1 MMI point.{" "}
+          You can exit the study at any time. You will be reimbursed with 5
+          Euros (PayPal or Amazon Voucher) or 0.5 MMI points (Only valid LMU
+          students).{" "}
         </p>
+        <br></br>
         Please note that the reward will be obtained at the end of study, more
         information will be provided at the end.
       </p>
+      <p>
+        <br></br>
+        <strong>
+          This study is a collaboration with LMU Munich and Bundeswehr
+          University Munich.
+        </strong>
+      </p>
       <hr></hr>
       <h2>Stages</h2>
-      <ol style={{ listStyleType: "clear" }}>
+      <ol style={{ listStyleType: "clear", fontWeight: "bolder" }}>
+        <br></br>
         <li>Consent & Agreement</li>
+        <br></br>
+
         <li>Webcam calibration</li>
-        <li>Sorting email inbox task</li>
+        <br></br>
+
+        <li>Sorting emails</li>
+        <br></br>
+
         <li>Survey</li>
       </ol>
 

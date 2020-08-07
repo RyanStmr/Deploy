@@ -19,41 +19,70 @@ const ConsentPage = (props) => {
 
   return (
     <div className="StartPage">
-      <h2>The study</h2>
+      <br></br>
+      <h1>The study</h1>
+      <br></br>
       <p>
         In this study, we are trying to understand how users experience and
         evaluate emails in a natural environment, such as an email client.{" "}
       </p>
-
+      <br></br>
       <p>
-        With starting the study you will be asked to calibrate your webcam.
-        Please follow the steps shown on your screen.{" "}
+        With starting the study you will be asked to calibrate your webcam.{" "}
+        <br></br>
+        <strong>Please follow the steps shown on your screen.</strong>{" "}
       </p>
       <p>After the calibration step you are ready to go!</p>
+      <br></br>
       <p>
         Make sure to complete the study in one continous session, meaning you
         should not stop the study and continue later on.{" "}
       </p>
+      <hr></hr>
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an
         important Start-Up. Your Job is to go through your bosses custom
         email-client as your first task in the morning. Go through all the
-        Emails and select the right inbox for each email.
+        Emails and select the right inbox for each email. There are three
+        different inboxes to select from:
+        <ol style={{ listStyleType: "clear" }}>
+          <br></br>
+          <li>
+            <strong>Important:</strong> Relevant Emails for you and your Boss to
+            check
+          </li>
+          <li>
+            <strong>Bin:</strong> Inbox for Advertisements and irrelevant Emails
+          </li>
+          <li>
+            <strong>Spam:</strong> Any Emails considered as fraud in your
+            opinion
+          </li>
+        </ol>
       </p>
+      <br></br>
+      <p>
+        You can move the Email to an Inbox by clicking "Move to Important",
+        "Move to Spam" or "Move to Bin" inside each email window. <br></br> If
+        you are completely unsure, you can leave the email in the original
+        inbox.
+      </p>
+      <br></br>
       <p>
         <strong>After you have finished your task</strong> forward the inboxes
         to your boss by clicking <strong>"Submit"</strong> on the top right of
-        your email client before clicking <strong>"Continue"</strong> to go to
-        the post study questionnaires
+        your email client before continuing with the the{" "}
+        <strong> post study questionnaires</strong>
       </p>
-      <hr></hr>
 
+      <hr></hr>
       <p>
         <strong>
-          Choose an alias and type in your alias-email address and username for
-          your virtual email account:
+          Choose any name and email which will be used to address you throughout
+          the study (does not have to be your real email or name):
         </strong>
       </p>
+      <br></br>
       <input
         name="email"
         value={values.email}
@@ -68,6 +97,7 @@ const ConsentPage = (props) => {
       ></input>
       <hr></hr>
       <h2>Consent:</h2>
+      <br></br>
       <p>
         <strong>
           <p>
@@ -75,6 +105,7 @@ const ConsentPage = (props) => {
           </p>
         </strong>
       </p>
+      <br></br>
       <p>
         {" "}
         1. I am aware that the collection, processing and use of my data is
@@ -86,8 +117,10 @@ const ConsentPage = (props) => {
 
       <p>
         2. I agree that my following data are processed: a) demographics b) Gaze
-        data and mouse movements, c) feedback questionnaires{" "}
+        data and mouse movements, c) feedback questionnaires. The webcam video
+        feed is not stored. Only gaze coordinates will be interpreted and saved.
       </p>
+      <br></br>
 
       <p>
         3. I agree that my data will be collected, processed, used and stored by
@@ -97,21 +130,19 @@ const ConsentPage = (props) => {
         related to respective participants. b) The anonymized data is stored for
         an indefinite period of time.
       </p>
+      <br></br>
       <p>
         4. I have been informed that my personal data collected in the context
         of the above purposes will be processed in compliance with the General
         Data Protection Regulation (GDPR and BayDSG).
       </p>
-      <p>
-        This study is a collaboration with LMU Munich and Bundeswehr University
-        Munich.
-      </p>
+      <br></br>
       <p>
         If you have questiones or concerns please contact:
         <strong> ryan.steimer@campus.lmu.de </strong>or{" "}
         <strong>yasmeen.essam@unibw.de</strong>
       </p>
-
+      <br></br>
       <Link
         to="/EmailClient"
         activeClassName="active"

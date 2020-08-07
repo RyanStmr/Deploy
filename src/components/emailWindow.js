@@ -2,21 +2,20 @@ import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EmailIcon from "@material-ui/icons/Email";
+import { Snackbar } from "@material-ui/core";
 
 import ErrorIcon from "@material-ui/icons/Error";
 import EmailTopBar from "./EmailTopBar";
 import HeaderInfoEmail from "./HeaderInfoEmail";
 class EmailWindow extends Component {
-  state = {};
+  state = {
+    printMessage: false,
+  };
 
   resetSelectedTab = () => {
     this.props.resetSelectedTab();
     //this.props.onNewEmail(undefined);
   };
-
-  log() {
-    console.log("in/out emailInfo");
-  }
 
   componentDidMount() {
     this.collectionInterval = setInterval(this.getScrollAmount, 500);
@@ -32,6 +31,14 @@ class EmailWindow extends Component {
   };
 
   render() {
+    const handleClick = () => {
+      this.setState({ printMessage: true });
+    };
+
+    const handleClose = () => {
+      this.setState({ printMessage: false });
+    };
+
     const SpecificEmail = this.props.Email.mail;
     let email = this.props.Email;
 
@@ -68,6 +75,7 @@ class EmailWindow extends Component {
               onClick={() => {
                 this.props.onMoveToImportant(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
+                handleClick();
               }}
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InMoveToImportantButton");
@@ -80,6 +88,15 @@ class EmailWindow extends Component {
               }}
             >
               Move to Important
+              <Snackbar
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                open={this.state.printMessage}
+                autoHideDuration={1500}
+                onClose={handleClose}
+              ></Snackbar>
             </Button>
             <Button
               startIcon={<ErrorIcon />}
@@ -88,6 +105,7 @@ class EmailWindow extends Component {
               onClick={() => {
                 this.props.onMoveToSpam(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
+                handleClick();
               }}
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InMoveToSpamButton");
@@ -100,6 +118,15 @@ class EmailWindow extends Component {
               }}
             >
               Move to Spam
+              <Snackbar
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                open={this.state.printMessage}
+                autoHideDuration={1500}
+                onClose={handleClose}
+              ></Snackbar>
             </Button>
             <Button
               style={styles.buttonsSidebar}
@@ -108,6 +135,7 @@ class EmailWindow extends Component {
               onClick={() => {
                 this.props.onMoveToBin(email.mail.defaultProps.keyID);
                 this.resetSelectedTab();
+                handleClick();
               }}
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InMoveToBinButton");
@@ -120,6 +148,16 @@ class EmailWindow extends Component {
               }}
             >
               Move to Bin
+              <Snackbar
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                open={this.state.printMessage}
+                autoHideDuration={1000}
+                message="Moved Email to Inbox"
+                onClose={handleClose}
+              ></Snackbar>
             </Button>
           </div>
 
@@ -167,4 +205,3 @@ class EmailWindow extends Component {
 }
 
 export default EmailWindow;
-//<p>{this.props.Email.response}</p>

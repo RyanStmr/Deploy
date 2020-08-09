@@ -29,16 +29,12 @@ class ProfileBox extends Component {
       <div style={{ marginLeft: "auto" }}>
         {!this.state.proceedingPosib ? (
           <div>
-            <Button variant="contained" style={{ margin: "5px" }}>
-              {" "}
-              <SettingsIcon></SettingsIcon>
-            </Button>
             <Button
               variant="contained"
               style={{ margin: "5px" }}
               onClick={() => {
                 alert(
-                  "Label all emails before proceeding! Any Questions: Please contact ryan.steimer@campus.lmu.de"
+                  "Any Questions: Please contact ryan.steimer@campus.lmu.de"
                 );
               }}
             >
@@ -46,9 +42,11 @@ class ProfileBox extends Component {
               <InfoIcon></InfoIcon>
             </Button>
             <Button
-              disabled="true"
               variant="contained"
-              style={{ backgroundColor: "#04B45F", margin: "10px" }}
+              style={{ backgroundColor: "#8fc994", margin: "10px" }}
+              onClick={() => {
+                alert("Label all emails before proceeding!");
+              }}
             >
               <ExitToAppIcon></ExitToAppIcon>Submit
             </Button>

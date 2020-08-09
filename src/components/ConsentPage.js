@@ -8,6 +8,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import EmailIcon from "@material-ui/icons/Email";
 import ErrorIcon from "@material-ui/icons/Error";
 import Logos from "./Logos.png";
+import Cam from "./CorruptCam.PNG";
 
 const ConsentPage = (props) => {
   const [values, handleChange] = useForm({
@@ -55,6 +56,12 @@ const ConsentPage = (props) => {
         Make sure to complete the study in one continous session, meaning you
         should not stop the study and continue later on.{" "}
       </p>
+      <p>
+        You might see your Webcam footage pop up, if the Webcam is having
+        trouble tracking you. It will disapper once it has tracked you again.
+      </p>
+      <br></br>
+      <img src={Cam} alt="CamFaulty" width="250" height="150"></img>
       <hr></hr>
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an

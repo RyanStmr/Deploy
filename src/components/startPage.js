@@ -1,19 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import Logos from "./Logos.png";
 
 import "./Startpage.css";
 
 const StartPage = (props) => {
   return (
     <div className="StartPage">
+      <img src={Logos} alt="Logos" width="700" height="100"></img>
       <hr></hr>
       <h2>Lets get started!</h2>
       <p>
         Welcome to our study, please make sure you have about{" "}
         <strong>30 minutes</strong> of time spare. Due to the serious situation
         of Corona, the study will be held online, and consists of{" "}
-        <strong> 4 stages.</strong>
+        <strong> 5 stages.</strong>
         <p>
           You can exit the study at any time. You will be reimbursed with 5
           Euros (PayPal or Amazon Voucher) or 0.5 MMI points (Only valid LMU
@@ -43,11 +45,15 @@ const StartPage = (props) => {
         <li>Sorting emails</li>
         <br></br>
 
+        <li>Calibration accuracy test</li>
+        <br></br>
+
         <li>Survey</li>
       </ol>
 
       <hr></hr>
       <h2>Requirements</h2>
+      <br></br>
       <ol style={{ listStyleType: "clear" }}>
         <li>Laptop or PC with a decent Webcam</li>
         <li>

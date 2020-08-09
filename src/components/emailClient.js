@@ -20,6 +20,7 @@ class EmailClient extends Component {
     inbox: Inbox,
     mailNrBadge: 0,
     alerted: false,
+    allInboxEmpty: false,
   };
 
   //Fisher Yates Array shuffle algorithm
@@ -52,6 +53,26 @@ class EmailClient extends Component {
     this.countEmails();
   };
 
+  getAllInboxLength = () => {
+    var counter2 = 0;
+    this.state.inbox.forEach((element) => {
+      if (element.type === "AllInbox") {
+        counter2++;
+      } else {
+        return;
+      }
+    });
+    if (counter2 === 0) {
+      let copy = this.state;
+      copy.allInboxEmpty = true;
+      this.setState(copy);
+    }
+  };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleIncomingEvent = (event) => {
     let copy = this.state;
     copy.events.push(event);
@@ -65,6 +86,7 @@ class EmailClient extends Component {
     });
     this.props.clickedButton("SpamInboxButtonClicked", "InMoveToSpamButton");
     this.setState(copy);
+    this.getAllInboxLength();
     this.forceUpdate();
   };
 
@@ -75,6 +97,7 @@ class EmailClient extends Component {
     });
     this.props.clickedButton("BinInboxButtonClicked", "InMoveToBinButton");
     this.setState(copy);
+    this.getAllInboxLength();
     this.forceUpdate();
   };
 
@@ -89,6 +112,7 @@ class EmailClient extends Component {
       "InMoveToImportantButton"
     );
     this.setState(copy);
+    this.getAllInboxLength();
     this.forceUpdate();
   };
 
@@ -206,6 +230,7 @@ class EmailClient extends Component {
           <ProfileBox
             className="ProfileBox"
             setInboxResult={() => this.props.setInboxResult(this.state.inbox)}
+            allInboxEmpty={this.state.allInboxEmpty}
           ></ProfileBox>
         </div>
         <nav className="nav-links">

@@ -36,7 +36,8 @@ app.get("/connect", (req, res) => {
     `CREATE TABLE USER${newUser.userID}(
       ID SERIAL PRIMARY KEY NOT NULL, 
       USERINFO json,
-      USERSURVEYINFO json
+      USERSURVEYINFO json,
+      USERACCINFO json
       )`,
     (error, results) => {
       if (error) {
@@ -139,6 +140,23 @@ app.post("/SurveyData", (req, res) => {
   res.send(userData);
 });
 
+app.post("/accuracyInfo", (req, res) => {
+  //userData Array of Json Objects
+  let userAccData = req.body;
+  console.log(userAccData);
+  let jsonObjectAcc = JSON.stringify(userAccData);
+
+  pool.query(
+    `INSERT INTO USER${userAccData[0][3]} (USERACCINFO) VALUES ('${jsonObjectAcc}')`,
+    (error, results) => {
+      if (error) {
+        console.log(`error when inserting surveyData ${error}`);
+      }
+    }
+  );
+
+  res.send(userAccData);
+});
 //Serving React
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build/index.html"));

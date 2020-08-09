@@ -8,57 +8,62 @@ import InfoIcon from "@material-ui/icons/Info";
 
 class ProfileBox extends Component {
   state = {
-    submitted: false,
+    proceedingPosib: false,
   };
+
+  componentDidUpdate = () => {
+    if (
+      this.props.allInboxEmpty === true &&
+      this.state.proceedingPosib === false
+    ) {
+      this.setProceedPos();
+    }
+  };
+
+  setProceedPos = () => {
+    this.setState({ proceedingPosib: true });
+  };
+
   render() {
     return (
       <div style={{ marginLeft: "auto" }}>
-        {!this.state.submitted ? (
+        {!this.state.proceedingPosib ? (
           <div>
             <Button variant="contained" style={{ margin: "5px" }}>
               {" "}
               <SettingsIcon></SettingsIcon>
             </Button>
-            <Button variant="contained" style={{ margin: "5px" }}>
+            <Button
+              variant="contained"
+              style={{ margin: "5px" }}
+              onClick={() => {
+                alert(
+                  "Label all emails before proceeding! Any Questions: Please contact ryan.steimer@campus.lmu.de"
+                );
+              }}
+            >
               {" "}
               <InfoIcon></InfoIcon>
             </Button>
-            <Link
-              to="/SurveyComponent"
-              activeClassName="active"
-              style={{ width: "380px" }}
+            <Button
+              disabled="true"
+              variant="contained"
+              style={{ backgroundColor: "#04B45F", margin: "10px" }}
             >
-              <Button
-                variant="contained"
-                style={{ backgroundColor: "#04B45F", margin: "10px" }}
-                onClick={() => {
-                  this.props.setInboxResult();
-                  this.setState({ submitted: true });
-                }}
-              >
-                <ExitToAppIcon></ExitToAppIcon>Submit
-              </Button>
-            </Link>
+              <ExitToAppIcon></ExitToAppIcon>Submit
+            </Button>
           </div>
         ) : (
           <div>
-            <Link
-              to="/SurveyComponent"
-              activeClassName="active"
-              style={{ width: "380px" }}
+            <Button
+              variant="contained"
+              style={{ backgroundColor: "#04B45F", margin: "10px" }}
+              onClick={() => {
+                this.props.setInboxResult();
+              }}
             >
-              <Button
-                variant="contained"
-                style={{
-                  backgroundColor: "#75c974",
-                  margin: "10px",
-                  width: "400px",
-                }}
-              >
-                {" "}
-                <ExitToAppIcon></ExitToAppIcon>Continue to Survey
-              </Button>
-            </Link>
+              <ExitToAppIcon></ExitToAppIcon>Submit
+            </Button>
           </div>
         )}
       </div>

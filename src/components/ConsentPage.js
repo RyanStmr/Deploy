@@ -3,12 +3,21 @@ import { Link } from "react-router-dom";
 import { useForm } from "./useForm";
 import "./Startpage.css";
 import Button from "@material-ui/core/Button";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import DeleteIcon from "@material-ui/icons/Delete";
+import EmailIcon from "@material-ui/icons/Email";
+import ErrorIcon from "@material-ui/icons/Error";
+import Logos from "./Logos.png";
 
 const ConsentPage = (props) => {
   const [values, handleChange] = useForm({
-    email: "your-email@example.com",
-    name: "firstname_lastname",
+    email: "",
+    name: "",
   });
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const updateProp = () => {
     let email = values.email;
@@ -17,9 +26,17 @@ const ConsentPage = (props) => {
     props.updatedData(email, name);
   };
 
+  var styles = {
+    buttonsSidebar: {
+      color: "#2E2E2E",
+      margin: "10px",
+    },
+  };
+
   return (
     <div className="StartPage">
-      <br></br>
+      <img src={Logos} alt="Logos" width="700" height="100"></img>
+      <hr></hr>
       <h1>The study</h1>
       <br></br>
       <p>
@@ -42,39 +59,62 @@ const ConsentPage = (props) => {
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an
         important Start-Up. Your Job is to go through your bosses custom
-        email-client as your first task in the morning. Go through all the
-        Emails and select the right inbox for each email. There are three
+        email-client as your first task in the morning. Go through{" "}
+        <strong>all the emails </strong>and{" "}
+        <strong>select the right inbox for each email</strong>. There are three
         different inboxes to select from:
         <ol style={{ listStyleType: "clear" }}>
           <br></br>
           <li>
-            <strong>Important:</strong> Relevant Emails for you and your Boss to
-            check
+            <strong>Important:</strong>
           </li>
           <li>
-            <strong>Bin:</strong> Inbox for Advertisements and irrelevant Emails
+            <strong>Bin:</strong>
           </li>
           <li>
-            <strong>Spam:</strong> Any Emails considered as fraud in your
-            opinion
+            <strong>Spam:</strong>
           </li>
         </ol>
       </p>
       <br></br>
       <p>
-        You can move the Email to an Inbox by clicking "Move to Important",
-        "Move to Spam" or "Move to Bin" inside each email window. <br></br> If
-        you are completely unsure, you can leave the email in the original
-        inbox.
+        You can move the email to an inbox by clicking "Move to Important",
+        "Move to Spam" or "Move to Bin" inside each email window.
       </p>
+      <Button
+        style={styles.buttonsSidebar}
+        startIcon={<EmailIcon />}
+        variant="outlined"
+      >
+        Move to Important
+      </Button>
+      <Button
+        startIcon={<ErrorIcon />}
+        style={styles.buttonsSidebar}
+        variant="outlined"
+      >
+        Move to Spam
+      </Button>
+      <Button
+        style={styles.buttonsSidebar}
+        startIcon={<DeleteIcon />}
+        variant="outlined"
+      >
+        Move to Bin
+      </Button>
       <br></br>
       <p>
         <strong>After you have finished your task</strong> forward the inboxes
-        to your boss by clicking <strong>"Submit"</strong> on the top right of
-        your email client before continuing with the the{" "}
+        to your boss by clicking{" "}
+        <Button
+          variant="contained"
+          style={{ backgroundColor: "#04B45F", margin: "10px" }}
+        >
+          <ExitToAppIcon></ExitToAppIcon>Submit
+        </Button>{" "}
+        on the top right of your email client before continuing with the the{" "}
         <strong> post study questionnaires</strong>
       </p>
-
       <hr></hr>
       <p>
         <strong>
@@ -83,12 +123,14 @@ const ConsentPage = (props) => {
         </strong>
       </p>
       <br></br>
+      Email:{" "}
       <input
         name="email"
         value={values.email}
         onChange={handleChange}
         style={{ width: "20%", marginRight: "20px" }}
       ></input>
+      Firstname & lastname:{" "}
       <input
         name="name"
         style={{ width: "20%", marginRight: "20px" }}
@@ -114,14 +156,12 @@ const ConsentPage = (props) => {
         event of cancellation, all data recorded of me will be irrevocably
         deleted.{" "}
       </p>
-
       <p>
         2. I agree that my following data are processed: a) demographics b) Gaze
         data and mouse movements, c) feedback questionnaires. The webcam video
         feed is not stored. Only gaze coordinates will be interpreted and saved.
       </p>
       <br></br>
-
       <p>
         3. I agree that my data will be collected, processed, used and stored by
         Bundeswehr University Munich for the following purposes: a) published by

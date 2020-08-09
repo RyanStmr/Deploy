@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import EmailClient from "./emailClient";
+import AccuracyTest from "./accuracyTest";
 
 class Tracker extends Component {
   constructor(props) {
@@ -38,6 +39,8 @@ class Tracker extends Component {
       inEmailScrollAmount: 0,
       inEmailPositionY: 0,
 
+      submitted: false,
+
       //To be sent at end of study
       resultInbox: [],
       visitedLinks: [],
@@ -46,6 +49,7 @@ class Tracker extends Component {
     this.stateCollector = [];
     this.collectionInterval = undefined;
     this.sendingInterval = undefined;
+    this.accuracyCollector = [];
   }
 
   componentDidMount() {
@@ -98,6 +102,19 @@ class Tracker extends Component {
       },
       body: JSON.stringify(data),
     }).then(this.resetCollector);
+  };
+
+  sendAccurcyInfo = () => {
+    //Send to Server
+    const data = this.accuracyCollector;
+    const response = fetch("/accuracyInfo", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(console.log("sent accuracy info"));
   };
 
   collectStates = () => {
@@ -262,10 +279,44 @@ class Tracker extends Component {
     this.setState(copy);
     this.collectStates();
     this.sendData();
+    this.startAccuracyTest();
     clearInterval(this.collectionInterval);
     clearInterval(this.sendingIntervall);
+  };
+
+  startAccuracyTest = () => {
+    let copy = this.state;
+    copy.submitted = true;
+    this.setState(copy);
+  };
+
+  collectAccuracyData = (circlePos, width, height) => {
+    const timer = setTimeout(
+      this.fillAccuracyCollector,
+      1500,
+      circlePos,
+      width,
+      height
+    );
+  };
+
+  fillAccuracyCollector = (circlePos, width, height) => {
+    this.setGazeData();
+    let accuracyData = [
+      circlePos,
+      this.state.gazeX,
+      this.state.gazeY,
+      this.state.userId,
+      width,
+      height,
+    ];
+    this.accuracyCollector.push(accuracyData);
+    console.log(this.accuracyCollector);
+  };
+
+  stopAccuracyTest = () => {
+    this.sendAccurcyInfo();
     window.GazeCloudAPI.StopEyeTracking();
-    console.log(this.state.resultInbox);
   };
 
   handleInsideEmailInfo = (InOrOutput, whichPart) => {
@@ -321,17 +372,29 @@ class Tracker extends Component {
 
   render() {
     return (
-      <div onMouseMove={this.handleMouseMove} onClick={this.handleMouseClick}>
-        <EmailClient
-          clickedButton={this.handleClickedInboxButton}
-          inEmailScrollAmount={this.SetInEmailScrollAmount}
-          UserInfo={this.props.userInfo}
-          onNewEmail={this.handleNewCurrentEmail}
-          onNewInbox={this.handleNewCurrentInbox}
-          setInboxResult={this.handleInboxResult}
-          insideEmailInfo={this.handleInsideEmailInfo}
-          outsideEmailInfo={this.handleOutsideEmailInfo}
-        ></EmailClient>
+      <div>
+        {this.state.submitted === false ? (
+          <div
+            onMouseMove={this.handleMouseMove}
+            onClick={this.handleMouseClick}
+          >
+            <EmailClient
+              clickedButton={this.handleClickedInboxButton}
+              inEmailScrollAmount={this.SetInEmailScrollAmount}
+              UserInfo={this.props.userInfo}
+              onNewEmail={this.handleNewCurrentEmail}
+              onNewInbox={this.handleNewCurrentInbox}
+              setInboxResult={this.handleInboxResult}
+              insideEmailInfo={this.handleInsideEmailInfo}
+              outsideEmailInfo={this.handleOutsideEmailInfo}
+            ></EmailClient>
+          </div>
+        ) : (
+          <AccuracyTest
+            collectAccuracyData={this.collectAccuracyData}
+            stopAccuracyTest={this.stopAccuracyTest}
+          ></AccuracyTest>
+        )}
       </div>
     );
   }

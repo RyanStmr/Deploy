@@ -100,6 +100,10 @@ class SurveyComponent extends Component {
             text: "I have experience with Eye Tracking",
           },
           {
+            value: "Eye Tracking - Eye fatigue",
+            text: "My eyes felt tired after or during doing the study",
+          },
+          {
             value: "Information presented enough",
             text:
               "I used information provided in the interface to categorize the emails.",
@@ -141,17 +145,18 @@ class SurveyComponent extends Component {
         type: "radiogroup",
         name: "Reimbursement",
         title:
-          "How to you want to reimbursed? (Any information given here will not be connected to the study data) ",
+          "How to you want to reimbursed? (Any information given here will not be connected to the study data, also you will receive your reimbursement within two weeks.) ",
         isRequired: true,
-        colCount: 3,
-        choices: ["MMI-Points", "5€ (PayPal or Amazon)", "None"],
+        colCount: 4,
+        choices: ["MMI-Points", "5€ PayPal", "5€ Amazon", "None"],
       },
       {
         name: "email",
         type: "text",
         inputType: "email",
+        isRequired: true,
         visibleIf:
-          "{Reimbursement}='MMI-Points' or {Reimbursement}='5€ (PayPal or Amazon)' ",
+          "{Reimbursement}='MMI-Points' or {Reimbursement}='5€ PayPal' or {Reimbursement}='5€ Amazon' ",
         title: "Your E-mail:",
         placeHolder: "your-email@domain.org",
 
@@ -164,14 +169,23 @@ class SurveyComponent extends Component {
       {
         type: "text",
         name: "MMI Name",
+        isRequired: true,
         visibleIf: "{Reimbursement}='MMI-Points'",
         title: "Please insert your first and last name here.",
       },
       {
         type: "text",
         name: "MMI Matrikelnummer",
+        isRequired: true,
         visibleIf: "{Reimbursement}='MMI-Points'",
         title: "Please insert your enrolement number (Matrikelnummer) here.",
+      },
+      {
+        type: "text",
+        name: "PayPal account",
+        isRequired: true,
+        visibleIf: "{Reimbursement}='5€ PayPal'",
+        title: "Please insert your PayPal.Me-Link here",
       },
     ],
   };

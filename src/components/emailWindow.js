@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EmailIcon from "@material-ui/icons/Email";
+import ErrorIcon from "@material-ui/icons/Error";
 import { Snackbar } from "@material-ui/core";
 
-import ErrorIcon from "@material-ui/icons/Error";
 import EmailTopBar from "./EmailTopBar";
 import HeaderInfoEmail from "./HeaderInfoEmail";
 class EmailWindow extends Component {
@@ -155,7 +155,7 @@ class EmailWindow extends Component {
                 }}
                 open={this.state.printMessage}
                 autoHideDuration={1000}
-                message="Moved Email to Inbox"
+                message="Email moved"
                 onClose={handleClose}
               ></Snackbar>
             </Button>

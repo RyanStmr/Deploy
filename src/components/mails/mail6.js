@@ -5,45 +5,31 @@ class Mail6 extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div onMouseOver={this.props.inEmailText}>
+        {" "}
         <p>
-          <img
-            alt=""
-            src="https://www.underconsideration.com/brandnew/archives/dropbox_2017_logo.png"
-            style={{ width: "120px", height: "27px" }}
-          />
+          Your email {this.props.emailAdress} has exceeded one or more size
+          limits set by the Network Admins. Please click the link below to
+          re-validate your email account.
         </p>
-
-        <title></title>
-        {/*<link
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          rel="stylesheet"
-        />*/}
-        <p>&nbsp;</p>
-
-        <p>Hi {this.props.userName},</p>
-
-        <p>You have a new document/s shared to you via dropbox sharing.</p>
-
-        <p>
-          <a href="https://www.google.com" target="_blank">
-            VIEW HERE
-          </a>
-        </p>
-
-        <p>&nbsp;</p>
-
-        <p>&nbsp;</p>
+        <br></br>
+        <a href="https://www.google.com" target="_blank">
+          Login to Outlook Web Access
+        </a>
+        <br></br>
+        <p>Thanks for your co-operation.</p>
+        <br></br>
+        <p>IT</p>
       </div>
     );
   }
 }
 
 Mail6.defaultProps = {
-  sender: "info@dropbox.com",
-  date: "Mai 12, 2020, 12:43",
-  subject: "Droppbox Notification",
-  capital: "D",
+  sender: "Outlook@company.com",
+  date: "March 12, 2020, 07:38",
+  subject: "Your Email Account Size",
+  capital: "O",
   keyID: 6,
   unseen: true,
 };

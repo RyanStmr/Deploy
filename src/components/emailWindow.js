@@ -179,7 +179,7 @@ class EmailWindow extends Component {
             marginTop: "5px",
             overflowY: "scroll",
             width: "710px",
-            height: "700px",
+            height: "650px",
             backgroundColor: "white",
           }}
           onMouseEnter={() => {

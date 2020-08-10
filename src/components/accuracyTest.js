@@ -28,7 +28,7 @@ class AccuracyTest extends Component {
 
   startAccuracyTest = () => {
     this.setState({ intro: false });
-    this.accuracyInterval = setInterval(this.drawNewCircle, 4000);
+    this.accuracyInterval = setInterval(this.drawNewCircle, 2500);
   };
 
   drawNewCircle = () => {

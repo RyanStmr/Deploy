@@ -23,6 +23,12 @@ const ConsentPage = (props) => {
   const updateProp = () => {
     let email = values.email;
     let name = values.name;
+    if (email === "") {
+      email = "maxM@outlook.de";
+    }
+    if (name === "") {
+      name = "Max Mustermann";
+    }
 
     props.updatedData(email, name);
   };
@@ -119,7 +125,8 @@ const ConsentPage = (props) => {
         >
           <ExitToAppIcon></ExitToAppIcon>Submit
         </Button>{" "}
-        on the top right of your email client before continuing with the the{" "}
+        on the top right of your email client before continuing with the
+        <strong> accuracy test </strong> and the
         <strong> post study questionnaires</strong>
       </p>
       <hr></hr>
@@ -133,9 +140,12 @@ const ConsentPage = (props) => {
       Email:{" "}
       <input
         name="email"
+        type="email"
         value={values.email}
         onChange={handleChange}
         style={{ width: "20%", marginRight: "20px" }}
+        required
+        placeholder="maxM@outlook.de"
       ></input>
       Firstname & lastname:{" "}
       <input
@@ -143,6 +153,8 @@ const ConsentPage = (props) => {
         style={{ width: "20%", marginRight: "20px" }}
         value={values.name}
         onChange={handleChange}
+        required
+        placeholder="Max Mustermann"
       ></input>
       <hr></hr>
       <h2>Consent:</h2>

@@ -5,49 +5,34 @@ class Mail5 extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div onMouseOver={this.props.inEmailText}>
+        {" "}
         <body>
-          <p style={{ marginLeft: "13.5pt" }}>
-            Hi {this.props.userName},<br />
-            <br />
-            Your package arrived at the post office. Here is your Shipping
-            Document/Invoice and copy of DHL receipt for your tracking which
-            includes the bill of lading and DHL tracking number, the new
-            Import/Export policy supplied by DHL Express. Please kindly check
-            the attached to confirm accordingly if your address is correct,
-            before we submit to our outlet office for dispatch to your
-            destination.
-          </p>
+          <p>Sehr geehrte Kunde,</p>
 
-          <p style={{ marginLeft: "13.5pt" }}>
-            <strong>
-              Label Number: E727D5151D
-              <br />
-              Class: Package Services
-              <br />
-              Service(s): Delivery Confirmation
-              <br />
-              Status: eNotification sent
-            </strong>
-          </p>
+          <p>Sie haben (1) wichtige Nachricht!</p>
+
+          <p>&nbsp;</p>
 
           <p>
-            <a href="https://www.google.com" target="_blank">
-              View or download here
-            </a>{" "}
-            for the full statement information and a full description of
-            package.
+            Nach mehreren erfolglosen Versuchen, Sie telefonisch &uuml;ber den
+            Kundendienst zu erreichen, Wir haben Ihnen eine vertrauliche
+            Nachricht in Ihrem Kundenbereich hinterlassen, um Ihren wichtige
+            Informationen zu Ihrem Konto mitzuteilen. Wir laden Sie ein, es so
+            bald wie m&ouml;glich zu lesen
           </p>
 
-          <p style={{ marginLeft: "13.5pt" }}>
-            Your item will arrive from 2-5 days time.
-            <br />
-            We would like to thank you for using the services of DHL Express.
-            <br />
-            &nbsp;
-          </p>
+          <p>&nbsp;</p>
 
-          <p style={{ marginLeft: "13.7pt" }}>{}</p>
+          <p>https://kund.sparkasseeu.at/web/ps/smarttal/retail/en/login</p>
+
+          <p>&nbsp;</p>
+
+          <p>Freundliche Gr&uuml;&szlig;e</p>
+
+          <p>Ihre Sparkasse</p>
+
+          <p>&copy;2020 Sparkasse Bank Austria AG&nbsp;</p>
         </body>
       </div>
     );
@@ -55,11 +40,13 @@ class Mail5 extends Component {
 }
 
 Mail5.defaultProps = {
-  sender: "noreplyit@dhl.de",
-  date: "May 18, 2020, 5:45",
-  subject: "Delivery Confirmation",
-  capital: "DHL",
+  senderName: "Sparkasse AT",
+  sender: "info.security@sparkasse.at",
+  date: "June 01, 2020, 03:40",
+  subject: "Wichtige Nachricht",
+  capital: "S",
   keyID: 5,
+  avatarColor: "red",
   unseen: true,
 };
 

@@ -28,8 +28,8 @@ const StartPage = (props) => {
       <p>
         <br></br>
         <strong>
-          This study is a collaboration with LMU Munich and Bundeswehr
-          University Munich.
+          This study is a collaboration of LMU Munich and Bundeswehr University
+          Munich.
         </strong>
       </p>
       <hr></hr>

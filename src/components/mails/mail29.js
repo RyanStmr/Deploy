@@ -6,50 +6,216 @@ class Mail29 extends Component {
   render() {
     return (
       <div onMouseOver={this.props.inEmailText}>
-        <p>
-          Sehr geehrte(r) ,<br />
-          <br />
-          unsere Aufforderung blieb bislang bedauerlicherweise erfolglos. Nun
-          geben wir Ihnen hiermit letztmalig die Möglichkeit, den ausbleibenden
-          Betrag unseren Mandanten Pay Online GmbH zu begleichen.
-          <br />
-          <br />
-          Eine vollständige Forderungsausstellung NR. 481075944, der Sie alle
-          Buchungen entnehmen können, befindet sich im Anhang. Die vollständige
-          Zahlung erwarten wir bis zum 26.07.2020.
-          <br />
-          <br />
-          Aufgrund des andauernden Zahlungsrückstands sind Sie angewiesen
-          zusätzlich, die durch unsere Inanspruchnahme entstandene Gebühren von
-          74,10 Euro zu tragen. Bei Rückfragen oder Unklarheiten erwarten wir
-          eine Kontaktaufnahme innerhalb von 24 Stunden. Um zusätzliche Kosten
-          zu vermeiden, bitten wir Sie den ausstehenden Betrag auf unser
-          Bankkonto zu überweisen.&nbsp;
-          <br />
-          <br />
-          Falls wir bis zum genannten Datum keine Zahlung verbuchen, sehen wir
-          uns gezwungen Ihren Mahnbescheid an ein Gericht abzugeben. Sämtliche
-          damit verbundenen Kosten werden Sie tragen müssen.
-          <br />
-          <br />
-          Mit freundlichen Grüßen
-          <br />
-          <br />
-          Stellvertretender Rechtsanwalt Jamie Thurn
-        </p>
+        <table
+          style={{ minWidth: "348px" }}
+          width="100%"
+          lang="en"
+          height="100%"
+          cellSpacing={0}
+          cellPadding={0}
+          border={0}
+        >
+          <tbody>
+            <tr style={{ height: "32px" }} height={32}>
+              <td />
+            </tr>
+            <tr align="center">
+              <td>
+                <div>
+                  <div />
+                </div>
+                <table
+                  style={{
+                    paddingBottom: "20px",
+                    maxWidth: "516px",
+                    minWidth: "220px",
+                  }}
+                  cellSpacing={0}
+                  cellPadding={0}
+                  border={0}
+                >
+                  <tbody>
+                    <tr>
+                      <td style={{ width: "8px" }} width={8} />
+                      <td>
+                        <div
+                          style={{
+                            borderStyle: "solid",
+                            borderWidth: "thin",
+                            borderColor: "#dadce0",
+                            borderRadius: "8px",
+                            padding: "40px 20px",
+                          }}
+                          className="m_-488723823095496125mdv2rw"
+                          align="center"
+                        >
+                          <img
+                            src="https://ci5.googleusercontent.com/proxy/T_zJ7UbaC9x27OP4-ZCPfDipqYLSGum30AlaxEycVclfvxO8Cze0sZ0kCrXlx6a-MgvW2tswbIyiNVfczjDuGh9okorzC5SUJDfwkHr6-3j1KUu94HuAw5uxM_jaElQef3Sub84=s0-d-e1-ft#https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png"
+                            aria-hidden="true"
+                            style={{ marginBottom: "16px" }}
+                            alt="Google"
+                            width={74}
+                            height={24}
+                          />
+                          <div
+                            style={{
+                              fontFamily:
+                                '"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif',
+                              borderBottom: "thin solid #dadce0",
+                              color: "rgba(0,0,0,0.87)",
+                              lineHeight: "32px",
+                              paddingBottom: "24px",
+                              textAlign: "center",
+                              wordBreak: "break-word",
+                            }}
+                          >
+                            <div style={{ fontSize: "24px" }}>
+                              Neues Gerät angemeldet
+                            </div>
+                            <table style={{ marginTop: "8px" }} align="center">
+                              <tbody>
+                                <tr style={{ lineHeight: "normal" }}>
+                                  <td
+                                    style={{ paddingRight: "8px" }}
+                                    align="right"
+                                  >
+                                    <img
+                                      style={{
+                                        width: "20px",
+                                        height: "20px",
+                                        verticalAlign: "sub",
+                                        borderRadius: "50%",
+                                      }}
+                                      src="https://lh5.googleusercontent.com/-CEHb2BWRteA/AAAAAAAAAAI/AAAAAAAABOU/gJDIBMAAXjE/s96/photo.jpg"
+                                      alt=""
+                                      width={20}
+                                      height={20}
+                                    />
+                                  </td>
+                                  <td>
+                                    <a
+                                      style={{
+                                        fontFamily:
+                                          '"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif',
+                                        color: "rgba(0,0,0,0.87)",
+                                        fontSize: "14px",
+                                        lineHeight: "20px",
+                                      }}
+                                    >
+                                      {this.props.emailAdress}
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div
+                            style={{
+                              fontFamily:
+                                "Roboto-Regular,Helvetica,Arial,sans-serif",
+                              fontSize: "14px",
+                              color: "rgba(0,0,0,0.87)",
+                              lineHeight: "20px",
+                              paddingTop: "20px",
+                              textAlign: "center",
+                            }}
+                          >
+                            Jemand hat sich über ein neues Windows-Gerät in
+                            Ihrem Google-Konto angemeldet. Sie haben diese
+                            E-Mail erhalten, weil wir uns vergewissern möchten,
+                            dass Sie das waren.
+                            <div
+                              style={{
+                                paddingTop: "32px",
+                                textAlign: "center",
+                              }}
+                            >
+                              <a
+                                href="https://accounts.google.com"
+                                style={{
+                                  fontFamily:
+                                    '"Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif',
+                                  lineHeight: "16px",
+                                  color: "#ffffff",
+                                  fontWeight: 400,
+                                  textDecoration: "none",
+                                  fontSize: "14px",
+                                  display: "inline-block",
+                                  padding: "10px 24px",
+                                  backgroundColor: "#4184f3",
+                                  borderRadius: "5px",
+                                  minWidth: "90px",
+                                }}
+                                target="_blank"
+                                data-saferedirecturl="https://www.google.com"
+                              >
+                                Aktivität prüfen
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div style={{ textAlign: "left" }}>
+                          <div
+                            style={{
+                              fontFamily:
+                                "Roboto-Regular,Helvetica,Arial,sans-serif",
+                              color: "rgba(0,0,0,0.54)",
+                              fontSize: "11px",
+                              lineHeight: "18px",
+                              paddingTop: "12px",
+                              textAlign: "center",
+                            }}
+                          >
+                            <div>
+                              Wir haben Ihnen diese E-Mail gesendet, um Sie über
+                              wichtige Änderungen zu Ihrem Google-Konto und den
+                              Diensten von Google zu informieren.
+                            </div>
+                            <div style={{ direction: "ltr" }}>
+                              © 2020 Google LLC,{" "}
+                              <a
+                                className="m_-488723823095496125afal"
+                                style={{
+                                  fontFamily:
+                                    "Roboto-Regular,Helvetica,Arial,sans-serif",
+                                  color: "rgba(0,0,0,0.54)",
+                                  fontSize: "11px",
+                                  lineHeight: "18px",
+                                  paddingTop: "12px",
+                                  textAlign: "center",
+                                }}
+                              >
+                                1600 Amphitheatre Parkway, Mountain View, CA
+                                94043, USA
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td style={{ width: "8px" }} width={8} />
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr style={{ height: "32px" }} height={32}>
+              <td />
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
 }
 
 Mail29.defaultProps = {
-  senderName: "Jamie Thurn",
-  sender: "Jamie.Thurn@gmail.com",
-  date: "June 5, 2020, 09:27",
-  subject: "Aufforderung zur Zahlung",
-  capital: "J",
+  senderName: "Google",
+  sender: "no-reply@accounts.google.com",
+  date: "August 01, 2020, 08:21",
+  subject: "Sicherheitswarnung",
+  capital: "G",
   keyID: 29,
-  avatarColor: "grey",
+  avatarColor: "blue",
   unseen: true,
 };
 

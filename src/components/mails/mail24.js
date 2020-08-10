@@ -2,212 +2,202 @@ import React, { Component } from "react";
 import "./MailsDefault.css";
 
 class Mail24 extends Component {
-  constructor(props) {
-    super(props);
-    this.handleScroll = this.handleScroll.bind(this);
-  }
   state = {};
-
-  handleScroll(event) {
-    console.log("the scroll things", event);
-  }
-
   render() {
     return (
-      <div id="container" onMouseOver={this.props.inEmailText}>
-        <h1 class="hx">Gewinnen Sie das iPhone11</h1>
-        <h2 class="hx"> 30 Tage vor dem offiziellen Verkausstart! </h2>
-        <h1 class="hx">iPhone 11&nbsp; </h1>
-        <p>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-            iPhone 11 Get for free
-          </a>
-        </p>
-        <p> Hallo,</p>
-        <p>
-          bald ist es wieder soweit. Millionen warten schon auf die Präsentation
-          des neue iPhone11! Sie haben die Möglichkeit, schon 30 Tage vor dem
-          offiziellen Verkaufsstart, das neue iPhone11 zu nutzen.
-          &nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
-        <p>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-            iPhone 11 Get for free
-          </a>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-            <br />
-          </a>
-        </p>
-
-        <div
-          id="c7998"
-          class="frame cols cols-2 cols-left
- frame-type-textmedia frame-layout-0"
+      <div onMouseOver={this.props.inEmailText}>
+        <img
+          style={{ maxHeight: "73px", width: "40px" }}
+          alt=""
+          src="https://ci6.googleusercontent.com/proxy/z0bWF43BJl3HebfvfCsWXqgFHPK3KUsIvSpS6DlrrQ0P_-CGsFTiJkEHtPlwXI73p2bZK9hm6uVCY7HJVg9mMLgvvZZOk8O4pgpwtmN1fJzGzBj4UhBwWqmDfu2KMaI=s0-d-e1-ft#https://cfl.dropboxstatic.com/static/images/emails/logo_glyph_34_m1%402x.png"
+          width="40px"
+        />
+        <table
+          style={{ lineHeight: "25px" }}
+          cellSpacing={0}
+          cellPadding={0}
+          border={0}
+          align="center"
         >
-          <header>
-            <h3 class="hx">Seien Sie einer der Ersten!</h3>
-          </header>
-
-          <p>
-            Kein Vertrag, keine Kosten, nur eine Bedingungen! Als Gratis Nutzer
-            des neuen iPhone11 müssen Sie 2 Fragebögen in den ersten 2 Monaten
-            ausfüllen. Diese erhalten Sie mit dem iPhone zugesandt. Nutzen Sie
-            Ihre einmalige Chance! Erhalten Sie das neue iPhone11 Gratis vor
-            Verkaufsstart.{" "}
-          </p>
-        </div>
-
-        <div
-          id="c7997"
-          class="frame cols cols-2 cols-right
- frame-type-textmedia frame-layout-0"
-        >
-          <p>&nbsp;</p>
-          <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-              Seien Sie einer der Ersten!
-            </a>
-          </p>
-        </div>
-
-        <div class="clearer"></div>
-
-        <div
-          id="c7995"
-          class="frame cols cols-2 cols-left
- frame-type-textmedia frame-layout-0"
-        >
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-              Revolutionäre Technik
-            </a>
-          </p>
-        </div>
-
-        <div
-          id="c7996"
-          class="frame cols cols-2 cols-right
- frame-type-textmedia frame-layout-0"
-        >
-          <header>
-            <h3 class="hx">Revolutionäre technik!</h3>
-          </header>
-
-          <p>
-            Wie die DigiTimes meldet, arbeite Apple daran, den Home Button in
-            den Touchscreen zu integrieren. Der Knopf solle künftig alle
-            Aufgaben übernehmen, die sich auch über den aktuellen physischen
-            Knopf erledigen lassen – also Entsperren des iPhones, Rückkehr zum
-            Startbildschirm, Aufrufen der Multitasking-Ebene, Starten von Siri.
-            Das alles ginge per Touch-Sensor, zumal Apple mit Force Touch eine
-            entsprechende Technik anbietet.{" "}
-          </p>
-        </div>
-
-        <div class="clearer"></div>
-
-        <div
-          id="c7994"
-          class="frame cols cols-2 cols-left
- frame-type-textmedia frame-layout-0"
-        >
-          <header>
-            <h3 class="hx">Sensationelle 3D-Software</h3>
-          </header>
-
-          <p>
-            Apple entwickelt beim neuen iPhone mit einer neuartigen 3D-Ansicht.
-            Um die Bilder mit Tiefgang zu sehen, benötigen Nutzer wohl keine
-            Brille. Den Quellen zufolge geht damit ein neues Software-Ökosystem
-            einher, das dreidimensionale Inhalte für den Monitor bietet.
-          </p>
-        </div>
-
-        <div
-          id="c7993"
-          class="frame cols cols-2 cols-right
- frame-type-textmedia frame-layout-0"
-        >
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-              sensationelle 3D-Software
-            </a>
-          </p>
-        </div>
-
-        <div class="clearer"></div>
-
-        <div
-          id="c7999"
-          class="frame cols cols-3 cols-left
- frame-type-textmedia frame-layout-0"
-        >
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div
-          id="c7992"
-          class="frame cols cols-3 cols-center
- frame-type-textmedia frame-layout-0"
-        >
-          <h3 class="hx"> Vor Verkaufsstart </h3>
-          <p>
-            Sie haben die Möglichkeit, 1 von insgesamt 88 iPhone11 vor dem
-            offiziellen Verkaufsstart kostenfrei zu gewinnen. &nbsp;
-          </p>
-          <p class="align-left">
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
-              iPhone 11 Get for free
-            </a>
-          </p>
-        </div>
-
-        <div
-          id="c8000"
-          class="frame cols cols-3 cols-right
- frame-type-textmedia frame-layout-0"
-        >
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-        </div>
-
-        <div class="clearer"></div>
-
-        <div
-          id="c7991"
-          class="frame 
- frame-type-textmedia frame-layout-0"
-        >
-          <p class="align-center">
-            <sup>
-              Sie erhalten diese Email, weil Sie sich für den Newsletter von
-              einem unserer Gewinnspiele oder von uns gesponsortem Gewinnspiel
-              angemeldet haben. Ihre Email- Adresse gelang auf diese Weise auf
-              unsere Emailliste. Wenn Sie diesen Newsletter nicht mehr erhalten
-              möchten, klicken Sie bitte hier. Versender dieser Mail: Haan de
-              Mol Ltd. 20-22 Wenlock Road, London, N1 7GU, England Director:
-              Adam Krajewski
-            </sup>
-          </p>
-        </div>
+          <tbody>
+            <tr>
+              <td colSpan={3} height={30} />
+            </tr>
+            <tr>
+              <td width={36} />
+              <td
+                style={{
+                  color: "#444444",
+                  borderCollapse: "collapse",
+                  fontSize: "11pt",
+                  fontFamily:
+                    'proxima_nova,"Open Sans","Lucida Grande","Segoe UI",Arial,Verdana,"Lucida Sans Unicode",Tahoma,"Sans Serif"',
+                  maxWidth: "454px",
+                }}
+                width={454}
+                valign="top"
+                align="left"
+              >
+                <p>Hallo {this.props.userName},</p>
+                <p>
+                  uns ist aufgefallen, dass Sie Ihr Dropbox-Konto seit über
+                  einem Jahr nicht mehr genutzt haben. Die Verknüpfung zu allen
+                  mit Ihrem Konto verknüpften Geräten wurde in Vorbereitung auf
+                  die Kontoschließung aufgehoben.
+                </p>
+                <p>
+                  <strong>Möchten Sie Ihr Dropbox-Konto behalten?</strong>
+                  <br />
+                  Dann melden Sie sich vor dem 2. Januar 2018 in Ihrem
+                  Dropbox-Konto an.
+                </p>
+                <center>
+                  <a
+                    style={{
+                      borderRadius: "3px",
+                      fontSize: "15px",
+                      color: "white",
+                      border: "1px #1373b5 solid",
+                      textDecoration: "none",
+                      padding: "14px 7px 14px 7px",
+                      width: "210px",
+                      maxWidth: "210px",
+                      fontFamily:
+                        'proxima_nova,"Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif',
+                      margin: "6px auto",
+                      display: "block",
+                      backgroundColor: "#007ee6",
+                      textAlign: "center",
+                    }}
+                    href="https://www.dropbox.com/l/AAAUk5A4Ck-G7iMUU4dA29bvh88gtKq3w1Q/login"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AAAUk5A4Ck-G7iMUU4dA29bvh88gtKq3w1Q/login&source=gmail&ust=1596714726078000&usg=AFQjCNE7AGCSBReJXb_lKK3vJgk2PjvLwA"
+                  >
+                    Anmelden, um das Konto weiterzuführen
+                    <br />
+                  </a>
+                </center>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontStyle: "italic",
+                    color: "#a8b9c6",
+                    fontSize: "11px",
+                  }}
+                >
+                  Klicken Sie auf die Schaltfläche oder rufen Sie{" "}
+                  <a
+                    href="https://www.dropbox.com/login"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/login&source=gmail&ust=1596714726078000&usg=AFQjCNFDBl1XwN05SZ4VR67mdqLdsaLWWA"
+                  >
+                    https://www.dropbox.com/login
+                  </a>{" "}
+                  auf.
+                </p>
+                <h2>
+                  Ihr Dropbox-Konto mit der E-Mail-Adresse{" "}
+                  <a href={`mailto:${this.props.emailAdress}`} target="_blank">
+                    {this.props.emailAdress}
+                  </a>{" "}
+                  wird automatisch geschlossen, wenn Sie sich nicht innerhalb
+                  der nächsten 7&nbsp;Tage anmelden.
+                </h2>
+                <p>
+                  <strong>Was passiert danach mit dem Konto?</strong>
+                  <br />
+                  Sobald Sie das Konto geschlossen haben, können Sie sich nicht
+                  mehr anmelden oder neue Geräte damit verknüpfen. All Ihre
+                  Daten werden ebenfalls gelöscht.
+                </p>
+                <p>
+                  <strong>
+                    Haben Sie Dropbox vor Kurzem verwendet und trotzdem diese
+                    E-Mail erhalten?
+                  </strong>
+                  <br />
+                  Wenn Sie Dropbox kürzlich verwendet haben, geht es in dieser
+                  E-Mail um ein anderes Konto, das nicht verwendet wird.
+                  Vergleichen Sie die E-Mail-Adresse Ihres aktiven Kontos mit
+                  der E-Mail-Adresse in dieser E-Mail. Auch wenn in der Adresse
+                  nur ein kleines Zeichen wie z.&nbsp;B. ein Punkt fehlt, kann
+                  es sich dabei um ein anderes Konto handeln.
+                </p>
+                <p>
+                  <strong>
+                    Sie brauchen das Konto und Ihre Daten nicht mehr?
+                  </strong>
+                  <br />
+                  Am 20. Juni 2020 wird Ihr Konto automatisch geschlossen. In
+                  diesem{" "}
+                  <a
+                    href="https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080&source=gmail&ust=1596714726078000&usg=AFQjCNGvVfQJn_HHVF9in43vChO1jX-0sw"
+                  >
+                    Hilfeartikel
+                  </a>{" "}
+                  erfahren Sie außerdem, was Sie vor der Schließung Ihres Kontos
+                  tun müssen, um Ihre Dateien zu behalten.
+                </p>
+                <p>
+                  Bei Fragen besuchen Sie unser{" "}
+                  <a
+                    href="https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080&source=gmail&ust=1596714726078000&usg=AFQjCNGvVfQJn_HHVF9in43vChO1jX-0sw"
+                  >
+                    Hilfecenter
+                  </a>{" "}
+                  oder schreiben Sie an{" "}
+                  <a href="mailto:inactives-help@dropbox.com" target="_blank">
+                    inactives-help@dropbox.com
+                  </a>
+                  .
+                </p>
+                <p>
+                  Viele Grüße
+                  <br />
+                  Das Dropbox-Team
+                </p>
+                <br />
+                <hr />
+                <p>
+                  <strong>Schützen Sie sich vor Phishing-E-Mails.</strong>
+                  <br /> Dropbox wird Sie nie per E-Mail nach Ihrem Kennwort
+                  fragen. Wenn Ihnen ein Link in einer E-Mail verdächtig
+                  vorkommt, rufen Sie stattdessen direkt die
+                  Dropbox-Anmeldeseite auf.{" "}
+                  <a
+                    href="https://www.dropbox.com/l/AAC7a_HEIEH0JLZrXAU08L0GnYXm-NC-Zcc/help/9113"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AAC7a_HEIEH0JLZrXAU08L0GnYXm-NC-Zcc/help/9113&source=gmail&ust=1596714726078000&usg=AFQjCNHRC4n_zcpvkfaDQEbdXYRWGdLkmQ"
+                  >
+                    {" "}
+                    Weitere Informationen zu Phishing und Malware
+                  </a>
+                </p>
+              </td>
+              <td width={36} />
+            </tr>
+            <tr>
+              <td colSpan={3} height={36} />
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
 }
 
 Mail24.defaultProps = {
-  senderName: "Apple",
-  sender: "info@apple.com",
-  date: "May 25, 2020, 11:25",
-  subject: "apple iPhone11 vor Verkauf",
-  capital: "A",
+  senderName: "no-reply@dropboxmail.com",
+  sender: "Dropbox",
+  date: "June 11, 2020, 13:10",
+  subject: "Ihr Dropbox-Konto wird geschlossen – handeln Sie jetzt!",
+  capital: "D",
   keyID: 24,
-  avatarColor: "grey",
+  avatarColor: "blue",
   unseen: true,
 };
 

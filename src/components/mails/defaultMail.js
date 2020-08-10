@@ -11,7 +11,7 @@ class DefaultMail extends Component {
 DefaultMail.defaultProps = {
   senderName: "xxxx",
   sender: "xxxxx",
-  date: "xxxxx",
+  date: "August 03, 2020, 11:17",
   subject: "xxxxx",
   capital: "xxxxx",
   keyID: 0,

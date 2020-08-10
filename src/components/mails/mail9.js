@@ -5,63 +5,49 @@ class Mail9 extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <h1 style={{ color: "rgb(68, 114, 196)" }}>
-          <b>LinkedIn</b>
-        </h1>
-
-        <h2 style={{ color: "rgb(68, 114, 196)" }}>REMINDER</h2>
-
-        <h3>
-          <b>
-            Invitation reminders/:&nbsp;&nbsp;&nbsp; From&nbsp; &nbsp;
-            <a href="https://www.google.com" target="_blank">
-              Steve Donaghy
-            </a>
-          </b>
-        </h3>
-
-        <h3>
-          <b>There are a total of </b>
-          <strong>
-            <b>4</b>
-            <b> </b>
-          </strong>
-          <b>
-            other messages awaiting your reply.&nbsp;&nbsp;
-            <a href="https://www.google.com" target="_blank">
-              Go to INBOX now
-            </a>
-            .
-          </b>
-        </h3>
+      <div onMouseOver={this.props.inEmailText}>
+        {" "}
+        <h3 style={{ color: "#9E9E9E" }}>WebMail Account</h3>
+        <h1 style={{ color: "#29B6F6" }}>Your mailbox has been compromised</h1>
+        <p>Your webmail account has been compromised.</p>
+        <p>We have blocked your account for your own safety.</p>
         <p>
-          <b>
-            Don&rsquo;t want to receive email notifications? Login to your
-            LinkedIn account to{" "}
-            <a href="https://www.google.com" target="_blank">
-              unsubscribe.
-            </a>
-            <br />
-            LinkedIn values your privacy.&nbsp; At no time has LinkedIn made
-            your email address available to any other LinkedIn users without
-            your permission.&nbsp;&nbsp;
-            <br />
-            c2013, LinkedIn Corporation.
-          </b>
+          Please follow these steps below to sign in and keep your account safe:
         </p>
-
-        <p>&nbsp;</p>
-      </React.Fragment>
+        <p>
+          <ol>
+            <li>
+              <a href="https://www.google.com" target="_blank">
+                Protect your account
+              </a>
+            </li>
+            <li>
+              Learn how to{" "}
+              <a href="https://www.google.com" target="_blank">
+                make your account more secure
+              </a>
+            </li>
+          </ol>
+        </p>
+        <p>
+          To opt out or change where you receive security notifications,{" "}
+          <a href="https://www.google.com" target="_blank">
+            click here
+          </a>
+        </p>
+        <p>Thanks,</p>
+        <p>Webmail account team</p>
+      </div>
     );
   }
 }
 
 Mail9.defaultProps = {
-  sender: "info@linkedin.com",
-  date: "June 1, 2020, 08:03",
-  subject: "Invitation Reminder",
-  capital: "L",
+  senderName: "AcountWebmail",
+  sender: "acount@webmail.com",
+  date: "June 21, 2020, 04:35",
+  subject: "You MailBox Compromissed",
+  capital: "A",
   keyID: 9,
   unseen: true,
 };

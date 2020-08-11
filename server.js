@@ -37,7 +37,8 @@ app.get("/connect", (req, res) => {
       ID SERIAL PRIMARY KEY NOT NULL, 
       USERINFO json,
       USERSURVEYINFO json,
-      USERACCINFO json
+      USERACCINFO json,
+      RESULTINBOX json,
       )`,
     (error, results) => {
       if (error) {
@@ -157,6 +158,24 @@ app.post("/accuracyInfo", (req, res) => {
 
   res.send(userAccData);
 });
+
+app.post("/resultInbox", (req, res) => {
+  let resultInbox = req.body;
+  console.log(resultInbox);
+  let jsonObjectInbox = JSON.stringify(resultInbox);
+
+  pool.query(
+    `INSERT INTO USER${jsonObjectInbox.userID} (RESULTINBOX) VALUES ('${jsonObjectInbox}')`,
+    (error, results) => {
+      if (error) {
+        console.log(`error when inserting result Inbox ${error}`);
+      }
+    }
+  );
+
+  res.send(resultInbox);
+});
+
 //Serving React
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build/index.html"));

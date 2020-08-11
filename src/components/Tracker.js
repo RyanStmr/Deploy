@@ -42,11 +42,11 @@ class Tracker extends Component {
       submitted: false,
 
       //To be sent at end of study
-      resultInbox: [],
       visitedLinks: [],
     };
 
-    this.stateCollector = [];
+    (this.resultInbox = { resultInbox: [], userID: 0 }),
+      (this.stateCollector = []);
     this.collectionInterval = undefined;
     this.sendingInterval = undefined;
     this.accuracyCollector = [];
@@ -269,19 +269,31 @@ class Tracker extends Component {
     this.setState(copy);
   };
 
-  handleInboxResult = (finalInboxLoc) => {
-    let copy = this.state;
-    copy.resultInbox = finalInboxLoc;
-    copy.resultInbox.forEach((element) => {
+  handleInboxResult = (finalInboxLocal) => {
+    this.resultInbox.resultInbox = finalInboxLocal;
+    this.resultInbox.resultInbox.forEach((element) => {
       element.keyID = element.mail.defaultProps.keyID;
       element.unseen = element.mail.defaultProps.unseen;
     });
-    this.setState(copy);
-    this.collectStates();
-    this.sendData();
+    this.resultInbox.userID = this.state.userId;
+    this.sendFinalInbox();
     this.startAccuracyTest();
     clearInterval(this.collectionInterval);
     clearInterval(this.sendingIntervall);
+  };
+
+  sendFinalInbox = () => {
+    //Send to Server
+
+    const data = this.resultInbox;
+    const response = fetch("/resultInbox", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(console.log("sent result Inbox"));
   };
 
   startAccuracyTest = () => {
@@ -311,7 +323,6 @@ class Tracker extends Component {
       height,
     ];
     this.accuracyCollector.push(accuracyData);
-    console.log(this.accuracyCollector);
   };
 
   stopAccuracyTest = () => {

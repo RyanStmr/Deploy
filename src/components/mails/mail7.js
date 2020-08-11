@@ -63,7 +63,7 @@ class Mail7 extends Component {
 Mail7.defaultProps = {
   senderName: "Skype",
   sender: "info@skype.com",
-  date: "Mai 4, 2020, 6:58",
+  date: "Mai 04, 2020, 06:58",
   subject: "Payment Request",
   capital: "I",
   keyID: 7,

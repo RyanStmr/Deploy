@@ -165,7 +165,7 @@ app.post("/resultInbox", (req, res) => {
   let jsonObjectInbox = JSON.stringify(resultInbox);
 
   pool.query(
-    `INSERT INTO USER${jsonObjectInbox.userID} (RESULTINBOX) VALUES ('${jsonObjectInbox}')`,
+    `INSERT INTO USER${resultInbox.userID} (RESULTINBOX) VALUES ('${jsonObjectInbox}')`,
     (error, results) => {
       if (error) {
         console.log(`error when inserting result Inbox ${error}`);

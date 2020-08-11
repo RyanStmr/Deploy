@@ -38,7 +38,7 @@ app.get("/connect", (req, res) => {
       USERINFO json,
       USERSURVEYINFO json,
       USERACCINFO json,
-      RESULTINBOX json,
+      RESULTINBOX json
       )`,
     (error, results) => {
       if (error) {
@@ -112,7 +112,7 @@ app.post("/data", (req, res) => {
     let jsonObject = JSON.stringify(element);
 
     pool.query(
-      `INSERT INTO USER${element.userId} (USERINFO) VALUES ('${jsonObject}')`,
+      `INSERT INTO USER${element.userID} (USERINFO) VALUES ('${jsonObject}')`,
       (error, results) => {
         if (error) {
           throw error;

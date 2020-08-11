@@ -45,8 +45,8 @@ class Tracker extends Component {
       visitedLinks: [],
     };
 
-    (this.resultInbox = { resultInbox: [], userID: 0 }),
-      (this.stateCollector = []);
+    this.resultInbox = { resultInbox: [], userID: 0 };
+    this.stateCollector = [];
     this.collectionInterval = undefined;
     this.sendingInterval = undefined;
     this.accuracyCollector = [];

@@ -5,7 +5,7 @@ class Mail22 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         {" "}
         <div>
           &nbsp;
@@ -134,6 +134,15 @@ class Mail22 extends Component {
                               }}
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.facebook.com/recover/code?u%3D100000215355979%26n%3D442051%26exp_locale%3Dde_DE%26s%3D24%26ocl%3D1&source=gmail&ust=1596715579127000&usg=AFQjCNGJacYT6-ATKmNLKdPVKfNbu1k-Ww"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink1");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink1");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink1");
+                              }}
                             >
                               <table
                                 style={{ borderCollapse: "collapse" }}
@@ -164,6 +173,24 @@ class Mail22 extends Component {
                                         }}
                                         target="_blank"
                                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.facebook.com/recover/code?u%3D100000215355979%26n%3D442051%26exp_locale%3Dde_DE%26s%3D24%26ocl%3D1&source=gmail&ust=1596715579127000&usg=AFQjCNGJacYT6-ATKmNLKdPVKfNbu1k-Ww"
+                                        onMouseEnter={() => {
+                                          this.props.insideEmailInfo(
+                                            true,
+                                            "InLink2"
+                                          );
+                                        }}
+                                        onMouseLeave={() => {
+                                          this.props.insideEmailInfo(
+                                            false,
+                                            "InLink2"
+                                          );
+                                        }}
+                                        onMouseOver={() => {
+                                          this.props.insideEmailInfo(
+                                            true,
+                                            "InLink2"
+                                          );
+                                        }}
                                       >
                                         <center>
                                           <font size={3}>
@@ -211,6 +238,15 @@ class Mail22 extends Component {
                         style={{ color: "#3b5998", textDecoration: "none" }}
                         target="_blank"
                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.facebook.com/login/recover/disavow_reset_email.php?n%3D442051%26i%3Dwww%26id%3D100000215355979%26ocl%3D1&source=gmail&ust=1596715579127000&usg=AFQjCNHIe5nIvOGnF242zrgmaHcAzxA87A"
+                        onMouseEnter={() => {
+                          this.props.insideEmailInfo(true, "InLink3");
+                        }}
+                        onMouseLeave={() => {
+                          this.props.insideEmailInfo(false, "InLink3");
+                        }}
+                        onMouseOver={() => {
+                          this.props.insideEmailInfo(true, "InLink3");
+                        }}
                       >
                         teile uns das mit
                       </a>
@@ -255,6 +291,15 @@ class Mail22 extends Component {
                     href={`mailto:${this.props.emailAdress}`}
                     style={{ color: "#3b5998", textDecoration: "none" }}
                     target="_blank"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink4");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink4");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink4");
+                    }}
                   >
                     {this.props.emailAdress}
                   </a>{" "}

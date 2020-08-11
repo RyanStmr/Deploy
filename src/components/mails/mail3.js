@@ -5,12 +5,24 @@ class Mail3 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <p>Dear {this.props.userName},</p>
         <p>
           Someone in Bogotá Colombia attempted to log into your account several
           times. If you believe this was fraudulent activity please report it{" "}
-          <a href="https://www.google.com" target="_blank">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             here
           </a>
           .

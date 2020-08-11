@@ -195,7 +195,7 @@ class EmailWindow extends Component {
           <SpecificEmail
             userName={this.props.userName}
             emailAdress={this.props.emailAdress}
-            inEmailText={this.props.inEmailText}
+            insideEmailInfo={this.props.insideEmailInfo}
             clickedLink={this.props.clickedLink}
           ></SpecificEmail>
         </div>

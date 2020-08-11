@@ -5,7 +5,7 @@ class Mail32 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <table width="100%" cellSpacing={0} cellPadding={12} border={0}>
           <tbody>
             <tr>
@@ -364,6 +364,24 @@ class Mail32 extends Component {
                                                         }}
                                                         target="_blank"
                                                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://accounts.google.com/AccountChooser"
+                                                        onMouseEnter={() => {
+                                                          this.props.insideEmailInfo(
+                                                            true,
+                                                            "InLink1"
+                                                          );
+                                                        }}
+                                                        onMouseLeave={() => {
+                                                          this.props.insideEmailInfo(
+                                                            false,
+                                                            "InLink1"
+                                                          );
+                                                        }}
+                                                        onMouseOver={() => {
+                                                          this.props.insideEmailInfo(
+                                                            true,
+                                                            "InLink1"
+                                                          );
+                                                        }}
                                                       >
                                                         kürzlich von Ihnen
                                                         genutzten Geräte
@@ -459,6 +477,24 @@ class Mail32 extends Component {
                                                                 }}
                                                                 target="_blank"
                                                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://support.google.com/accounts/contact/device_alert_feedback?hl%3Dde&source=gmail&ust=1597144021299000&usg=AFQjCNEDhgvEriHQ9rAbSpaCLshv4Tewew"
+                                                                onMouseEnter={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink2"
+                                                                  );
+                                                                }}
+                                                                onMouseLeave={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    false,
+                                                                    "InLink2"
+                                                                  );
+                                                                }}
+                                                                onMouseOver={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink2"
+                                                                  );
+                                                                }}
                                                               >
                                                                 klicken Sie hier
                                                               </a>
@@ -476,6 +512,24 @@ class Mail32 extends Component {
                                                                 }}
                                                                 target="_blank"
                                                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://support.google.com/accounts/answer/2733203&source=gmail&ust=1597144021299000&usg=AFQjCNEEeqfz3xnu4SzgOt1D0xc169tGdw"
+                                                                onMouseEnter={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink3"
+                                                                  );
+                                                                }}
+                                                                onMouseLeave={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    false,
+                                                                    "InLink3"
+                                                                  );
+                                                                }}
+                                                                onMouseOver={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink3"
+                                                                  );
+                                                                }}
                                                               >
                                                                 Google
                                                                 Konten-Hilfe

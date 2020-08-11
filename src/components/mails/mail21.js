@@ -5,7 +5,7 @@ class Mail21 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         {" "}
         <div style={{ overflow: "hidden" }}>
           <font size={-1}>

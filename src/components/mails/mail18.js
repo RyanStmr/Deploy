@@ -5,7 +5,7 @@ class Mail18 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <div align="center">
           <table
             style={{ width: "495.0pt", borderCollapse: "collapse" }}

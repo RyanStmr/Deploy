@@ -5,7 +5,7 @@ class Mail4 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <p>
           <b>Lieber Kunde</b>
         </p>
@@ -14,7 +14,20 @@ class Mail4 extends Component {
           stunden. Es ist unerlässlich, eine Prüfung der Daten durchzuführen
           vorhanden ist, sonst Ihre Apple-ID zerstört werden. Klicken Sie
           einfach auf den Link unten .<br />
-          <a href="www.google.com" class="internal-link" target="_blank">
+          <a
+            href="www.google.com"
+            class="internal-link"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             Klicken Sie auf Jetzt hier zu überprüfen
           </a>
           <br />

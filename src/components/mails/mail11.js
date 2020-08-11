@@ -5,7 +5,7 @@ class Mail11 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <body>
           <p style={{ marginLeft: "13.5pt;" }}>Hello {this.props.userName},</p>
 
@@ -16,7 +16,19 @@ class Mail11 extends Component {
 
           <p style={{ marginLeft: "13.5pt;" }}>
             Click{" "}
-            <a href="https://www.google.com" target="_blank">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink1");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+            >
               https://google.com/drive/docs/file012345
             </a>{" "}
             and sign in to view details..

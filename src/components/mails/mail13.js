@@ -5,7 +5,7 @@ class Mail13 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <body>
           <p>
             Attention: {this.props.userName}
@@ -23,7 +23,19 @@ class Mail13 extends Component {
             <br />
             <br />
             We pleasantly ask you to overview{" "}
-            <a href="https://www.google.com" target="_blank">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink1");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+            >
               APPEAL REPORT
             </a>{" "}
             to reply on this complaint.

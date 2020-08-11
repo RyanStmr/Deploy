@@ -5,12 +5,25 @@ class Mail1 extends Component {
   state = {};
   render() {
     return (
-      <div id="container" onMouseOver={this.props.inEmailText}>
+      <div id="container">
         <h1 class="hx">Gewinnen Sie das iPhone11</h1>
         <h2 class="hx"> 30 Tage vor dem offiziellen Verkausstart! </h2>
         <h1 class="hx">iPhone 11&nbsp; </h1>
         <p>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+          <a
+            href="/phishing/selbstlerntest-phishing/"
+            class="internal-link"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             iPhone 11 Get for free
           </a>
         </p>
@@ -22,10 +35,36 @@ class Mail1 extends Component {
           &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+          <a
+            href="/phishing/selbstlerntest-phishing/"
+            class="internal-link"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink2");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink2");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink2");
+            }}
+          >
             iPhone 11 Get for free
           </a>
-          <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+          <a
+            href="/phishing/selbstlerntest-phishing/"
+            class="internal-link"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink3");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink3");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink3");
+            }}
+          >
             <br />
           </a>
         </p>
@@ -55,7 +94,20 @@ frame-type-textmedia frame-layout-0"
         >
           <p>&nbsp;</p>
           <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+            <a
+              href="/phishing/selbstlerntest-phishing/"
+              class="internal-link"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink4");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink4");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink4");
+              }}
+            >
               Seien Sie einer der Ersten!
             </a>
           </p>
@@ -71,7 +123,20 @@ frame-type-textmedia frame-layout-0"
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+            <a
+              href="/phishing/selbstlerntest-phishing/"
+              class="internal-link"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink5");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink5");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink5");
+              }}
+            >
               Revolutionäre Technik
             </a>
           </p>
@@ -124,7 +189,20 @@ frame-type-textmedia frame-layout-0"
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+            <a
+              href="/phishing/selbstlerntest-phishing/"
+              class="internal-link"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink6");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink6");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink6");
+              }}
+            >
               sensationelle 3D-Software
             </a>
           </p>
@@ -152,7 +230,20 @@ frame-type-textmedia frame-layout-0"
             offiziellen Verkaufsstart kostenfrei zu gewinnen. &nbsp;
           </p>
           <p class="align-left">
-            <a href="/phishing/selbstlerntest-phishing/" class="internal-link">
+            <a
+              href="/phishing/selbstlerntest-phishing/"
+              class="internal-link"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink7");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink7");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink7");
+              }}
+            >
               iPhone 11 Get for free
             </a>
           </p>

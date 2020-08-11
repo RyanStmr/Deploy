@@ -5,7 +5,7 @@ class Mail9 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         {" "}
         <h3 style={{ color: "#9E9E9E" }}>WebMail Account</h3>
         <h1 style={{ color: "#29B6F6" }}>Your mailbox has been compromised</h1>
@@ -17,13 +17,37 @@ class Mail9 extends Component {
         <p>
           <ol>
             <li>
-              <a href="https://www.google.com" target="_blank">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                onMouseEnter={() => {
+                  this.props.insideEmailInfo(true, "InLink1");
+                }}
+                onMouseLeave={() => {
+                  this.props.insideEmailInfo(false, "InLink1");
+                }}
+                onMouseOver={() => {
+                  this.props.insideEmailInfo(true, "InLink1");
+                }}
+              >
                 Protect your account
               </a>
             </li>
             <li>
               Learn how to{" "}
-              <a href="https://www.google.com" target="_blank">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                onMouseEnter={() => {
+                  this.props.insideEmailInfo(true, "InLink2");
+                }}
+                onMouseLeave={() => {
+                  this.props.insideEmailInfo(false, "InLink2");
+                }}
+                onMouseOver={() => {
+                  this.props.insideEmailInfo(true, "InLink2");
+                }}
+              >
                 make your account more secure
               </a>
             </li>
@@ -31,7 +55,19 @@ class Mail9 extends Component {
         </p>
         <p>
           To opt out or change where you receive security notifications,{" "}
-          <a href="https://www.google.com" target="_blank">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink3");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink3");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink3");
+            }}
+          >
             click here
           </a>
         </p>

@@ -5,7 +5,7 @@ class Mail29 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <table
           style={{ minWidth: "348px" }}
           width="100%"
@@ -148,6 +148,15 @@ class Mail29 extends Component {
                                 }}
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink1");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
                               >
                                 Aktivität prüfen
                               </a>

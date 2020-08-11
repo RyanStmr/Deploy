@@ -5,7 +5,7 @@ class Mail16 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <div>
           <div align="center">
             <table
@@ -1645,6 +1645,24 @@ class Mail16 extends Component {
                                                                                 title='"" '
                                                                                 target="_blank"
                                                                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b81fe1446e53e6c3b9d3634b47c2d7a4a34e33c909eefc4dde76e2ede1c5b1c6901ad436491a30b2fc740182754eb77bcafd303626116d401&source=gmail&ust=1597149174587000&usg=AFQjCNEAxlQ0Mqy7NIo6yxe8ghQyTDXaaw"
+                                                                                onMouseEnter={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink1"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseLeave={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    false,
+                                                                                    "InLink1"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseOver={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink1"
+                                                                                  );
+                                                                                }}
                                                                               >
                                                                                 <span
                                                                                   style={{
@@ -2005,6 +2023,24 @@ class Mail16 extends Component {
                                                                         href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b717ed2849e5f5a9cd87e38d4074fcb75fc50c976fa50516d86ea39c286372fc931c08566af50578480e3adb007bda177"
                                                                         target="_blank"
                                                                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b717ed2849e5f5a9cd87e38d4074fcb75fc50c976fa50516d86ea39c286372fc931c08566af50578480e3adb007bda177&source=gmail&ust=1597149174587000&usg=AFQjCNFpiyBSkwJkF58r2HhbTCTZRD2aRA"
+                                                                        onMouseEnter={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            true,
+                                                                            "InLink2"
+                                                                          );
+                                                                        }}
+                                                                        onMouseLeave={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            false,
+                                                                            "InLink2"
+                                                                          );
+                                                                        }}
+                                                                        onMouseOver={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            true,
+                                                                            "InLink2"
+                                                                          );
+                                                                        }}
                                                                       >
                                                                         <span
                                                                           style={{
@@ -2020,6 +2056,24 @@ class Mail16 extends Component {
                                                                         href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b9dd0cb12eef5325f7961777fa12559ccc442a2be12f71095e4832249d4dee58f235baf9e24501469525964d2493559e4"
                                                                         target="_blank"
                                                                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b9dd0cb12eef5325f7961777fa12559ccc442a2be12f71095e4832249d4dee58f235baf9e24501469525964d2493559e4&source=gmail&ust=1597149174587000&usg=AFQjCNH3YQ88k5YH7LSXqDcrZJIjGGEGlw"
+                                                                        onMouseEnter={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            true,
+                                                                            "InLink3"
+                                                                          );
+                                                                        }}
+                                                                        onMouseLeave={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            false,
+                                                                            "InLink3"
+                                                                          );
+                                                                        }}
+                                                                        onMouseOver={() => {
+                                                                          this.props.insideEmailInfo(
+                                                                            true,
+                                                                            "InLink3"
+                                                                          );
+                                                                        }}
                                                                       >
                                                                         <span
                                                                           style={{
@@ -2234,6 +2288,24 @@ class Mail16 extends Component {
                                                                 href="https://click.e.amaysim.com.au/?qs=fc337a92f444101beb00a947736345923e96b796fe7204151c371aaf0dff5bae0fbf6ac9e5fe3d3c5ee657a96bea0edcd4b4b9667e426b5e"
                                                                 target="_blank"
                                                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101beb00a947736345923e96b796fe7204151c371aaf0dff5bae0fbf6ac9e5fe3d3c5ee657a96bea0edcd4b4b9667e426b5e&source=gmail&ust=1597149174587000&usg=AFQjCNFsm1PkXRdPHcZwq0yh0Jp7T7e_lA"
+                                                                onMouseEnter={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink4"
+                                                                  );
+                                                                }}
+                                                                onMouseLeave={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    false,
+                                                                    "InLink4"
+                                                                  );
+                                                                }}
+                                                                onMouseOver={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "InLink4"
+                                                                  );
+                                                                }}
                                                               >
                                                                 <span
                                                                   style={{
@@ -2679,6 +2751,24 @@ class Mail16 extends Component {
                                                                       href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b8579429dce472973ed47ffff8783fbf59ba682596bada7a26aa1c93dbb58859eefecb705a866b58eac1fd81cdc2d2665"
                                                                       target="_blank"
                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b8579429dce472973ed47ffff8783fbf59ba682596bada7a26aa1c93dbb58859eefecb705a866b58eac1fd81cdc2d2665&source=gmail&ust=1597149174587000&usg=AFQjCNF--1Keus3o4AbGemg4EkzKH9jpBA"
+                                                                      onMouseEnter={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          true,
+                                                                          "InLink5"
+                                                                        );
+                                                                      }}
+                                                                      onMouseLeave={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          false,
+                                                                          "InLink5"
+                                                                        );
+                                                                      }}
+                                                                      onMouseOver={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          true,
+                                                                          "InLink5"
+                                                                        );
+                                                                      }}
                                                                     >
                                                                       <span
                                                                         style={{
@@ -2992,6 +3082,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101bfe57863061441ef364023e3d065864690154e556b2cefd79b38d2d6fba9f9bf7e30d79daf4518aabd0e8ce3cdafa9209"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101bfe57863061441ef364023e3d065864690154e556b2cefd79b38d2d6fba9f9bf7e30d79daf4518aabd0e8ce3cdafa9209&source=gmail&ust=1597149174587000&usg=AFQjCNFyroLEjpnSypbBMYb38fXEgRfctg"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink6"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink6"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink6"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3008,6 +3116,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b9dd0cb12eef5325f7961777fa12559ccc442a2be12f71095e4832249d4dee58f235baf9e24501469525964d2493559e4"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b9dd0cb12eef5325f7961777fa12559ccc442a2be12f71095e4832249d4dee58f235baf9e24501469525964d2493559e4&source=gmail&ust=1597149174587000&usg=AFQjCNH3YQ88k5YH7LSXqDcrZJIjGGEGlw"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink7"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink7"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink7"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3023,6 +3149,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101bd06063adc137a1b74e58dcfc6cdd54f1ae9840fa7ec35147ecd9d98717730098860ab147ac6687e1f494dfc0961fb4ff"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101bd06063adc137a1b74e58dcfc6cdd54f1ae9840fa7ec35147ecd9d98717730098860ab147ac6687e1f494dfc0961fb4ff&source=gmail&ust=1597149174587000&usg=AFQjCNH0L03qmjF3VqHLKETba-xcwobrfA"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink8"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink8"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink8"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3059,6 +3203,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b10bfe4f802cd7b111a3c07816699d4128d2d6b5fa8942132f5efddd0532e130cc6c443a8db21014eee0b94449a2f07c0"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b10bfe4f802cd7b111a3c07816699d4128d2d6b5fa8942132f5efddd0532e130cc6c443a8db21014eee0b94449a2f07c0&source=gmail&ust=1597149174587000&usg=AFQjCNHOjUq7KyKKn7VJeExBcE5gg9Bckw"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink9"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink9"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink9"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3074,6 +3236,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101b599951abf75de2c9ed419f46405e0f3dbc92d11b613b3aac572a9fd03458fc3bbec499c1c3dd4fb1885872fbc80c44f5"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101b599951abf75de2c9ed419f46405e0f3dbc92d11b613b3aac572a9fd03458fc3bbec499c1c3dd4fb1885872fbc80c44f5&source=gmail&ust=1597149174587000&usg=AFQjCNH6Bi1-8qKb0EQrCxGl3SPc53ufmg"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink10"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink10"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink10"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3090,6 +3270,24 @@ class Mail16 extends Component {
                                                               href="https://view.e.amaysim.com.au/?qs=4dd78636c67e3f85f864754be92b5a32eda25f2f95a5d8297fd9578633eaa15be4a4101026c026e1e97c3766ad06e1dd77c0ba4641841c120e275a5b187e53ec4965cca10daf0b5ff5b679e9055cf4fa8957c29e476cecaa"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://view.e.amaysim.com.au/?qs%3D4dd78636c67e3f85f864754be92b5a32eda25f2f95a5d8297fd9578633eaa15be4a4101026c026e1e97c3766ad06e1dd77c0ba4641841c120e275a5b187e53ec4965cca10daf0b5ff5b679e9055cf4fa8957c29e476cecaa&source=gmail&ust=1597149174588000&usg=AFQjCNF-Dz8G5_TPHWmSWiT4ZbAxK2OIcw"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink11"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink11"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink11"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -3105,6 +3303,24 @@ class Mail16 extends Component {
                                                               href="https://click.e.amaysim.com.au/?qs=fc337a92f444101be457a7988c9fc04a1f6a01e0ee127c217e45898fa51698edaca5ff816c10c8a5717c4850ede9bb5f9e4b93d666589f5d"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.e.amaysim.com.au/?qs%3Dfc337a92f444101be457a7988c9fc04a1f6a01e0ee127c217e45898fa51698edaca5ff816c10c8a5717c4850ede9bb5f9e4b93d666589f5d&source=gmail&ust=1597149174588000&usg=AFQjCNGZW8TwyDLuMF2fMu8NCVYZy2olJg"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink12"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink12"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink12"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{

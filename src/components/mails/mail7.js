@@ -5,7 +5,7 @@ class Mail7 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <p>Hello {this.props.userName},</p>
         <div style={{ fontSize: "13px" }}>
           <p>
@@ -35,7 +35,19 @@ class Mail7 extends Component {
             $60.00 billing to your card, please follow the link below to cancel
             the payment :<br />
             <br />
-            <a href="https://www.google.com" target="_blank">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink1");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+            >
               CANCEL THIS PAYMENT
             </a>
             &nbsp; (Transaction

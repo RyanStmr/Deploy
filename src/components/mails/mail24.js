@@ -5,7 +5,7 @@ class Mail24 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <img
           style={{ maxHeight: "73px", width: "40px" }}
           alt=""
@@ -72,6 +72,15 @@ class Mail24 extends Component {
                     href="https://www.dropbox.com/l/AAAUk5A4Ck-G7iMUU4dA29bvh88gtKq3w1Q/login"
                     target="_blank"
                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AAAUk5A4Ck-G7iMUU4dA29bvh88gtKq3w1Q/login&source=gmail&ust=1596714726078000&usg=AFQjCNE7AGCSBReJXb_lKK3vJgk2PjvLwA"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink1");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink1");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink1");
+                    }}
                   >
                     Anmelden, um das Konto weiterzuführen
                     <br />
@@ -90,6 +99,15 @@ class Mail24 extends Component {
                     href="https://www.dropbox.com/login"
                     target="_blank"
                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/login&source=gmail&ust=1596714726078000&usg=AFQjCNFDBl1XwN05SZ4VR67mdqLdsaLWWA"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink2");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink2");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink2");
+                    }}
                   >
                     https://www.dropbox.com/login
                   </a>{" "}
@@ -97,7 +115,19 @@ class Mail24 extends Component {
                 </p>
                 <h2>
                   Ihr Dropbox-Konto mit der E-Mail-Adresse{" "}
-                  <a href={`mailto:${this.props.emailAdress}`} target="_blank">
+                  <a
+                    href={`mailto:${this.props.emailAdress}`}
+                    target="_blank"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink3");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink3");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink3");
+                    }}
+                  >
                     {this.props.emailAdress}
                   </a>{" "}
                   wird automatisch geschlossen, wenn Sie sich nicht innerhalb
@@ -134,6 +164,15 @@ class Mail24 extends Component {
                     href="https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080"
                     target="_blank"
                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080&source=gmail&ust=1596714726078000&usg=AFQjCNGvVfQJn_HHVF9in43vChO1jX-0sw"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink4");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink4");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink4");
+                    }}
                   >
                     Hilfeartikel
                   </a>{" "}
@@ -146,11 +185,32 @@ class Mail24 extends Component {
                     href="https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080"
                     target="_blank"
                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080&source=gmail&ust=1596714726078000&usg=AFQjCNGvVfQJn_HHVF9in43vChO1jX-0sw"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink5");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink5");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink5");
+                    }}
                   >
                     Hilfecenter
                   </a>{" "}
                   oder schreiben Sie an{" "}
-                  <a href="mailto:inactives-help@dropbox.com" target="_blank">
+                  <a
+                    href="mailto:inactives-help@dropbox.com"
+                    target="_blank"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink6");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink6");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink6");
+                    }}
+                  >
                     inactives-help@dropbox.com
                   </a>
                   .
@@ -172,6 +232,15 @@ class Mail24 extends Component {
                     href="https://www.dropbox.com/l/AAC7a_HEIEH0JLZrXAU08L0GnYXm-NC-Zcc/help/9113"
                     target="_blank"
                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.dropbox.com/l/AAC7a_HEIEH0JLZrXAU08L0GnYXm-NC-Zcc/help/9113&source=gmail&ust=1596714726078000&usg=AFQjCNHRC4n_zcpvkfaDQEbdXYRWGdLkmQ"
+                    onMouseEnter={() => {
+                      this.props.insideEmailInfo(true, "InLink7");
+                    }}
+                    onMouseLeave={() => {
+                      this.props.insideEmailInfo(false, "InLink7");
+                    }}
+                    onMouseOver={() => {
+                      this.props.insideEmailInfo(true, "InLink7");
+                    }}
                   >
                     {" "}
                     Weitere Informationen zu Phishing und Malware

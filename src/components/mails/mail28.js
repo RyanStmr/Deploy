@@ -5,7 +5,7 @@ class Mail28 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <div>
           <div>
             <p
@@ -95,6 +95,24 @@ class Mail28 extends Component {
                                           href="https://click.mail.onedrive.com/?qs=ef32d819733cb175c5eaf6c006d9bc86e501cb4c8d4aaede4c805ba52335b903aeb6bd2188219688c97fcd09c49c469431028c140924451615cba18e4bf97802"
                                           target="_blank"
                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb175c5eaf6c006d9bc86e501cb4c8d4aaede4c805ba52335b903aeb6bd2188219688c97fcd09c49c469431028c140924451615cba18e4bf97802&source=gmail&ust=1597142075947000&usg=AFQjCNGRf_aOx8Tyaz1OfKGT41_YaYZ4Pg"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink1"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink1"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink1"
+                                            );
+                                          }}
                                         >
                                           <strong>
                                             <span
@@ -116,6 +134,24 @@ class Mail28 extends Component {
                                           href="https://view.mail.onedrive.com/?qs=57d5a224bf281c0da7aaf21de6277d33b5bff57a511dd2c869a234adf11a12acaa2b4a7c3670d57b83aa3fe21fed292257de37adfa1359d6644837f12f18ca48014dded8bd609375aaa4ced2d844f9b5"
                                           target="_blank"
                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://view.mail.onedrive.com/?qs%3D57d5a224bf281c0da7aaf21de6277d33b5bff57a511dd2c869a234adf11a12acaa2b4a7c3670d57b83aa3fe21fed292257de37adfa1359d6644837f12f18ca48014dded8bd609375aaa4ced2d844f9b5&source=gmail&ust=1597142075947000&usg=AFQjCNGhMQ2I1UExF0pcZlbCFUvlrV4mkg"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink2"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink2"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink2"
+                                            );
+                                          }}
                                         >
                                           <strong>
                                             <span
@@ -266,12 +302,48 @@ class Mail28 extends Component {
                                                     href="https://click.mail.onedrive.com/?qs=ef32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46"
                                                     target="_blank"
                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46&source=gmail&ust=1597142075947000&usg=AFQjCNHoLzT6VdHY-eU6cwTqr2YV8KTWZg"
+                                                    onMouseEnter={() => {
+                                                      this.props.insideEmailInfo(
+                                                        true,
+                                                        "InLink3"
+                                                      );
+                                                    }}
+                                                    onMouseLeave={() => {
+                                                      this.props.insideEmailInfo(
+                                                        false,
+                                                        "InLink3"
+                                                      );
+                                                    }}
+                                                    onMouseOver={() => {
+                                                      this.props.insideEmailInfo(
+                                                        true,
+                                                        "InLink3"
+                                                      );
+                                                    }}
                                                   />
                                                 </span>
                                                 <a
                                                   href="https://click.mail.onedrive.com/?qs=ef32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46"
                                                   target="_blank"
                                                   data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46&source=gmail&ust=1597142075947000&usg=AFQjCNHoLzT6VdHY-eU6cwTqr2YV8KTWZg"
+                                                  onMouseEnter={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink4"
+                                                    );
+                                                  }}
+                                                  onMouseLeave={() => {
+                                                    this.props.insideEmailInfo(
+                                                      false,
+                                                      "InLink4"
+                                                    );
+                                                  }}
+                                                  onMouseOver={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink4"
+                                                    );
+                                                  }}
                                                 >
                                                   <img
                                                     style={{
@@ -291,6 +363,24 @@ class Mail28 extends Component {
                                                     href="https://click.mail.onedrive.com/?qs=ef32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46"
                                                     target="_blank"
                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb1752c7793b0eebab865ec8bf9363c719a117f0dc5f2ad314eb3075c5bea777180808ab850e40dfd726f4a77c58c744397d6aa4f0678bdef2e46&source=gmail&ust=1597142075947000&usg=AFQjCNHoLzT6VdHY-eU6cwTqr2YV8KTWZg"
+                                                    onMouseEnter={() => {
+                                                      this.props.insideEmailInfo(
+                                                        true,
+                                                        "InLink5"
+                                                      );
+                                                    }}
+                                                    onMouseLeave={() => {
+                                                      this.props.insideEmailInfo(
+                                                        false,
+                                                        "InLink5"
+                                                      );
+                                                    }}
+                                                    onMouseOver={() => {
+                                                      this.props.insideEmailInfo(
+                                                        true,
+                                                        "InLink5"
+                                                      );
+                                                    }}
                                                   />
                                                 </span>
                                                 <span
@@ -488,6 +578,24 @@ class Mail28 extends Component {
                                             <a
                                               href={`mailto:${this.props.emailAdress}`}
                                               target="_blank"
+                                              onMouseEnter={() => {
+                                                this.props.insideEmailInfo(
+                                                  true,
+                                                  "InLink6"
+                                                );
+                                              }}
+                                              onMouseLeave={() => {
+                                                this.props.insideEmailInfo(
+                                                  false,
+                                                  "InLink6"
+                                                );
+                                              }}
+                                              onMouseOver={() => {
+                                                this.props.insideEmailInfo(
+                                                  true,
+                                                  "InLink6"
+                                                );
+                                              }}
                                             >
                                               {this.props.emailAdress}
                                             </a>
@@ -509,6 +617,24 @@ class Mail28 extends Component {
                                           href="https://click.mail.onedrive.com/?qs=ef32d819733cb175ac96928863da9fbb5ae46f9dc75697ffefdd2b3b384030df55edb0a3a1f5e67f441fb5469121ef8893cf426af628df4694a6192bdd662bff"
                                           target="_blank"
                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb175ac96928863da9fbb5ae46f9dc75697ffefdd2b3b384030df55edb0a3a1f5e67f441fb5469121ef8893cf426af628df4694a6192bdd662bff&source=gmail&ust=1597142075947000&usg=AFQjCNHawqr9mFKfyYWp8QNWXI9Uz_oNWw"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink7"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink7"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink7"
+                                            );
+                                          }}
                                         >
                                           <strong>
                                             <span
@@ -531,6 +657,24 @@ class Mail28 extends Component {
                                           href="https://click.mail.onedrive.com/?qs=ef32d819733cb175bc6dfff14cc5efb73bb33ab849ff3f588604b9bc28cf8f957e344aedfa47ca56c1427c081243f0e9cf0ba71898daa559f22ef4c2c0c7c892"
                                           target="_blank"
                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb175bc6dfff14cc5efb73bb33ab849ff3f588604b9bc28cf8f957e344aedfa47ca56c1427c081243f0e9cf0ba71898daa559f22ef4c2c0c7c892&source=gmail&ust=1597142075947000&usg=AFQjCNHCuFbMwR8PUqcsZJYM7v24G1sJeg"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink8"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink8"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink8"
+                                            );
+                                          }}
                                         >
                                           <strong>
                                             <span
@@ -760,6 +904,24 @@ class Mail28 extends Component {
                                                                                       href="https://click.mail.onedrive.com/?qs=ef32d819733cb175706d4ad7d9a9aa915f249154d9dafe234e278738da0d87cc65ba309deb8fbd10f3992aef1286e2a473905e7f7da181b1bec1a5335de26ebf"
                                                                                       target="_blank"
                                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb175706d4ad7d9a9aa915f249154d9dafe234e278738da0d87cc65ba309deb8fbd10f3992aef1286e2a473905e7f7da181b1bec1a5335de26ebf&source=gmail&ust=1597142075948000&usg=AFQjCNGScwf4BO53eAa93IhyVTHGSRyDTg"
+                                                                                      onMouseEnter={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink9"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseLeave={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          false,
+                                                                                          "InLink9"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseOver={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink9"
+                                                                                        );
+                                                                                      }}
                                                                                     >
                                                                                       <strong>
                                                                                         <span
@@ -1084,6 +1246,24 @@ class Mail28 extends Component {
                                                   href="https://click.mail.onedrive.com/?qs=ef32d819733cb175a9898645b8b8c35387bc317c946f6b21c0625d856303186dbaac42b68a1b532b7c8cab2939daed5510cddfdefbee414d4bdcb5fb8119d023"
                                                   target="_blank"
                                                   data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb175a9898645b8b8c35387bc317c946f6b21c0625d856303186dbaac42b68a1b532b7c8cab2939daed5510cddfdefbee414d4bdcb5fb8119d023&source=gmail&ust=1597142075948000&usg=AFQjCNFDc7BuG2yrl4NTHzHXF0Aiy5SB0Q"
+                                                  onMouseEnter={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink10"
+                                                    );
+                                                  }}
+                                                  onMouseLeave={() => {
+                                                    this.props.insideEmailInfo(
+                                                      false,
+                                                      "InLink10"
+                                                    );
+                                                  }}
+                                                  onMouseOver={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink10"
+                                                    );
+                                                  }}
                                                 >
                                                   <span
                                                     style={{
@@ -1134,6 +1314,24 @@ class Mail28 extends Component {
                                                   href="https://click.mail.onedrive.com/?qs=ef32d819733cb17536750294967abb142cfbdcacd3104eed00bb32cec475b15d08410a4e381b81917e1add7d767052629a67a81738b2f8d94623bade8125d4c6"
                                                   target="_blank"
                                                   data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb17536750294967abb142cfbdcacd3104eed00bb32cec475b15d08410a4e381b81917e1add7d767052629a67a81738b2f8d94623bade8125d4c6&source=gmail&ust=1597142075948000&usg=AFQjCNFRIQrDKYbd76ZsaJowZiljxRKGOg"
+                                                  onMouseEnter={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink11"
+                                                    );
+                                                  }}
+                                                  onMouseLeave={() => {
+                                                    this.props.insideEmailInfo(
+                                                      false,
+                                                      "InLink11"
+                                                    );
+                                                  }}
+                                                  onMouseOver={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "InLink11"
+                                                    );
+                                                  }}
                                                 >
                                                   <span
                                                     style={{
@@ -1278,6 +1476,24 @@ class Mail28 extends Component {
                                           href="https://click.mail.onedrive.com/?qs=ef32d819733cb1750a5c77aee4681778672a6c4d4cd1d3a8bd1d2ccf723f3c8e2f5cd7dc0e994eecd002b535d499fcac9ab3e40515d17ef0a916bf27b0e02ba0"
                                           target="_blank"
                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3Def32d819733cb1750a5c77aee4681778672a6c4d4cd1d3a8bd1d2ccf723f3c8e2f5cd7dc0e994eecd002b535d499fcac9ab3e40515d17ef0a916bf27b0e02ba0&source=gmail&ust=1597142075948000&usg=AFQjCNHyU6NBIYsrKBcNGjkLZO0nK_xEHg"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink12"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink12"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink12"
+                                            );
+                                          }}
                                         >
                                           <strong>
                                             <span
@@ -1317,11 +1533,51 @@ class Mail28 extends Component {
                                         }}
                                       >
                                         Microsoft Corporation, One{" "}
-                                        <a href="https://www.google.com/maps/search/Microsoft+Way,+Redmond,+WA+98052+USA?entry=gmail&source=g">
+                                        <a
+                                          href="https://www.google.com/maps/search/Microsoft+Way,+Redmond,+WA+98052+USA?entry=gmail&source=g"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink13"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink13"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink13"
+                                            );
+                                          }}
+                                        >
                                           Microsoft Way, Redmond, WA 98052
                                         </a>
                                         &nbsp;
-                                        <a href="https://www.google.com/maps/search/Microsoft+Way,+Redmond,+WA+98052+USA?entry=gmail&source=g">
+                                        <a
+                                          href="https://www.google.com/maps/search/Microsoft+Way,+Redmond,+WA+98052+USA?entry=gmail&source=g"
+                                          onMouseEnter={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink14"
+                                            );
+                                          }}
+                                          onMouseLeave={() => {
+                                            this.props.insideEmailInfo(
+                                              false,
+                                              "InLink14"
+                                            );
+                                          }}
+                                          onMouseOver={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "InLink14"
+                                            );
+                                          }}
+                                        >
                                           USA
                                         </a>
                                         <u />

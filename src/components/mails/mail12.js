@@ -5,7 +5,7 @@ class Mail12 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <h2 class="hx">Ungewöhnliche IP -Aktivität</h2>
         <p>
           Wir haben festgestellt Jemand hat gerade versucht, Adresse anmelden in
@@ -22,7 +22,20 @@ class Mail12 extends Component {
           <br />
           &nbsp;
           <br />
-          <a href="www.google.com" class="internal-link" target="_blank">
+          <a
+            href="www.google.com"
+            class="internal-link"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             Jetzt Prüfen
           </a>
           <br />

@@ -8,7 +8,7 @@ import "./Startpage.css";
 const StartPage = (props) => {
   return (
     <div className="StartPage">
-      <img src={Logos} alt="Logos" width="700" height="100"></img>
+      <img src={Logos} alt="Logos" width="900" height="100"></img>
       <hr></hr>
       <h2>Lets get started!</h2>
       <p>

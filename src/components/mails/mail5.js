@@ -5,7 +5,7 @@ class Mail5 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         {" "}
         <body>
           <p>Sehr geehrte Kunde,</p>

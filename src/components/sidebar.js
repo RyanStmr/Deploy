@@ -237,7 +237,6 @@ export default function VerticalTabs(props) {
                   onMoveEmailForward={forwardSelectedTab}
                   onMoveEmailBackward={backSelectedTab}
                   insideEmailInfo={props.insideEmailInfo}
-                  inEmailText={props.inEmailText}
                 ></EmailWindow>
               </div>
             </TabPanel>

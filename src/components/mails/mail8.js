@@ -5,7 +5,7 @@ class Mail8 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <p>
           <img
             alt="Netflix-Kindersicherungshandbuch | Internetangelegenheiten"
@@ -28,7 +28,19 @@ class Mail8 extends Component {
           simply restat your membership to enjoy all the best TV shows &amp;
           movies without interruption.
         </p>
-        <a href="https://www.google.com" target="_blank">
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          onMouseEnter={() => {
+            this.props.insideEmailInfo(true, "InLink1");
+          }}
+          onMouseLeave={() => {
+            this.props.insideEmailInfo(false, "InLink1");
+          }}
+          onMouseOver={() => {
+            this.props.insideEmailInfo(true, "InLink1");
+          }}
+        >
           RESTART MEMBERSHIP
         </a>{" "}
         <p>

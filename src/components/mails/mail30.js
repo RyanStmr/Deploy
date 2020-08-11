@@ -5,7 +5,7 @@ class Mail30 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <table width="100%" cellSpacing={0} cellPadding={12} border={0}>
           <tbody>
             <tr>
@@ -68,6 +68,15 @@ class Mail30 extends Component {
                                 }}
                                 href="mailto:*******@outlook.de"
                                 target="_blank"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink1");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
                               >
                                 *******@outlook.de
                               </a>
@@ -106,6 +115,15 @@ class Mail30 extends Component {
                               <a
                                 href={`mailto:${this.props.emailAdress}`}
                                 target="_blank"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink2");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink2");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink2");
+                                }}
                               >
                                 {this.props.emailAdress}
                               </a>
@@ -210,6 +228,15 @@ class Mail30 extends Component {
                                 href="https://account.live.com/pw"
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/pw&source=gmail&ust=1597143056543000&usg=AFQjCNFVggl1wcNCZQUhqESx74pcNVK4Cw"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink3");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink3");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink3");
+                                }}
                               >
                                 1. Setzen Sie Ihr Kennwort zurück.
                               </a>
@@ -237,6 +264,15 @@ class Mail30 extends Component {
                                 href="https://account.live.com/Proofs/Manage"
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/Proofs/Manage&source=gmail&ust=1597143056543000&usg=AFQjCNGSEXWjsolfB6-BLhY_0Rrio8yJTg"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink4");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink4");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink4");
+                                }}
                               >
                                 2. Prüfen Sie Ihre Sicherheitsinformationen.
                               </a>
@@ -264,6 +300,15 @@ class Mail30 extends Component {
                                 href="http://go.microsoft.com/fwlink/?LinkID=324395"
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=http://go.microsoft.com/fwlink/?LinkID%3D324395&source=gmail&ust=1597143056543000&usg=AFQjCNHxtHU_EDmPqhMwFAn-ELpUR_m-0w"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink5");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink5");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink5");
+                                }}
                               >
                                 3. Erfahren Sie, wie Sie Ihr Konto besser
                                 absichern.
@@ -294,6 +339,15 @@ class Mail30 extends Component {
                                 href="https://account.live.com/SecurityNotifications/Update"
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/SecurityNotifications/Update&source=gmail&ust=1597143056543000&usg=AFQjCNGm0-YE6UQU9d49M8k2Xg1PHY3J_Q"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink6");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink6");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink6");
+                                }}
                               >
                                 abbestellen
                               </a>{" "}

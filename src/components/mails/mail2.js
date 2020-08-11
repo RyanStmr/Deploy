@@ -5,7 +5,7 @@ class Mail2 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <h1
           style={{
             boxSizing: "border-box",
@@ -40,7 +40,19 @@ class Mail2 extends Component {
 
         <p>
           Ready to check ? Click{" "}
-          <a href="https://www.google.com" target="_blank">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             here
           </a>{" "}
           to get back your account.

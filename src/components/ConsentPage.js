@@ -42,7 +42,7 @@ const ConsentPage = (props) => {
 
   return (
     <div className="StartPage">
-      <img src={Logos} alt="Logos" width="700" height="100"></img>
+      <img src={Logos} alt="Logos" width="900" height="100"></img>
       <hr></hr>
       <h1>The study</h1>
       <br></br>

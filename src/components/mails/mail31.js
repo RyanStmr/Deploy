@@ -5,7 +5,7 @@ class Mail31 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <table width="100%" cellSpacing={0} cellPadding={12} border={0}>
           <tbody>
             <tr>
@@ -24,6 +24,15 @@ class Mail31 extends Component {
                         <a
                           href={`mailto:${this.props.emailAdress}`}
                           target="_blank"
+                          onMouseEnter={() => {
+                            this.props.insideEmailInfo(true, "InLink1");
+                          }}
+                          onMouseLeave={() => {
+                            this.props.insideEmailInfo(false, "InLink1");
+                          }}
+                          onMouseOver={() => {
+                            this.props.insideEmailInfo(true, "InLink1");
+                          }}
                         >
                           {this.props.emailAdress}
                         </a>
@@ -65,6 +74,15 @@ class Mail31 extends Component {
                             href="https://account.live.com/acsr"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/acsr&source=gmail&ust=1597143654363000&usg=AFQjCNHW1WsSJgZ-kQLg756fEGaahCcmpw"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink2");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink2");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink2");
+                            }}
                           >
                             <span style={{ color: "#0000ff" }}>
                               submit a new form
@@ -107,6 +125,15 @@ class Mail31 extends Component {
                           href="https://account.live.com/acsr"
                           target="_blank"
                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/acsr&source=gmail&ust=1597143654363000&usg=AFQjCNHW1WsSJgZ-kQLg756fEGaahCcmpw"
+                          onMouseEnter={() => {
+                            this.props.insideEmailInfo(true, "InLink3");
+                          }}
+                          onMouseLeave={() => {
+                            this.props.insideEmailInfo(false, "InLink3");
+                          }}
+                          onMouseOver={() => {
+                            this.props.insideEmailInfo(true, "InLink3");
+                          }}
                         >
                           <span style={{ color: "#4f81bd" }}>
                             Submit a new form
@@ -202,6 +229,15 @@ class Mail31 extends Component {
                             href="http://hotmail.com"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://hotmail.com&source=gmail&ust=1597143654363000&usg=AFQjCNFzYLDfVAb0cuhEWAdKeSsQ2SN-Yw"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink4");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink4");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink4");
+                            }}
                           >
                             hotmail.com
                           </a>
@@ -210,6 +246,15 @@ class Mail31 extends Component {
                             href="http://live.com"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://live.com&source=gmail&ust=1597143654363000&usg=AFQjCNFSBdmhc0wqPlzI_pnfmZyN-WHYUA"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink5");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink5");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink5");
+                            }}
                           >
                             live.com
                           </a>
@@ -218,6 +263,15 @@ class Mail31 extends Component {
                             href="http://outlook.com"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://outlook.com&source=gmail&ust=1597143654363000&usg=AFQjCNHt9VoqMJzoH8q6f2jUCniMXQ7x5Q"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink6");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink6");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink6");
+                            }}
                           >
                             outlook.com
                           </a>
@@ -228,6 +282,15 @@ class Mail31 extends Component {
                             href="http://hotmail.co.se"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://hotmail.co.se&source=gmail&ust=1597143654363000&usg=AFQjCNExJg2ceBhhYt96KFCUoGnzyeoj-w"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink7");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink7");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink7");
+                            }}
                           >
                             hotmail.co.se
                           </a>
@@ -236,6 +299,15 @@ class Mail31 extends Component {
                             href="http://hotmail.com"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://hotmail.com&source=gmail&ust=1597143654363000&usg=AFQjCNFzYLDfVAb0cuhEWAdKeSsQ2SN-Yw"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink8");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink8");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink8");
+                            }}
                           >
                             hotmail.com
                           </a>
@@ -270,6 +342,15 @@ class Mail31 extends Component {
                             href="https://account.live.com/acsr"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://account.live.com/acsr&source=gmail&ust=1597143654363000&usg=AFQjCNHW1WsSJgZ-kQLg756fEGaahCcmpw"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink9");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink9");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink9");
+                            }}
                           >
                             <span style={{ color: "#4f81bd" }}>
                               Submit a new form
@@ -345,6 +426,15 @@ class Mail31 extends Component {
                           href="http://privacy.microsoft.com/"
                           target="_blank"
                           data-saferedirecturl="https://www.google.com/url?hl=de&q=http://privacy.microsoft.com/&source=gmail&ust=1597143654363000&usg=AFQjCNFpOQ1i5PswexWwLgfevRXDfPad1g"
+                          onMouseEnter={() => {
+                            this.props.insideEmailInfo(true, "InLink10");
+                          }}
+                          onMouseLeave={() => {
+                            this.props.insideEmailInfo(false, "InLink10");
+                          }}
+                          onMouseOver={() => {
+                            this.props.insideEmailInfo(true, "InLink10");
+                          }}
                         >
                           <span style={{ color: "#0000ff" }}>
                             Privacy Statement

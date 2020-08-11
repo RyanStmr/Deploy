@@ -5,7 +5,7 @@ class Mail14 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <p>
           <img
             alt=""
@@ -26,7 +26,19 @@ class Mail14 extends Component {
         <p>You have a new document/s shared to you via dropbox sharing.</p>
 
         <p>
-          <a href="https://www.google.com" target="_blank">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            onMouseEnter={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+            onMouseLeave={() => {
+              this.props.insideEmailInfo(false, "InLink1");
+            }}
+            onMouseOver={() => {
+              this.props.insideEmailInfo(true, "InLink1");
+            }}
+          >
             VIEW HERE
           </a>
         </p>

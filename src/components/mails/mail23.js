@@ -5,7 +5,7 @@ class Mail23 extends Component {
   state = {};
   render() {
     return (
-      <div onMouseOver={this.props.inEmailText}>
+      <div>
         <div align="center">
           <img
             src="https://ci3.googleusercontent.com/proxy/I1oMqlvINaLAuw9jlMoIr9OCKJADDkojgaJL2eWqoHRq1AcvwYGz5gLVmSlRJGuCulfAZRWFfMRl8hwLqxfWPPu5ziVm9nDc_wRlA1UptZfJxM5zgmLGiFNksz0Clhf7VcRjFJcKLqhw5qu1QITT8ajJ933IMCfnXcCyVGp8tIbu4FrRLVIlMKipudlrlH1OwNdunY9emh9aA97psuvSvNymdtQ1lE4p9RcFx04CcJqp1WHbXhEWRppQJAy3XAMZjKoU640pPEfHUO2NT7fwSIvb1Y8LHJNquYTQVeT9D3pCQdVObib54xdKngT7hQbZRuA1JId1JNzP3omyfA_hVldZGIyUaTOuPzOOBC-OW_9fJffqXvEkgjVFV91ZSf1OyHsneIMxVHIEHaMinrBX5YGh1ZZHGDrlRA=s0-d-e1-ft#https://www.amazon.com/gp/r.html?C=1BDNQAME26BY1&K=2PT0BS5R312SN&M=urn:rtn:msg:2020051318500653a958e847aa4cbdbe2abd768880p0na&R=1XE8WM3PBYP6I&T=O&U=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif&H=1CPDYBUIDN18OCTKWSDCEXBJDISA&ref_=pe_2429110_469155710_opens"
@@ -155,6 +155,15 @@ class Mail23 extends Component {
                             href="https://www.amazon.com/gp/f.html?C=1BDNQAME26BY1&K=2PT0BS5R312SN&M=urn:rtn:msg:2020051318500653a958e847aa4cbdbe2abd768880p0na&R=1TERCFUVH6IDU&T=C&U=https%3A%2F%2Fwww.amazon.com%2Fa%2Fc%2Fr%3Fk%3Dfb657f8983ed49fe8bbbcc1858e6dc79-ecbc%26ref_%3Dpe_2429110_469155710&H=SDW7FLTAGKNLVTD5BUN6PGZMXPQA&ref_=pe_2429110_469155710"
                             target="_blank"
                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.amazon.com/gp/f.html?C%3D1BDNQAME26BY1%26K%3D2PT0BS5R312SN%26M%3Durn:rtn:msg:2020051318500653a958e847aa4cbdbe2abd768880p0na%26R%3D1TERCFUVH6IDU%26T%3DC%26U%3Dhttps%253A%252F%252Fwww.amazon.com%252Fa%252Fc%252Fr%253Fk%253Dfb657f8983ed49fe8bbbcc1858e6dc79-ecbc%2526ref_%253Dpe_2429110_469155710%26H%3DSDW7FLTAGKNLVTD5BUN6PGZMXPQA%26ref_%3Dpe_2429110_469155710&source=gmail&ust=1596714355554000&usg=AFQjCNEXmT4z9JpXGYFABKKjDv9D6IdYnA"
+                            onMouseEnter={() => {
+                              this.props.insideEmailInfo(true, "InLink1");
+                            }}
+                            onMouseLeave={() => {
+                              this.props.insideEmailInfo(false, "InLink1");
+                            }}
+                            onMouseOver={() => {
+                              this.props.insideEmailInfo(true, "InLink1");
+                            }}
                           >
                             <div
                               id="m_-4566908254252809703detailsContainer"

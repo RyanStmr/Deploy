@@ -116,6 +116,7 @@ class AccuracyTest extends Component {
           this.positionXNew,
           this.positionYNew
         );
+        this.counter++;
       case 8:
         this.positionXNew = this.state.screenWidth - 100;
         this.positionYNew = this.state.screenHeight - 100;

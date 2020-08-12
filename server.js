@@ -43,6 +43,8 @@ app.get("/connect", (req, res) => {
     (error, results) => {
       if (error) {
         console.log(error);
+      } else {
+        console.log("created table for user" + newUser.userID);
       }
     }
   );
@@ -107,8 +109,8 @@ app.post("/data", (req, res) => {
   let userData = req.body;
   console.log(`receiving data from ${userData[0].userId} `);
   userData.forEach((element) => {
-    if (element.userId === 0) return;
-
+    if (element.userId === 0 || element.userId === undefined) return;
+    console.log(element.userId);
     let jsonObject = JSON.stringify(element);
 
     pool.query(

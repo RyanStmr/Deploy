@@ -71,12 +71,12 @@ const ConsentPage = (props) => {
       <hr></hr>
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an
-        important Start-Up. Your Job is to go through your bosses custom
-        email-client as your first task in the morning.
+        important Start-Up called Global-Connect. Your Job is to go through your
+        and your bosses custom email-client as your first task in the morning.
       </p>
       <p>
         Your boss is off on holidays for the week, after having many meetings
-        with a company called "IStored" last week.{" "}
+        with a company called "Imotion" last week.{" "}
       </p>
       <p>
         Go through <strong>all the emails </strong>and{" "}

@@ -30,6 +30,8 @@ import Mail29 from "./mails/mail29";
 import Mail30 from "./mails/mail30";
 import Mail31 from "./mails/mail31";
 import Mail32 from "./mails/mail32";
+import Mail33 from "./mails/mail33";
+import Mail34 from "./mails/mail34";
 
 const Inbox = [
   {
@@ -158,6 +160,14 @@ const Inbox = [
   },
   {
     mail: Mail32,
+    visible: true,
+  },
+  {
+    mail: Mail33,
+    visible: true,
+  },
+  {
+    mail: Mail34,
     visible: true,
   },
 ];

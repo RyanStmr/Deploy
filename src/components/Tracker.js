@@ -50,6 +50,7 @@ class Tracker extends Component {
     this.collectionInterval = undefined;
     this.sendingInterval = undefined;
     this.accuracyCollector = [];
+    this.accuracyIntervall = undefined;
   }
 
   componentDidMount() {
@@ -303,9 +304,9 @@ class Tracker extends Component {
   };
 
   collectAccuracyData = (circlePos, width, height) => {
-    const timer = setTimeout(
+    this.accuracyIntervall = setInterval(
       this.fillAccuracyCollector,
-      1500,
+      100,
       circlePos,
       width,
       height
@@ -315,10 +316,11 @@ class Tracker extends Component {
   fillAccuracyCollector = (circlePos, width, height) => {
     this.setGazeData();
     let accuracyData = [
+      this.state.userId,
       circlePos,
       this.state.gazeX,
       this.state.gazeY,
-      this.state.userId,
+      this.state.validationGaze,
       width,
       height,
     ];
@@ -328,6 +330,7 @@ class Tracker extends Component {
   stopAccuracyTest = () => {
     this.sendAccurcyInfo();
     window.GazeCloudAPI.StopEyeTracking();
+    clearInterval(this.accuracyIntervall);
   };
 
   handleInsideEmailInfo = (InOrOutput, whichPart) => {

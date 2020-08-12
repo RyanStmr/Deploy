@@ -27,13 +27,13 @@ class AccuracyTest extends Component {
   };
 
   startAccuracyTest = () => {
-    this.setState({ intro: false });
     this.accuracyInterval = setInterval(this.drawNewCircle, 2500);
   };
 
   drawNewCircle = () => {
     switch (this.counter) {
       case 0:
+        this.setState({ intro: false });
         this.props.collectAccuracyData(
           this.counter,
           this.state.screenWidth / 2,
@@ -53,6 +53,17 @@ class AccuracyTest extends Component {
         this.counter++;
         break;
       case 2:
+        this.positionXNew = 100;
+        this.positionYNew = this.state.screenWidth / 2;
+        this.changeCirclePosition(this.positionXNew, this.positionYNew);
+        this.props.collectAccuracyData(
+          this.counter,
+          this.positionXNew,
+          this.positionYNew
+        );
+        this.counter++;
+        break;
+      case 3:
         this.positionXNew = this.state.screenWidth - 100;
         this.positionYNew = 100;
         this.changeCirclePosition(this.positionXNew, this.positionYNew);
@@ -63,7 +74,29 @@ class AccuracyTest extends Component {
         );
         this.counter++;
         break;
-      case 3:
+      case 4:
+        this.positionXNew = 100;
+        this.positionYNew = this.state.screenHeight / 2;
+        this.changeCirclePosition(this.positionXNew, this.positionYNew);
+        this.props.collectAccuracyData(
+          this.counter,
+          this.positionXNew,
+          this.positionYNew
+        );
+        this.counter++;
+        break;
+      case 5:
+        this.positionXNew = this.state.screenWidth - 100;
+        this.positionYNew = this.state.screenHeight / 2;
+        this.changeCirclePosition(this.positionXNew, this.positionYNew);
+        this.props.collectAccuracyData(
+          this.counter,
+          this.positionXNew,
+          this.positionYNew
+        );
+        this.counter++;
+        break;
+      case 6:
         this.positionXNew = 100;
         this.positionYNew = this.state.screenHeight - 100;
         this.changeCirclePosition(this.positionXNew, this.positionYNew);
@@ -74,7 +107,16 @@ class AccuracyTest extends Component {
         );
         this.counter++;
         break;
-      case 4:
+      case 7:
+        this.positionXNew = this.state.screenWidth / 2;
+        this.positionYNew = this.state.screenHeight - 100;
+        this.changeCirclePosition(this.positionXNew, this.positionYNew);
+        this.props.collectAccuracyData(
+          this.counter,
+          this.positionXNew,
+          this.positionYNew
+        );
+      case 8:
         this.positionXNew = this.state.screenWidth - 100;
         this.positionYNew = this.state.screenHeight - 100;
         this.changeCirclePosition(this.positionXNew, this.positionYNew);
@@ -116,7 +158,11 @@ class AccuracyTest extends Component {
             ctx.fillStyle = "white";
             ctx.font = "30px Arial";
 
-            ctx.fillText("Please follow the red circle with your eyes", 10, 50);
+            ctx.fillText(
+              "Please follow the red circle with your eyes",
+              this.state.screenWidth / 2,
+              this.state.screenHeight / 2
+            );
           }}
         />
       );

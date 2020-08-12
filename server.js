@@ -148,7 +148,7 @@ app.post("/accuracyInfo", (req, res) => {
   let jsonObjectAcc = JSON.stringify(userAccData);
 
   pool.query(
-    `INSERT INTO USER${userAccData[0][3]} (USERACCINFO) VALUES ('${jsonObjectAcc}')`,
+    `INSERT INTO USER${userAccData[0][0]} (USERACCINFO) VALUES ('${jsonObjectAcc}')`,
     (error, results) => {
       if (error) {
         console.log(`error when inserting surveyData ${error}`);

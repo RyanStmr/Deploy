@@ -114,7 +114,7 @@ app.post("/data", (req, res) => {
     let jsonObject = JSON.stringify(element);
 
     pool.query(
-      `INSERT INTO USER${element.userID} (USERINFO) VALUES ('${jsonObject}')`,
+      `INSERT INTO USER${element.userId} (USERINFO) VALUES ('${jsonObject}')`,
       (error, results) => {
         if (error) {
           throw error;

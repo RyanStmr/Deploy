@@ -51,6 +51,7 @@ class Tracker extends Component {
     this.sendingInterval = undefined;
     this.accuracyCollector = [];
     this.accuracyIntervall = undefined;
+    this.collectingAccuracy = false;
   }
 
   componentDidMount() {
@@ -304,13 +305,19 @@ class Tracker extends Component {
   };
 
   collectAccuracyData = (circlePos, width, height) => {
-    this.accuracyIntervall = setInterval(
-      this.fillAccuracyCollector,
-      100,
-      circlePos,
-      width,
-      height
-    );
+    if (this.collectingAccuracy === false) {
+      this.accuracyIntervall = setInterval(
+        this.fillAccuracyCollector,
+        100,
+        circlePos,
+        width,
+        height
+      );
+    } else {
+      clearInterval(this.accuracyIntervall);
+      this.collectingAccuracy = false;
+      this.collectAccuracyData(circlePos, width, height);
+    }
   };
 
   fillAccuracyCollector = (circlePos, width, height) => {

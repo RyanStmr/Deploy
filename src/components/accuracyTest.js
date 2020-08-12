@@ -53,8 +53,8 @@ class AccuracyTest extends Component {
         this.counter++;
         break;
       case 2:
-        this.positionXNew = 100;
-        this.positionYNew = this.state.screenWidth / 2;
+        this.positionXNew = this.state.screenWidth / 2;
+        this.positionYNew = 100;
         this.changeCirclePosition(this.positionXNew, this.positionYNew);
         this.props.collectAccuracyData(
           this.counter,
@@ -160,7 +160,7 @@ class AccuracyTest extends Component {
 
             ctx.fillText(
               "Please follow the red circle with your eyes",
-              this.state.screenWidth / 2,
+              this.state.screenWidth / 2 - 300,
               this.state.screenHeight / 2
             );
           }}

@@ -72,23 +72,29 @@ const ConsentPage = (props) => {
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an
         important Start-Up. Your Job is to go through your bosses custom
-        email-client as your first task in the morning. Go through{" "}
-        <strong>all the emails </strong>and{" "}
+        email-client as your first task in the morning.
+      </p>
+      <p>
+        Your boss is off on holidays for the week, after having many meetings
+        with a company called "IStored" last week.{" "}
+      </p>
+      <p>
+        Go through <strong>all the emails </strong>and{" "}
         <strong>select the right inbox for each email</strong>. There are three
         different inboxes to select from:
-        <ol style={{ listStyleType: "clear" }}>
-          <br></br>
-          <li>
-            <strong>Important:</strong>
-          </li>
-          <li>
-            <strong>Bin:</strong>
-          </li>
-          <li>
-            <strong>Spam:</strong>
-          </li>
-        </ol>
       </p>
+      <ol style={{ listStyleType: "clear" }}>
+        <br></br>
+        <li>
+          <strong>Important:</strong>
+        </li>
+        <li>
+          <strong>Bin:</strong>
+        </li>
+        <li>
+          <strong>Spam:</strong>
+        </li>
+      </ol>
       <br></br>
       <p>
         You can move the email to an inbox by clicking "Move to Important",

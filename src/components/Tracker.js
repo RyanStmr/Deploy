@@ -313,6 +313,7 @@ class Tracker extends Component {
         width,
         height
       );
+      this.collectingAccuracy = true;
     } else {
       clearInterval(this.accuracyIntervall);
       this.collectingAccuracy = false;

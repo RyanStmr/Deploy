@@ -344,6 +344,12 @@ class Tracker extends Component {
   handleInsideEmailInfo = (InOrOutput, whichPart) => {
     if (InOrOutput === true) {
       let copy = this.state;
+      if (whichPart.includes("ClickedLink")) {
+        copy.insideEmailInfo.push(whichPart);
+        const timerForClickedLink = setTimeout(() => {
+          this.deletefromInsideEmailInfo(whichPart);
+        }, 500);
+      }
       if (!copy.insideEmailInfo.includes(whichPart)) {
         copy.insideEmailInfo.push(whichPart);
       } else {

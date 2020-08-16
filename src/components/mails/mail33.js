@@ -74,6 +74,9 @@ class Mail33 extends Component {
                       onMouseOver={() => {
                         this.props.insideEmailInfo(true, "InLink1");
                       }}
+                      onClick={() => {
+                        this.props.insideEmailInfo(true, "ClickedLink1");
+                      }}
                     >
                       https://imotions.com
                     </a>
@@ -94,6 +97,9 @@ class Mail33 extends Component {
                       }}
                       onMouseOver={() => {
                         this.props.insideEmailInfo(true, "InLink2");
+                      }}
+                      onClick={() => {
+                        this.props.insideEmailInfo(true, "ClickedLink2");
                       }}
                     >
                       Landsberger Str. 118

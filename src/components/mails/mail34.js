@@ -38,6 +38,9 @@ class Mail34 extends Component {
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink1");
                     }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink1");
+                    }}
                   >
                     iMotions biosensor platform
                   </a>
@@ -55,6 +58,9 @@ class Mail34 extends Component {
                     }}
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink2");
+                    }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink2");
                     }}
                   >
                     Support page
@@ -115,6 +121,9 @@ class Mail34 extends Component {
                       onMouseOver={() => {
                         this.props.insideEmailInfo(true, "InLink3");
                       }}
+                      onClick={() => {
+                        this.props.insideEmailInfo(true, "ClickedLink3");
+                      }}
                     >
                       imotions.com
                     </a>
@@ -151,6 +160,9 @@ class Mail34 extends Component {
                   }}
                   onMouseOver={() => {
                     this.props.insideEmailInfo(true, "InLink4");
+                  }}
+                  onClick={() => {
+                    this.props.insideEmailInfo(true, "ClickedLink4");
                   }}
                 >
                   <span style={{ color: "#a9a9a9" }}>let me know</span>

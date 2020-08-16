@@ -81,6 +81,9 @@ class Mail24 extends Component {
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink1");
                     }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink1");
+                    }}
                   >
                     Anmelden, um das Konto weiterzuführen
                     <br />
@@ -108,6 +111,9 @@ class Mail24 extends Component {
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink2");
                     }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink2");
+                    }}
                   >
                     https://www.dropbox.com/login
                   </a>{" "}
@@ -126,6 +132,9 @@ class Mail24 extends Component {
                     }}
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink3");
+                    }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink3");
                     }}
                   >
                     {this.props.emailAdress}
@@ -173,6 +182,9 @@ class Mail24 extends Component {
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink4");
                     }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink4");
+                    }}
                   >
                     Hilfeartikel
                   </a>{" "}
@@ -194,6 +206,9 @@ class Mail24 extends Component {
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink5");
                     }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink5");
+                    }}
                   >
                     Hilfecenter
                   </a>{" "}
@@ -209,6 +224,9 @@ class Mail24 extends Component {
                     }}
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink6");
+                    }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink6");
                     }}
                   >
                     inactives-help@dropbox.com
@@ -240,6 +258,9 @@ class Mail24 extends Component {
                     }}
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink7");
+                    }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink7");
                     }}
                   >
                     {" "}

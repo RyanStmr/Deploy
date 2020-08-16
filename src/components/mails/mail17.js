@@ -79,6 +79,12 @@ class Mail17 extends Component {
                                               "InLink1"
                                             );
                                           }}
+                                          onClick={() => {
+                                            this.props.insideEmailInfo(
+                                              true,
+                                              "ClickedLink1"
+                                            );
+                                          }}
                                         >
                                           <span
                                             style={{
@@ -218,6 +224,12 @@ class Mail17 extends Component {
                                               this.props.insideEmailInfo(
                                                 true,
                                                 "InLink2"
+                                              );
+                                            }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink2"
                                               );
                                             }}
                                           >
@@ -598,6 +610,12 @@ class Mail17 extends Component {
                                                                   "InLink3"
                                                                 );
                                                               }}
+                                                              onClick={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "ClickedLink3"
+                                                                );
+                                                              }}
                                                             >
                                                               <span className="m_3452812782107377922button-link1">
                                                                 <span
@@ -783,6 +801,12 @@ class Mail17 extends Component {
                                               this.props.insideEmailInfo(
                                                 true,
                                                 "InLink4"
+                                              );
+                                            }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink4"
                                               );
                                             }}
                                           >

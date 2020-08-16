@@ -164,6 +164,9 @@ class Mail23 extends Component {
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink1");
                             }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink1");
+                            }}
                           >
                             <div
                               id="m_-4566908254252809703detailsContainer"

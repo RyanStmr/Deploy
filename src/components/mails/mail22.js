@@ -143,6 +143,12 @@ class Mail22 extends Component {
                               onMouseOver={() => {
                                 this.props.insideEmailInfo(true, "InLink1");
                               }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink1"
+                                );
+                              }}
                             >
                               <table
                                 style={{ borderCollapse: "collapse" }}
@@ -189,6 +195,12 @@ class Mail22 extends Component {
                                           this.props.insideEmailInfo(
                                             true,
                                             "InLink2"
+                                          );
+                                        }}
+                                        onClick={() => {
+                                          this.props.insideEmailInfo(
+                                            true,
+                                            "ClickedLink2"
                                           );
                                         }}
                                       >
@@ -247,6 +259,9 @@ class Mail22 extends Component {
                         onMouseOver={() => {
                           this.props.insideEmailInfo(true, "InLink3");
                         }}
+                        onClick={() => {
+                          this.props.insideEmailInfo(true, "ClickedLink3");
+                        }}
                       >
                         teile uns das mit
                       </a>
@@ -299,6 +314,9 @@ class Mail22 extends Component {
                     }}
                     onMouseOver={() => {
                       this.props.insideEmailInfo(true, "InLink4");
+                    }}
+                    onClick={() => {
+                      this.props.insideEmailInfo(true, "ClickedLink4");
                     }}
                   >
                     {this.props.emailAdress}

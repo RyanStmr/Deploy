@@ -33,6 +33,9 @@ class Mail31 extends Component {
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink1");
                           }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink1");
+                          }}
                         >
                           {this.props.emailAdress}
                         </a>
@@ -82,6 +85,9 @@ class Mail31 extends Component {
                             }}
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink2");
+                            }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink2");
                             }}
                           >
                             <span style={{ color: "#0000ff" }}>
@@ -133,6 +139,9 @@ class Mail31 extends Component {
                           }}
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink3");
+                          }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink3");
                           }}
                         >
                           <span style={{ color: "#4f81bd" }}>
@@ -238,6 +247,9 @@ class Mail31 extends Component {
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink4");
                             }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink4");
+                            }}
                           >
                             hotmail.com
                           </a>
@@ -255,6 +267,9 @@ class Mail31 extends Component {
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink5");
                             }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink5");
+                            }}
                           >
                             live.com
                           </a>
@@ -271,6 +286,9 @@ class Mail31 extends Component {
                             }}
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink6");
+                            }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink6");
                             }}
                           >
                             outlook.com
@@ -291,6 +309,9 @@ class Mail31 extends Component {
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink7");
                             }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink7");
+                            }}
                           >
                             hotmail.co.se
                           </a>
@@ -307,6 +328,9 @@ class Mail31 extends Component {
                             }}
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink8");
+                            }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink8");
                             }}
                           >
                             hotmail.com
@@ -350,6 +374,9 @@ class Mail31 extends Component {
                             }}
                             onMouseOver={() => {
                               this.props.insideEmailInfo(true, "InLink9");
+                            }}
+                            onClick={() => {
+                              this.props.insideEmailInfo(true, "ClickedLink9");
                             }}
                           >
                             <span style={{ color: "#4f81bd" }}>
@@ -434,6 +461,9 @@ class Mail31 extends Component {
                           }}
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink10");
+                          }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink10");
                           }}
                         >
                           <span style={{ color: "#0000ff" }}>

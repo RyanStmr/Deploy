@@ -29,6 +29,9 @@ class Mail9 extends Component {
                 onMouseOver={() => {
                   this.props.insideEmailInfo(true, "InLink1");
                 }}
+                onClick={() => {
+                  this.props.insideEmailInfo(true, "ClickedLink1");
+                }}
               >
                 Protect your account
               </a>
@@ -46,6 +49,9 @@ class Mail9 extends Component {
                 }}
                 onMouseOver={() => {
                   this.props.insideEmailInfo(true, "InLink2");
+                }}
+                onClick={() => {
+                  this.props.insideEmailInfo(true, "ClickedLink2");
                 }}
               >
                 make your account more secure
@@ -66,6 +72,9 @@ class Mail9 extends Component {
             }}
             onMouseOver={() => {
               this.props.insideEmailInfo(true, "InLink3");
+            }}
+            onClick={() => {
+              this.props.insideEmailInfo(true, "ClickedLink3");
             }}
           >
             click here

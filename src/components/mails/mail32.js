@@ -382,6 +382,12 @@ class Mail32 extends Component {
                                                             "InLink1"
                                                           );
                                                         }}
+                                                        onClick={() => {
+                                                          this.props.insideEmailInfo(
+                                                            true,
+                                                            "ClickedLink1"
+                                                          );
+                                                        }}
                                                       >
                                                         kürzlich von Ihnen
                                                         genutzten Geräte
@@ -495,6 +501,12 @@ class Mail32 extends Component {
                                                                     "InLink2"
                                                                   );
                                                                 }}
+                                                                onClick={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "ClickedLink2"
+                                                                  );
+                                                                }}
                                                               >
                                                                 klicken Sie hier
                                                               </a>
@@ -528,6 +540,12 @@ class Mail32 extends Component {
                                                                   this.props.insideEmailInfo(
                                                                     true,
                                                                     "InLink3"
+                                                                  );
+                                                                }}
+                                                                onClick={() => {
+                                                                  this.props.insideEmailInfo(
+                                                                    true,
+                                                                    "ClickedLink3"
                                                                   );
                                                                 }}
                                                               >

@@ -28,6 +28,9 @@ class Mail11 extends Component {
               onMouseOver={() => {
                 this.props.insideEmailInfo(true, "InLink1");
               }}
+              onClick={() => {
+                this.props.insideEmailInfo(true, "ClickedLink1");
+              }}
             >
               http://www.yourlogin-drive.store
             </a>{" "}

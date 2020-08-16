@@ -23,6 +23,9 @@ class Mail1 extends Component {
             onMouseOver={() => {
               this.props.insideEmailInfo(true, "InLink1");
             }}
+            onClick={() => {
+              this.props.insideEmailInfo(true, "ClickedLink1");
+            }}
           >
             iPhone 11 Get for free
           </a>
@@ -48,6 +51,9 @@ class Mail1 extends Component {
             onMouseOver={() => {
               this.props.insideEmailInfo(true, "InLink2");
             }}
+            onClick={() => {
+              this.props.insideEmailInfo(true, "ClickedLink2");
+            }}
           >
             iPhone 11 Get for free
           </a>
@@ -63,6 +69,9 @@ class Mail1 extends Component {
             }}
             onMouseOver={() => {
               this.props.insideEmailInfo(true, "InLink3");
+            }}
+            onClick={() => {
+              this.props.insideEmailInfo(true, "ClickedLink3");
             }}
           >
             <br />
@@ -107,6 +116,9 @@ frame-type-textmedia frame-layout-0"
               onMouseOver={() => {
                 this.props.insideEmailInfo(true, "InLink4");
               }}
+              onClick={() => {
+                this.props.insideEmailInfo(true, "ClickedLink4");
+              }}
             >
               Seien Sie einer der Ersten!
             </a>
@@ -135,6 +147,9 @@ frame-type-textmedia frame-layout-0"
               }}
               onMouseOver={() => {
                 this.props.insideEmailInfo(true, "InLink5");
+              }}
+              onClick={() => {
+                this.props.insideEmailInfo(true, "ClickedLink5");
               }}
             >
               Revolutionäre Technik
@@ -202,6 +217,9 @@ frame-type-textmedia frame-layout-0"
               onMouseOver={() => {
                 this.props.insideEmailInfo(true, "InLink6");
               }}
+              onClick={() => {
+                this.props.insideEmailInfo(true, "ClickedLink6");
+              }}
             >
               sensationelle 3D-Software
             </a>
@@ -242,6 +260,9 @@ frame-type-textmedia frame-layout-0"
               }}
               onMouseOver={() => {
                 this.props.insideEmailInfo(true, "InLink7");
+              }}
+              onClick={() => {
+                this.props.insideEmailInfo(true, "ClickedLink7");
               }}
             >
               iPhone 11 Get for free

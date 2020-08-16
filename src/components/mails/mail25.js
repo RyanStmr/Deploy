@@ -68,7 +68,6 @@ class Mail25 extends Component {
                         unauthorised person has accessed your account, go to{" "}
                         <a
                           href="https://iforgot.apple.com"
-                          role="link"
                           target="_blank"
                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://iforgot.apple.com&source=gmail&ust=1597139756777000&usg=AFQjCNGXifqn6KbcnsmY5G6jSfhkvtz9_A"
                           onMouseEnter={() => {
@@ -79,6 +78,9 @@ class Mail25 extends Component {
                           }}
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink1");
+                          }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink1");
                           }}
                         >
                           iforgot.apple.com
@@ -98,6 +100,9 @@ class Mail25 extends Component {
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink2");
                           }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink2");
+                          }}
                         >
                           https://appleid.apple.com
                         </a>{" "}
@@ -116,7 +121,6 @@ class Mail25 extends Component {
                         If you need additional help, please contact{" "}
                         <a
                           href="https://support.apple.com/en-gb"
-                          role="link"
                           target="_blank"
                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://support.apple.com/en-gb&source=gmail&ust=1597139756777000&usg=AFQjCNHgjUUzuagDij9PpFuHPW4T_v8Qpg"
                           onMouseEnter={() => {
@@ -127,6 +131,9 @@ class Mail25 extends Component {
                           }}
                           onMouseOver={() => {
                             this.props.insideEmailInfo(true, "InLink3");
+                          }}
+                          onClick={() => {
+                            this.props.insideEmailInfo(true, "ClickedLink3");
                           }}
                         >
                           Apple Support

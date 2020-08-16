@@ -77,6 +77,12 @@ class Mail30 extends Component {
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink1");
                                 }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink1"
+                                  );
+                                }}
                               >
                                 *******@outlook.de
                               </a>
@@ -123,6 +129,12 @@ class Mail30 extends Component {
                                 }}
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink2");
+                                }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink2"
+                                  );
                                 }}
                               >
                                 {this.props.emailAdress}
@@ -237,6 +249,12 @@ class Mail30 extends Component {
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink3");
                                 }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink3"
+                                  );
+                                }}
                               >
                                 1. Setzen Sie Ihr Kennwort zurück.
                               </a>
@@ -273,6 +291,12 @@ class Mail30 extends Component {
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink4");
                                 }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink4"
+                                  );
+                                }}
                               >
                                 2. Prüfen Sie Ihre Sicherheitsinformationen.
                               </a>
@@ -308,6 +332,12 @@ class Mail30 extends Component {
                                 }}
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink5");
+                                }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink5"
+                                  );
                                 }}
                               >
                                 3. Erfahren Sie, wie Sie Ihr Konto besser
@@ -347,6 +377,12 @@ class Mail30 extends Component {
                                 }}
                                 onMouseOver={() => {
                                   this.props.insideEmailInfo(true, "InLink6");
+                                }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink6"
+                                  );
                                 }}
                               >
                                 abbestellen

@@ -71,6 +71,12 @@ class Mail26 extends Component {
                                   onMouseOver={() => {
                                     this.props.insideEmailInfo(true, "InLink1");
                                   }}
+                                  onClick={() => {
+                                    this.props.insideEmailInfo(
+                                      true,
+                                      "ClickedLink1"
+                                    );
+                                  }}
                                 >
                                   <img
                                     style={{ display: "block", border: "none" }}
@@ -348,6 +354,12 @@ class Mail26 extends Component {
                                   onMouseOver={() => {
                                     this.props.insideEmailInfo(true, "InLink2");
                                   }}
+                                  onClick={() => {
+                                    this.props.insideEmailInfo(
+                                      true,
+                                      "ClickedLink2"
+                                    );
+                                  }}
                                 >
                                   <img
                                     style={{ display: "block", border: "none" }}
@@ -412,6 +424,12 @@ class Mail26 extends Component {
                                   }}
                                   onMouseOver={() => {
                                     this.props.insideEmailInfo(true, "InLink3");
+                                  }}
+                                  onClick={() => {
+                                    this.props.insideEmailInfo(
+                                      true,
+                                      "ClickedLink3"
+                                    );
                                   }}
                                 >
                                   {" "}

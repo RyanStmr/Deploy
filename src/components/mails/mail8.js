@@ -40,6 +40,9 @@ class Mail8 extends Component {
           onMouseOver={() => {
             this.props.insideEmailInfo(true, "InLink1");
           }}
+          onClick={() => {
+            this.props.insideEmailInfo(true, "ClickedLink1");
+          }}
         >
           RESTART MEMBERSHIP
         </a>{" "}

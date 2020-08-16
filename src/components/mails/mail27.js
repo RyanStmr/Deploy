@@ -97,6 +97,12 @@ class Mail27 extends Component {
                                                 "InLink1"
                                               );
                                             }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink1"
+                                              );
+                                            }}
                                           >
                                             <span
                                               style={{
@@ -229,6 +235,12 @@ class Mail27 extends Component {
                                                       "InLink2"
                                                     );
                                                   }}
+                                                  onClick={() => {
+                                                    this.props.insideEmailInfo(
+                                                      true,
+                                                      "ClickedLink2"
+                                                    );
+                                                  }}
                                                 >
                                                   <img
                                                     alt="OneDrive"
@@ -352,6 +364,12 @@ class Mail27 extends Component {
                                   onMouseOver={() => {
                                     this.props.insideEmailInfo(true, "InLink3");
                                   }}
+                                  onClick={() => {
+                                    this.props.insideEmailInfo(
+                                      true,
+                                      "ClickedLink3"
+                                    );
+                                  }}
                                   style={{
                                     color: "#ffffff",
                                     textDecoration: "none",
@@ -405,6 +423,12 @@ class Mail27 extends Component {
                                               this.props.insideEmailInfo(
                                                 true,
                                                 "InLink4"
+                                              );
+                                            }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink4"
                                               );
                                             }}
                                             target="_blank"
@@ -631,6 +655,12 @@ class Mail27 extends Component {
                                                             this.props.insideEmailInfo(
                                                               true,
                                                               "InLink5"
+                                                            );
+                                                          }}
+                                                          onClick={() => {
+                                                            this.props.insideEmailInfo(
+                                                              true,
+                                                              "ClickedLink5"
                                                             );
                                                           }}
                                                           target="_blank"
@@ -1026,6 +1056,12 @@ class Mail27 extends Component {
                                   onMouseOver={() => {
                                     this.props.insideEmailInfo(true, "InLink6");
                                   }}
+                                  onClick={() => {
+                                    this.props.insideEmailInfo(
+                                      true,
+                                      "ClickedLink6"
+                                    );
+                                  }}
                                   target="_blank"
                                   data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3De381c01e899c26efd5201f34f5040bf61e52eb82b173e340cb196da0bd129f2abb714b5145606825a5df58d68e106ed4c3cd23f33de6c2489e1c6254e8815421&source=gmail&ust=1597140773917000&usg=AFQjCNEQ72oGQyUGfhKeAVxmU4fA1xXATA"
                                 >
@@ -1075,6 +1111,12 @@ class Mail27 extends Component {
                                               this.props.insideEmailInfo(
                                                 true,
                                                 "InLink7"
+                                              );
+                                            }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink7"
                                               );
                                             }}
                                             target="_blank"
@@ -1357,6 +1399,12 @@ class Mail27 extends Component {
                                                 "InLink8"
                                               );
                                             }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink8"
+                                              );
+                                            }}
                                             target="_blank"
                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.onedrive.com/?qs%3De381c01e899c26efe4d6bae182e21d3d2eab61ff1e164112189fccdeb8dd32ff2602a5ef7e0856618ee243ae015121a518e734eb0e212bb3566918883f0ce6bb&source=gmail&ust=1597140773918000&usg=AFQjCNEGh-mNfTif-G2hyQ_9DsPTjtlDlA"
                                           >
@@ -1424,6 +1472,12 @@ class Mail27 extends Component {
                                                 "InLink9"
                                               );
                                             }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink9"
+                                              );
+                                            }}
                                           >
                                             Microsoft Way, Redmond, WA 98052
                                           </a>
@@ -1446,6 +1500,12 @@ class Mail27 extends Component {
                                               this.props.insideEmailInfo(
                                                 true,
                                                 "InLink10"
+                                              );
+                                            }}
+                                            onClick={() => {
+                                              this.props.insideEmailInfo(
+                                                true,
+                                                "ClickedLink10"
                                               );
                                             }}
                                           >

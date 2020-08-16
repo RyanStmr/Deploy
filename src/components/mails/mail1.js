@@ -11,7 +11,7 @@ class Mail1 extends Component {
         <h1 class="hx">iPhone 11&nbsp; </h1>
         <p>
           <a
-            href="/phishing/selbstlerntest-phishing/"
+            href="http://www.appleiphonerelease.shop/"
             class="internal-link"
             target="_blank"
             onMouseEnter={() => {
@@ -36,7 +36,7 @@ class Mail1 extends Component {
         </p>
         <p>
           <a
-            href="/phishing/selbstlerntest-phishing/"
+            href="http://www.appleiphonerelease.shop/"
             class="internal-link"
             target="_blank"
             onMouseEnter={() => {
@@ -52,7 +52,7 @@ class Mail1 extends Component {
             iPhone 11 Get for free
           </a>
           <a
-            href="/phishing/selbstlerntest-phishing/"
+            href="http://www.appleiphonerelease.shop/"
             class="internal-link"
             target="_blank"
             onMouseEnter={() => {
@@ -95,7 +95,7 @@ frame-type-textmedia frame-layout-0"
           <p>&nbsp;</p>
           <p>
             <a
-              href="/phishing/selbstlerntest-phishing/"
+              href="http://www.appleiphonerelease.shop/"
               class="internal-link"
               target="_blank"
               onMouseEnter={() => {
@@ -124,7 +124,7 @@ frame-type-textmedia frame-layout-0"
           <p>&nbsp;</p>
           <p>
             <a
-              href="/phishing/selbstlerntest-phishing/"
+              href="http://www.appleiphonerelease.shop/"
               class="internal-link"
               target="_blank"
               onMouseEnter={() => {
@@ -190,7 +190,7 @@ frame-type-textmedia frame-layout-0"
           <p>&nbsp;</p>
           <p>
             <a
-              href="/phishing/selbstlerntest-phishing/"
+              href="http://www.appleiphonerelease.shop/"
               class="internal-link"
               target="_blank"
               onMouseEnter={() => {
@@ -231,7 +231,7 @@ frame-type-textmedia frame-layout-0"
           </p>
           <p class="align-left">
             <a
-              href="/phishing/selbstlerntest-phishing/"
+              href="http://www.appleiphonerelease.shop/"
               class="internal-link"
               target="_blank"
               onMouseEnter={() => {

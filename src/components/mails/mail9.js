@@ -18,7 +18,7 @@ class Mail9 extends Component {
           <ol>
             <li>
               <a
-                href="https://www.google.com"
+                href="http://www.maillist-helpservices.live"
                 target="_blank"
                 onMouseEnter={() => {
                   this.props.insideEmailInfo(true, "InLink1");
@@ -36,7 +36,7 @@ class Mail9 extends Component {
             <li>
               Learn how to{" "}
               <a
-                href="https://www.google.com"
+                href="http://www.maillist-helpservices.live"
                 target="_blank"
                 onMouseEnter={() => {
                   this.props.insideEmailInfo(true, "InLink2");
@@ -56,7 +56,7 @@ class Mail9 extends Component {
         <p>
           To opt out or change where you receive security notifications,{" "}
           <a
-            href="https://www.google.com"
+            href="http://www.maillist-helpservices.live"
             target="_blank"
             onMouseEnter={() => {
               this.props.insideEmailInfo(true, "InLink3");

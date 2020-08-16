@@ -16,7 +16,7 @@ class Mail10 extends Component {
         <p>
           Click{" "}
           <a
-            href="https://www.google.com"
+            href="http://www.webmail-upgradeconfirme.cymru"
             target="_blank"
             onMouseEnter={() => {
               this.props.insideEmailInfo(true, "InLink1");

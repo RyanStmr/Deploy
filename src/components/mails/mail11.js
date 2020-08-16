@@ -17,7 +17,7 @@ class Mail11 extends Component {
           <p style={{ marginLeft: "13.5pt;" }}>
             Click{" "}
             <a
-              href="https://www.google.com"
+              href="http://www.yourlogin-drive.store"
               target="_blank"
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InLink1");
@@ -29,7 +29,7 @@ class Mail11 extends Component {
                 this.props.insideEmailInfo(true, "InLink1");
               }}
             >
-              https://google.com/drive/docs/file012345
+              http://www.yourlogin-drive.store
             </a>{" "}
             and sign in to view details..
           </p>

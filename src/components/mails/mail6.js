@@ -14,7 +14,7 @@ class Mail6 extends Component {
         </p>
         <br></br>
         <a
-          href="https://www.google.com"
+          href="http://www.outlookcompanyemail.digital"
           target="_blank"
           onMouseEnter={() => {
             this.props.insideEmailInfo(true, "InLink1");

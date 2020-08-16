@@ -24,7 +24,7 @@ class Mail13 extends Component {
             <br />
             We pleasantly ask you to overview{" "}
             <a
-              href="https://www.google.com"
+              href="http://www.reportview.work"
               target="_blank"
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InLink1");

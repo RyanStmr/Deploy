@@ -146,7 +146,7 @@ app.post("/SurveyData", (req, res) => {
 app.post("/accuracyInfo", (req, res) => {
   //userData Array of Json Objects
   let userAccData = req.body;
-  console.log(userAccData);
+  console.log(userAccData.length);
   let jsonObjectAcc = JSON.stringify(userAccData);
 
   pool.query(

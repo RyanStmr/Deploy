@@ -41,7 +41,7 @@ class Mail2 extends Component {
         <p>
           Ready to check ? Click{" "}
           <a
-            href="https://www.google.com"
+            href="http://www.spotifyverificationinfoaccount.club"
             target="_blank"
             onMouseEnter={() => {
               this.props.insideEmailInfo(true, "InLink1");

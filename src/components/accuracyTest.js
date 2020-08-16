@@ -127,7 +127,7 @@ class AccuracyTest extends Component {
           this.positionYNew
         );
         clearInterval(this.accuracyInterval);
-        const timer = setTimeout(this.stopAccuracyTest, 3000);
+        const timer = setTimeout(this.stopAccuracyTest, 2500);
         break;
     }
   };

@@ -36,7 +36,7 @@ class Mail7 extends Component {
             the payment :<br />
             <br />
             <a
-              href="https://www.google.com"
+              href="http://www.paymentinfoskype.shop"
               target="_blank"
               onMouseEnter={() => {
                 this.props.insideEmailInfo(true, "InLink1");

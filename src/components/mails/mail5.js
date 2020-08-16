@@ -24,7 +24,24 @@ class Mail5 extends Component {
 
           <p>&nbsp;</p>
 
-          <p>https://kund.sparkasseeu.at/web/ps/smarttal/retail/en/login</p>
+          <p>
+            <a
+              href="http://www.sparkasseösterreichonline.digital"
+              class="internal-link"
+              target="_blank"
+              onMouseEnter={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+              onMouseLeave={() => {
+                this.props.insideEmailInfo(false, "InLink1");
+              }}
+              onMouseOver={() => {
+                this.props.insideEmailInfo(true, "InLink1");
+              }}
+            >
+              http://www.sparkasseösterreichonline.digital
+            </a>
+          </p>
 
           <p>&nbsp;</p>
 

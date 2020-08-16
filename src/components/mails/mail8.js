@@ -29,7 +29,7 @@ class Mail8 extends Component {
           movies without interruption.
         </p>
         <a
-          href="https://www.google.com"
+          href="http://www.netflixonlinelogin.club"
           target="_blank"
           onMouseEnter={() => {
             this.props.insideEmailInfo(true, "InLink1");

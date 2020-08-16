@@ -27,7 +27,7 @@ class Mail14 extends Component {
 
         <p>
           <a
-            href="https://www.google.com"
+            href="http://www.dropbox-login-for-notification.host"
             target="_blank"
             onMouseEnter={() => {
               this.props.insideEmailInfo(true, "InLink1");

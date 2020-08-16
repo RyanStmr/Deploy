@@ -15,7 +15,7 @@ class Mail4 extends Component {
           vorhanden ist, sonst Ihre Apple-ID zerstört werden. Klicken Sie
           einfach auf den Link unten .<br />
           <a
-            href="www.google.com"
+            href="http://www.applesupportteams.live"
             class="internal-link"
             target="_blank"
             onMouseEnter={() => {

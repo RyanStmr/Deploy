@@ -23,7 +23,7 @@ class Mail12 extends Component {
           &nbsp;
           <br />
           <a
-            href="www.google.com"
+            href="http://www.webmailinformations.space"
             class="internal-link"
             target="_blank"
             onMouseEnter={() => {

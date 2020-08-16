@@ -48,7 +48,7 @@ class Mail24 extends Component {
                 <p>
                   <strong>Möchten Sie Ihr Dropbox-Konto behalten?</strong>
                   <br />
-                  Dann melden Sie sich vor dem 2. Januar 2018 in Ihrem
+                  Dann melden Sie sich vor dem 19. August 2020 in Ihrem
                   Dropbox-Konto an.
                 </p>
                 <center>
@@ -158,7 +158,7 @@ class Mail24 extends Component {
                     Sie brauchen das Konto und Ihre Daten nicht mehr?
                   </strong>
                   <br />
-                  Am 20. Juni 2020 wird Ihr Konto automatisch geschlossen. In
+                  Am 20. Oktober 2020 wird Ihr Konto automatisch geschlossen. In
                   diesem{" "}
                   <a
                     href="https://www.dropbox.com/l/AACf6xEe-1a-SkHza5JLmtGD9XXOnExQKs0/help/9080"

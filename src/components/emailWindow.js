@@ -46,6 +46,7 @@ class EmailWindow extends Component {
       buttonsSidebar: {
         color: "#2E2E2E",
         margin: "10px",
+        backgroundColor: "#f2f2f2",
       },
     };
 

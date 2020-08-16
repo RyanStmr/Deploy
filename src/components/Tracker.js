@@ -89,7 +89,7 @@ class Tracker extends Component {
   };
 
   startTracking = () => {
-    this.collectionInterval = setInterval(this.collectStates, 1000);
+    this.collectionInterval = setInterval(this.collectStates, 250);
     this.sendingIntervall = setInterval(this.sendData, 5000);
   };
 

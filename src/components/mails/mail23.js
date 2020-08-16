@@ -152,9 +152,9 @@ class Mail23 extends Component {
                         >
                           <a
                             id="m_-4566908254252809703responseUrl"
-                            href="https://www.amazon.com/gp/f.html?C=1BDNQAME26BY1&K=2PT0BS5R312SN&M=urn:rtn:msg:2020051318500653a958e847aa4cbdbe2abd768880p0na&R=1TERCFUVH6IDU&T=C&U=https%3A%2F%2Fwww.amazon.com%2Fa%2Fc%2Fr%3Fk%3Dfb657f8983ed49fe8bbbcc1858e6dc79-ecbc%26ref_%3Dpe_2429110_469155710&H=SDW7FLTAGKNLVTD5BUN6PGZMXPQA&ref_=pe_2429110_469155710"
+                            href="https://www.amazon.de/gp/css/homepage.html?from=hz"
                             target="_blank"
-                            data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.amazon.com/gp/f.html?C%3D1BDNQAME26BY1%26K%3D2PT0BS5R312SN%26M%3Durn:rtn:msg:2020051318500653a958e847aa4cbdbe2abd768880p0na%26R%3D1TERCFUVH6IDU%26T%3DC%26U%3Dhttps%253A%252F%252Fwww.amazon.com%252Fa%252Fc%252Fr%253Fk%253Dfb657f8983ed49fe8bbbcc1858e6dc79-ecbc%2526ref_%253Dpe_2429110_469155710%26H%3DSDW7FLTAGKNLVTD5BUN6PGZMXPQA%26ref_%3Dpe_2429110_469155710&source=gmail&ust=1596714355554000&usg=AFQjCNEXmT4z9JpXGYFABKKjDv9D6IdYnA"
+                            data-saferedirecturl="https://www.amazon.de/gp/css/homepage.html?from=hz"
                             onMouseEnter={() => {
                               this.props.insideEmailInfo(true, "InLink1");
                             }}

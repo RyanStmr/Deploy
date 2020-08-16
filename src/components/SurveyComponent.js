@@ -126,18 +126,21 @@ class SurveyComponent extends Component {
       {
         type: "text",
         name: "Important aspects",
+        isRequired: true,
         title:
           "Which aspects of the email made you categorize it as Important? (key words are enough)",
       },
       {
         type: "text",
         name: "Spam aspects",
+        isRequired: true,
         title:
           "Which aspects of the email made you categorize it as Spam? (key words are enough)",
       },
       {
         type: "text",
         name: "Bin aspects",
+        isRequired: true,
         title:
           "Which aspects of the email made you categorize it as Bin? (key words are enough)",
       },

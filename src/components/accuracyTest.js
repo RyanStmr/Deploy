@@ -80,6 +80,7 @@ class AccuracyTest extends Component {
       case 5:
         this.positionXNew = this.state.screenWidth / 2;
         this.positionYNew = this.state.screenHeight / 2;
+        this.changeCirclePosition(this.positionXNew, this.positionYNew);
         this.props.collectAccuracyData(
           this.counter,
           this.positionXNew,

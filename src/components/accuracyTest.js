@@ -189,7 +189,12 @@ class AccuracyTest extends Component {
               this.state.screenHeight
             );
             ctx.fillStyle = "#000000";
-            ctx.fillRect(0, 0, this.state.screenWidth, this.state.screenHeight);
+            ctx.fillRect(
+              0,
+              0,
+              this.state.screenWidth - 17,
+              this.state.screenHeight - 17
+            );
             ctx.lineWidth = 5;
             ctx.strokeStyle = "#fc0b0b";
             ctx.arc(

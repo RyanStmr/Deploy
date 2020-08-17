@@ -14,22 +14,22 @@ const StartPage = (props) => {
       <p>
         Welcome to our study, please make sure you have about{" "}
         <strong>30 minutes</strong> of time spare. Due to the serious situation
-        of Corona, the study will be held online, and consists of{" "}
+        of Corona, the study will be held online and consists of{" "}
         <strong> 5 stages.</strong>
         <p>
           You can exit the study at any time. You will be reimbursed with 5
           Euros (PayPal or Amazon Voucher) or 0.5 MMI points (Only valid LMU
           students).{" "}
         </p>
-        <br></br>
         Please note that the reward will be obtained at the end of study, more
         information will be provided at the end.
       </p>
       <p>
         <br></br>
         <strong>
-          This study is a collaboration of LMU Munich and Bundeswehr University
-          Munich.
+          This study is a joint research project between the Media Informatics
+          Department of the LMU Munich, the Research Institute for Cyber Defense
+          (CODE) of the Bundeswehr University and Ruhr University Bochum.
         </strong>
       </p>
       <hr></hr>
@@ -60,7 +60,7 @@ const StartPage = (props) => {
           Good room lighting (Make sure there is no strong light behind you)
         </li>
         <li>18 years or older</li>
-        <li>No glasses, contact lenses are just fine</li>
+        <li>No glasses if possible, preferably contact lenses</li>
         <li>Google Chrome or Firefox Browser</li>
         <li>~30 minutes of spare time</li>
       </ol>

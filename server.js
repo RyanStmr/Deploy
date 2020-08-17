@@ -51,37 +51,6 @@ app.get("/connect", (req, res) => {
   res.send(newUser);
 });
 
-/*
-CURRENTEMAIL INT,
-      CURRENTINBOX TEXT,
-      HEADERINFO INT,
-      INEAMILTEXT BOOLEAN,
-      MOUSEPOSXPLAIN INT,
-      MOUSEPOSYPLAIN INT,
-      MOUSEPOSXTRANSFORM INT,
-      MOUSEPOSYTRANSFORM INT,
-      CLICK INT,
-      CLICKPOSXTRANSFORM INT,
-      CLICKPOSYTRANSFORM INT,
-      TIMESTAMP INT,
-      GAZEX INT,
-      GAZEY INT,
-      GAZEXTRANSFORM INT,
-      GAZEYTRANSFORM INT,
-      VALIDATIONGAZE INT,
-      USERID INT,
-      USERNICKNAME TEXT;
-      PAGESCROLLY INT,
-      PAGESCROLLX INT,
-      BRWOSERWIDTH INT,
-      BROWSERHEIGHT INT,
-      MARGINTOSCREENTOP INT,
-      MARGINTOSCREENLEFT INT,
-      MOUSEGENERALFIELD INT,
-      MOUSEEMAILFIELD INT,
-      RESUL
-       */
-
 function createNewUser(id, browser) {
   let newUser = {
     userID: id,
@@ -110,7 +79,6 @@ app.post("/data", (req, res) => {
   console.log(`receiving data from ${userData[0].userId} `);
   userData.forEach((element) => {
     if (element.userId === 0 || element.userId === undefined) return;
-    console.log(element.userId);
     let jsonObject = JSON.stringify(element);
 
     pool.query(
@@ -146,7 +114,7 @@ app.post("/SurveyData", (req, res) => {
 app.post("/accuracyInfo", (req, res) => {
   //userData Array of Json Objects
   let userAccData = req.body;
-  console.log(userAccData.length);
+  console.log(`Number of sccuracy samples received: ${userAccData.length}`);
   let jsonObjectAcc = JSON.stringify(userAccData);
 
   pool.query(

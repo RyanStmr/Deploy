@@ -1738,8 +1738,8 @@ class Mail28 extends Component {
 }
 
 Mail28.defaultProps = {
-  senderName: "Microsoft OneDrive",
-  sender: "email@mail.onedrive.com",
+  senderName: "email@mail.onedrive.com",
+  sender: "Microsoft OneDrive",
   date: "August 03, 2020, 11:17",
   subject: "Ihr OneDrive ist fast voll",
   capital: "W",

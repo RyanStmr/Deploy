@@ -23,13 +23,8 @@ const ConsentPage = (props) => {
   const updateProp = () => {
     let email = values.email;
     let name = values.name;
-    if (email === "") {
-      email = "maxM@outlook.de";
-    }
-    if (name === "") {
-      name = "Max Mustermann";
-    }
-
+    email === "" ? (email = "MaxM@globalConnect.com") : (email = email);
+    name === "" ? (name = "Max Mustermann") : (name = name);
     props.updatedData(email, name);
   };
 
@@ -47,7 +42,7 @@ const ConsentPage = (props) => {
       <h1>The study</h1>
       <br></br>
       <p>
-        In this study, we are trying to understand how users experience and
+        In this study we are trying to understand how users experience and
         evaluate emails in a natural environment, such as an email client.{" "}
       </p>
       <br></br>
@@ -63,43 +58,43 @@ const ConsentPage = (props) => {
         should not stop the study and continue later on.{" "}
       </p>
       <p>
-        You might see your Webcam footage pop up, if the Webcam is having
-        trouble tracking you. It will disapper once it has tracked you again.
+        You might see your webcam footage pop up, if the webcam is having
+        trouble tracking you. It will disappear once it has tracked you again.
       </p>
       <br></br>
       <img src={Cam} alt="CamFaulty" width="250" height="150"></img>
       <hr></hr>
       <p>
         <strong>Your task: </strong>Pretend you are working as a secretary in an
-        important Start-Up called Global-Connect. Your Job is to go through your
+        important start-up called Global-Connect. Your job is to go through your
         and your bosses custom email-client as your first task in the morning.
       </p>
       <p>
         Your boss is off on holidays for the week, after having many meetings
-        with a company called "Imotion" last week.
+        with a company called "Imotion" last week. Therefore your inbox and your
+        bosses have been joined together.
       </p>
       <p>
         Go through <strong>all the emails </strong>and{" "}
         <strong>select the right inbox for each email</strong>. There are three
         different inboxes to select from:
       </p>
-      s
       <ol style={{ listStyleType: "clear" }}>
         <br></br>
         <li>
-          <strong>Important:</strong>
+          <strong>Important</strong>
         </li>
         <li>
-          <strong>Bin:</strong>
+          <strong>Bin</strong>
         </li>
         <li>
-          <strong>Spam:</strong>
+          <strong>Spam</strong>
         </li>
       </ol>
       <br></br>
       <p>
         You can move the email to an inbox by clicking{" "}
-        <strong>"Move to Important"</strong>,<strong>"Move to Spam"</strong> or{" "}
+        <strong>"Move to Important"</strong>,<strong> "Move to Spam"</strong> or{" "}
         <strong>"Move to Bin"</strong> inside each email window.
       </p>
       <Button
@@ -125,7 +120,7 @@ const ConsentPage = (props) => {
       </Button>
       <br></br>
       <p>
-        <strong>After you have finished your task</strong>click
+        <strong>After you have finished your task</strong> click
         <Button
           variant="contained"
           style={{ backgroundColor: "#04B45F", margin: "10px" }}
@@ -134,10 +129,10 @@ const ConsentPage = (props) => {
         </Button>{" "}
         on the top right of your email client before continuing with the
         <strong> accuracy test </strong> and the
-        <strong> post study questionnaires</strong>
+        <strong> post study questionnaires</strong>.
       </p>
       <hr></hr>
-      <p>
+      <p style={{ color: "red" }}>
         <strong>
           Choose any name and email which will be used to address you throughout
           the study (does not have to be your real email or name):
@@ -152,7 +147,7 @@ const ConsentPage = (props) => {
         onChange={handleChange}
         style={{ width: "20%", marginRight: "20px" }}
         required
-        placeholder="maxM@outlook.de"
+        placeholder="maxM@globalConnect.de"
       ></input>
       Firstname & lastname:{" "}
       <input

@@ -161,7 +161,12 @@ class AccuracyTest extends Component {
               this.state.screenHeight
             );
             ctx.fillStyle = "#000000";
-            ctx.fillRect(0, 0, this.state.screenWidth, this.state.screenHeight);
+            ctx.fillRect(
+              0,
+              0,
+              this.state.screenWidth - 17,
+              this.state.screenHeight - 17
+            );
             ctx.fillStyle = "white";
             ctx.font = "30px Arial";
 

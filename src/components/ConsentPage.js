@@ -76,13 +76,14 @@ const ConsentPage = (props) => {
       </p>
       <p>
         Your boss is off on holidays for the week, after having many meetings
-        with a company called "Imotion" last week.{" "}
+        with a company called "Imotion" last week.
       </p>
       <p>
         Go through <strong>all the emails </strong>and{" "}
         <strong>select the right inbox for each email</strong>. There are three
         different inboxes to select from:
       </p>
+      s
       <ol style={{ listStyleType: "clear" }}>
         <br></br>
         <li>
@@ -97,8 +98,9 @@ const ConsentPage = (props) => {
       </ol>
       <br></br>
       <p>
-        You can move the email to an inbox by clicking "Move to Important",
-        "Move to Spam" or "Move to Bin" inside each email window.
+        You can move the email to an inbox by clicking{" "}
+        <strong>"Move to Important"</strong>,<strong>"Move to Spam"</strong> or{" "}
+        <strong>"Move to Bin"</strong> inside each email window.
       </p>
       <Button
         style={styles.buttonsSidebar}
@@ -123,8 +125,7 @@ const ConsentPage = (props) => {
       </Button>
       <br></br>
       <p>
-        <strong>After you have finished your task</strong> forward the inboxes
-        to your boss by clicking{" "}
+        <strong>After you have finished your task</strong>click
         <Button
           variant="contained"
           style={{ backgroundColor: "#04B45F", margin: "10px" }}

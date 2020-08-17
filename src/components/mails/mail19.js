@@ -263,6 +263,30 @@ class Mail19 extends Component {
                                                                                       href="http://click.email.flixbus.com/?qs=e2d5a8d5406d86893c13c20c45b8664237837df456fd5337f81c2dfb168b7033f8d93b3057c1bdff9e05e5eeafb491e74582004ed330ac1e76d28e9a3c2fc0af"
                                                                                       target="_blank"
                                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d86893c13c20c45b8664237837df456fd5337f81c2dfb168b7033f8d93b3057c1bdff9e05e5eeafb491e74582004ed330ac1e76d28e9a3c2fc0af&source=gmail&ust=1597146993198000&usg=AFQjCNGTS5ZEPbpWZ6h8ky8ooEeOazK0zw"
+                                                                                      onMouseEnter={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink1"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseLeave={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          false,
+                                                                                          "InLink1"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseOver={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink1"
+                                                                                        );
+                                                                                      }}
+                                                                                      onClick={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "ClickedLink1"
+                                                                                        );
+                                                                                      }}
                                                                                     >
                                                                                       <span
                                                                                         style={{
@@ -314,6 +338,30 @@ class Mail19 extends Component {
                                                                                       href="http://view.email.flixbus.com/?qs=7934b0ec0b4aeca33396752547458f0d26cb705fb3f7723b47e24456f3f29fad5948602d5e7771a7ce7bd34287c17e7a627c5bc6f535882b0bb1a06f71d8b5277488bff4e2ed1259"
                                                                                       target="_blank"
                                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=http://view.email.flixbus.com/?qs%3D7934b0ec0b4aeca33396752547458f0d26cb705fb3f7723b47e24456f3f29fad5948602d5e7771a7ce7bd34287c17e7a627c5bc6f535882b0bb1a06f71d8b5277488bff4e2ed1259&source=gmail&ust=1597146993198000&usg=AFQjCNHZ3-eqsIbA38_yxH-_oIXVHN7K_w"
+                                                                                      onMouseEnter={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink2"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseLeave={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          false,
+                                                                                          "InLink2"
+                                                                                        );
+                                                                                      }}
+                                                                                      onMouseOver={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "InLink2"
+                                                                                        );
+                                                                                      }}
+                                                                                      onClick={() => {
+                                                                                        this.props.insideEmailInfo(
+                                                                                          true,
+                                                                                          "ClickedLink2"
+                                                                                        );
+                                                                                      }}
                                                                                     >
                                                                                       <span
                                                                                         style={{
@@ -446,6 +494,30 @@ class Mail19 extends Component {
                                                             title='"" '
                                                             target="_blank"
                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689e7ff880eb0328b63a24e76342c01521a534d5685e4de3eb191581d26663dc04118cc63d83ca8609776220584cea6b1ea5bddf77dcab8326d&source=gmail&ust=1597146993198000&usg=AFQjCNGrQI6jZdOemL5G0b5QuuTNimjHhQ"
+                                                            onMouseEnter={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "InLink3"
+                                                              );
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                              this.props.insideEmailInfo(
+                                                                false,
+                                                                "InLink3"
+                                                              );
+                                                            }}
+                                                            onMouseOver={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "InLink3"
+                                                              );
+                                                            }}
+                                                            onClick={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "ClickedLink3"
+                                                              );
+                                                            }}
                                                           >
                                                             <span
                                                               style={{
@@ -716,6 +788,30 @@ class Mail19 extends Component {
                                                             title='"" '
                                                             target="_blank"
                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689d07cbebedc47852c45809cdcc0474d34aba7030f486b05ef9b6dfe9bf9406466e48313cb59298c2dc5afe185ad7aabb6601180b73da4e70f&source=gmail&ust=1597146993198000&usg=AFQjCNE1As4W23RaECitB1hX2TFeKoTagw"
+                                                            onMouseEnter={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "InLink4"
+                                                              );
+                                                            }}
+                                                            onMouseLeave={() => {
+                                                              this.props.insideEmailInfo(
+                                                                false,
+                                                                "InLink4"
+                                                              );
+                                                            }}
+                                                            onMouseOver={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "InLink4"
+                                                              );
+                                                            }}
+                                                            onClick={() => {
+                                                              this.props.insideEmailInfo(
+                                                                true,
+                                                                "ClickedLink4"
+                                                              );
+                                                            }}
                                                           >
                                                             <span
                                                               style={{
@@ -891,6 +987,30 @@ class Mail19 extends Component {
                                                                                 href="https://www.flixbus.ch/?wt_mc=ret.ch.FlixBus.email.standalone.product.pricepromo.ad&wt_cc1=190802_pricepromo_ch-email"
                                                                                 target="_blank"
                                                                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://www.flixbus.ch/?wt_mc%3Dret.ch.FlixBus.email.standalone.product.pricepromo.ad%26wt_cc1%3D190802_pricepromo_ch-email&source=gmail&ust=1597146993199000&usg=AFQjCNH9emAKoHNknIVOzSfME1n3we7J4A"
+                                                                                onMouseEnter={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink5"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseLeave={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    false,
+                                                                                    "InLink5"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseOver={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink5"
+                                                                                  );
+                                                                                }}
+                                                                                onClick={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "ClickedLink5"
+                                                                                  );
+                                                                                }}
                                                                               >
                                                                                 <img
                                                                                   style={{
@@ -1038,6 +1158,30 @@ class Mail19 extends Component {
                                                               href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689c5e8ce631aaf7afa2c282415cb188540d1232eaa8b40dba84e090d4d0f5a04476bf974fbd550d568bd26a12a9ec622bb787d33e18928742a"
                                                               target="_blank"
                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689c5e8ce631aaf7afa2c282415cb188540d1232eaa8b40dba84e090d4d0f5a04476bf974fbd550d568bd26a12a9ec622bb787d33e18928742a&source=gmail&ust=1597146993199000&usg=AFQjCNEQ0wyy-PVOpJS2fa7rX_8hlg7Tew"
+                                                              onMouseEnter={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink6"
+                                                                );
+                                                              }}
+                                                              onMouseLeave={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  false,
+                                                                  "InLink6"
+                                                                );
+                                                              }}
+                                                              onMouseOver={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "InLink7"
+                                                                );
+                                                              }}
+                                                              onClick={() => {
+                                                                this.props.insideEmailInfo(
+                                                                  true,
+                                                                  "ClickedLink8"
+                                                                );
+                                                              }}
                                                             >
                                                               <span
                                                                 style={{
@@ -1375,6 +1519,30 @@ class Mail19 extends Component {
                                                                                     href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689f2395470428c1c4642037fcc6c8b2b31bde0145d02a0f768efc8402797f0cf575b44960758a795360da7bdf3134e79a8"
                                                                                     target="_blank"
                                                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689f2395470428c1c4642037fcc6c8b2b31bde0145d02a0f768efc8402797f0cf575b44960758a795360da7bdf3134e79a8&source=gmail&ust=1597146993199000&usg=AFQjCNEht00NxYK_LrJvR0LPTuSwyN6zzw"
+                                                                                    onMouseEnter={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink7"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseLeave={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        false,
+                                                                                        "InLink7"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseOver={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink7"
+                                                                                      );
+                                                                                    }}
+                                                                                    onClick={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "ClickedLink7"
+                                                                                      );
+                                                                                    }}
                                                                                   >
                                                                                     <span
                                                                                       style={{
@@ -1486,6 +1654,30 @@ class Mail19 extends Component {
                                                                                           href="https://shop.flixbus.ch/search?departureCity=3158&arrivalCity=89/?wt_mc=ret.ch.FlixBus.email.standalone.product.pricepromo.ad&wt_cc1=190802_pricepromo_ch-email"
                                                                                           target="_blank"
                                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://shop.flixbus.ch/search?departureCity%3D3158%26arrivalCity%3D89/?wt_mc%3Dret.ch.FlixBus.email.standalone.product.pricepromo.ad%26wt_cc1%3D190802_pricepromo_ch-email&source=gmail&ust=1597146993199000&usg=AFQjCNF1QtAZWugoo6zOJBJ7TAsHS_CFpw"
+                                                                                          onMouseEnter={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink8"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseLeave={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              false,
+                                                                                              "InLink8"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseOver={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink8"
+                                                                                            );
+                                                                                          }}
+                                                                                          onClick={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "ClickedLink8"
+                                                                                            );
+                                                                                          }}
                                                                                         >
                                                                                           <img
                                                                                             style={{
@@ -1615,7 +1807,31 @@ class Mail19 extends Component {
                                                                                     href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689efa5ab11a51b8d7c50daea8c530410594f15a86a3ae7b78733266d28131625855141b5c45559e02d2b80eec33e9e86b4"
                                                                                     target="_blank"
                                                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689efa5ab11a51b8d7c50daea8c530410594f15a86a3ae7b78733266d28131625855141b5c45559e02d2b80eec33e9e86b4&source=gmail&ust=1597146993199000&usg=AFQjCNH88A0JQsfNK2AVImX8him_TPbozg"
-                                                                                  >
+                                                                                    onMouseEnter={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink9"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseLeave={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        false,
+                                                                                        "InLink9"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseOver={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink9"
+                                                                                      );
+                                                                                    }}
+                                                                                    onClick={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "ClickedLink9"
+                                                                                      );
+                                                                                    }}
+                                                                                 >
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize:
@@ -1727,6 +1943,30 @@ class Mail19 extends Component {
                                                                                           href="https://shop.flixbus.ch/search?departureCity=2105&arrivalCity=89/?wt_mc=ret.ch.FlixBus.email.standalone.product.pricepromo.ad&wt_cc1=190802_pricepromo_ch-email"
                                                                                           target="_blank"
                                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://shop.flixbus.ch/search?departureCity%3D2105%26arrivalCity%3D89/?wt_mc%3Dret.ch.FlixBus.email.standalone.product.pricepromo.ad%26wt_cc1%3D190802_pricepromo_ch-email&source=gmail&ust=1597146993199000&usg=AFQjCNG2odSOCAU40PcXheTG4PYymB1aQw"
+                                                                                          onMouseEnter={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink10"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseLeave={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              false,
+                                                                                              "InLink10"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseOver={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink10"
+                                                                                            );
+                                                                                          }}
+                                                                                          onClick={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "ClickedLink10"
+                                                                                            );
+                                                                                          }}
                                                                                         >
                                                                                           <img
                                                                                             style={{
@@ -1856,6 +2096,38 @@ class Mail19 extends Component {
                                                                                     href="http://click.email.flixbus.com/?qs=e2d5a8d5406d86892af73ccfcc5f46eed3613bac347598f2fd879b988b0840bde5a5895cd74273f55c539928741b3c0b4c40fa206c80a7e7"
                                                                                     target="_blank"
                                                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d86892af73ccfcc5f46eed3613bac347598f2fd879b988b0840bde5a5895cd74273f55c539928741b3c0b4c40fa206c80a7e7&source=gmail&ust=1597146993199000&usg=AFQjCNGTQFLYPdfFIAHf34wYekbmTLsngQ"
+                                                                                    onMouseEnter={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink11"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseLeave={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        false,
+                                                                                        "InLink11"
+                                                                                      );
+                                                                                    }}
+                                                                                    onMouseOver={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "InLink11"
+                                                                                      );
+                                                                                    }}
+                                                                                    onClick={() => {
+                                                                                      this.props.insideEmailInfo(
+                                                                                        true,
+                                                                                        "ClickedLink11"
+                                                                                      );
+                                                                                    }}
+                                                                                  >
+                                                                                    <span
+                                                                                      style={{
+                                                                                        color:
+                                                                                          "#e37222",
+                                                                                        textDecoration:
+                                                                                          "none",
+                                                                                      }}
                                                                                   >
                                                                                     <span
                                                                                       style={{
@@ -1967,6 +2239,30 @@ class Mail19 extends Component {
                                                                                           href="https://shop.flixbus.ch/search?departureCity=1504&arrivalCity=89/?wt_mc=ret.ch.FlixBus.email.standalone.product.pricepromo.ad&wt_cc1=190802_pricepromo_ch-email"
                                                                                           target="_blank"
                                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://shop.flixbus.ch/search?departureCity%3D1504%26arrivalCity%3D89/?wt_mc%3Dret.ch.FlixBus.email.standalone.product.pricepromo.ad%26wt_cc1%3D190802_pricepromo_ch-email&source=gmail&ust=1597146993199000&usg=AFQjCNHJxVWFpkFmnrGEtmqB8yNNPTE5Yw"
+                                                                                          onMouseEnter={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink12"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseLeave={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              false,
+                                                                                              "InLink12"
+                                                                                            );
+                                                                                          }}
+                                                                                          onMouseOver={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "InLink12"
+                                                                                            );
+                                                                                          }}
+                                                                                          onClick={() => {
+                                                                                            this.props.insideEmailInfo(
+                                                                                              true,
+                                                                                              "ClickedLink12"
+                                                                                            );
+                                                                                          }}
                                                                                         >
                                                                                           <img
                                                                                             style={{
@@ -2109,6 +2405,30 @@ class Mail19 extends Component {
                                                                     title='"" '
                                                                     target="_blank"
                                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d86899f2937f6e6872abedb5bf77eb2047e9f7f53901c912ff7470eb66cfa345ced039b534d8761eeb012f2681c300954ec964e81f27591395480&source=gmail&ust=1597146993199000&usg=AFQjCNEYcQEO6X0WI4s-Rwi7bN8fvhcLzQ"
+                                                                    onMouseEnter={() => {
+                                                                      this.props.insideEmailInfo(
+                                                                        true,
+                                                                        "InLink13"
+                                                                      );
+                                                                    }}
+                                                                    onMouseLeave={() => {
+                                                                      this.props.insideEmailInfo(
+                                                                        false,
+                                                                        "InLink13"
+                                                                      );
+                                                                    }}
+                                                                    onMouseOver={() => {
+                                                                      this.props.insideEmailInfo(
+                                                                        true,
+                                                                        "InLink13"
+                                                                      );
+                                                                    }}
+                                                                    onClick={() => {
+                                                                      this.props.insideEmailInfo(
+                                                                        true,
+                                                                        "ClickedLink13"
+                                                                      );
+                                                                    }}
                                                                   >
                                                                     <span
                                                                       style={{
@@ -2311,6 +2631,30 @@ class Mail19 extends Component {
                                                                           title='"Facebook" t '
                                                                           target="_blank"
                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d86895a09318fe84a79ffe8a25e88f726bab106e739169d1427dff7d0fdd1b73c8ab741a4ecc9489e5ef0d6e6d068a6721caf40a40392aec63754&source=gmail&ust=1597146993199000&usg=AFQjCNH_K0KrHth5PZouLDDT1sgbnMqSFg"
+                                                                          onMouseEnter={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onMouseLeave={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              false,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onMouseOver={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onClick={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "ClickedLink14"
+                                                                            );
+                                                                          }}
                                                                         >
                                                                           <span
                                                                             style={{
@@ -2346,6 +2690,30 @@ class Mail19 extends Component {
                                                                           title='"Twitter" t '
                                                                           target="_blank"
                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689580309fbc65dc95b70febb224c761b0e713b3a62a1fac1029078e85a6eba33b226708312facb9ef8e6d1e52de0c2f1aee37e9bc5a50611ef&source=gmail&ust=1597146993199000&usg=AFQjCNG7fYrn-YkE4BiaJmxKQe6vJp9yXQ"
+                                                                          onMouseEnter={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink15"
+                                                                            );
+                                                                          }}
+                                                                          onMouseLeave={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              false,
+                                                                              "InLink15"
+                                                                            );
+                                                                          }}
+                                                                          onMouseOver={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink15"
+                                                                            );
+                                                                          }}
+                                                                          onClick={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "ClickedLink15"
+                                                                            );
+                                                                          }}
                                                                         >
                                                                           <span
                                                                             style={{
@@ -2381,6 +2749,30 @@ class Mail19 extends Component {
                                                                           title='"Youtube" t '
                                                                           target="_blank"
                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d868956c3611c7f179b6f33ce3e9da8a47dc227e3d7dbe1e8a3764d4c994635082ee1c61a251082215e0c5a14dda067a4ffc9ba695c5df90a679a&source=gmail&ust=1597146993199000&usg=AFQjCNFvgK6z0WTIgLaBVestAcbyho_IuQ"
+                                                                          onMouseEnter={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink16"
+                                                                            );
+                                                                          }}
+                                                                          onMouseLeave={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              false,
+                                                                              "InLink16"
+                                                                            );
+                                                                          }}
+                                                                          onMouseOver={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink16"
+                                                                            );
+                                                                          }}
+                                                                          onClick={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "ClickedLink16"
+                                                                            );
+                                                                          }}
                                                                         >
                                                                           <span
                                                                             style={{
@@ -2416,7 +2808,31 @@ class Mail19 extends Component {
                                                                           title="Instagram"
                                                                           target="_blank"
                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d86891c9c6f556cc5746c2de2d1b1efe1243d51f312292638ce3c83f72e7e9a5b5f1998069cee9446c66ac3fae6faeb36b685df6968b1a10d0f7b&source=gmail&ust=1597146993199000&usg=AFQjCNErSFwuRZTPnCfHQmhT7mRwWjdDJg"
-                                                                        >
+                                                                          onMouseEnter={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink17"
+                                                                            );
+                                                                          }}
+                                                                          onMouseLeave={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              false,
+                                                                              "InLink17"
+                                                                            );
+                                                                          }}
+                                                                          onMouseOver={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink17"
+                                                                            );
+                                                                          }}
+                                                                          onClick={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "ClickedLink17"
+                                                                            );
+                                                                          }}
+                                                                       >
                                                                           <span
                                                                             style={{
                                                                               textDecoration:
@@ -2607,6 +3023,30 @@ class Mail19 extends Component {
                                                                           <a
                                                                             href={`mailto:${this.props.emailAdress}`}
                                                                             target="_blank"
+                                                                            onMouseEnter={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink18"
+                                                                              );
+                                                                            }}
+                                                                            onMouseLeave={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                false,
+                                                                                "InLink18"
+                                                                              );
+                                                                            }}
+                                                                            onMouseOver={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink18"
+                                                                              );
+                                                                            }}
+                                                                            onClick={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "ClickedLink18"
+                                                                              );
+                                                                            }}
                                                                           >
                                                                             {
                                                                               this
@@ -2629,6 +3069,30 @@ class Mail19 extends Component {
                                                                             href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689f8dcfd5d9b190b1c77261ad7d849ba91f90075f083de453219182992409a57706856b5ffe33179b61ca3662cb352f74707fec9eeb1b4e4c5"
                                                                             target="_blank"
                                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689f8dcfd5d9b190b1c77261ad7d849ba91f90075f083de453219182992409a57706856b5ffe33179b61ca3662cb352f74707fec9eeb1b4e4c5&source=gmail&ust=1597146993199000&usg=AFQjCNEQLWcO9ARWJqamczcMn0GeCpR3Rw"
+                                                                            onMouseEnter={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink19"
+                                                                              );
+                                                                            }}
+                                                                            onMouseLeave={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                false,
+                                                                                "InLink19"
+                                                                              );
+                                                                            }}
+                                                                            onMouseOver={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink19"
+                                                                              );
+                                                                            }}
+                                                                            onClick={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "ClickedLink19"
+                                                                              );
+                                                                            }}
                                                                           >
                                                                             <span
                                                                               style={{
@@ -2649,6 +3113,30 @@ class Mail19 extends Component {
                                                                             href="http://click.email.flixbus.com/?qs=e2d5a8d5406d868954eab7c8c331e18b69dcca611072d456620acd598af72604c045017a48fe295e2a0654b523d041de40b602d4afe1ba922f22825d83314c72"
                                                                             target="_blank"
                                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d868954eab7c8c331e18b69dcca611072d456620acd598af72604c045017a48fe295e2a0654b523d041de40b602d4afe1ba922f22825d83314c72&source=gmail&ust=1597146993199000&usg=AFQjCNEjpO0q_q8-fqDsoRpfrLamgMCK-g"
+                                                                            onMouseEnter={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink20"
+                                                                              );
+                                                                            }}
+                                                                            onMouseLeave={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                false,
+                                                                                "InLink20"
+                                                                              );
+                                                                            }}
+                                                                            onMouseOver={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink20"
+                                                                              );
+                                                                            }}
+                                                                            onClick={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "ClickedLink20"
+                                                                              );
+                                                                            }}
                                                                           >
                                                                             <span
                                                                               style={{
@@ -2715,6 +3203,30 @@ class Mail19 extends Component {
                                                                               href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689228fc2a5f4d6dd385ce33f305a618d919f5530a8ea3843df9c0ff0928e5b65018e9b5ea89e19a1563f96a7a3357044e1602654429075a35c"
                                                                               target="_blank"
                                                                               data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689228fc2a5f4d6dd385ce33f305a618d919f5530a8ea3843df9c0ff0928e5b65018e9b5ea89e19a1563f96a7a3357044e1602654429075a35c&source=gmail&ust=1597146993199000&usg=AFQjCNG1xHdisMFReCLgj_VjhlmTGpOAsQ"
+                                                                              onMouseEnter={() => {
+                                                                                this.props.insideEmailInfo(
+                                                                                  true,
+                                                                                  "InLink21"
+                                                                                );
+                                                                              }}
+                                                                              onMouseLeave={() => {
+                                                                                this.props.insideEmailInfo(
+                                                                                  false,
+                                                                                  "InLink21"
+                                                                                );
+                                                                              }}
+                                                                              onMouseOver={() => {
+                                                                                this.props.insideEmailInfo(
+                                                                                  true,
+                                                                                  "InLink21"
+                                                                                );
+                                                                              }}
+                                                                              onClick={() => {
+                                                                                this.props.insideEmailInfo(
+                                                                                  true,
+                                                                                  "ClickedLink21"
+                                                                                );
+                                                                              }}
                                                                             >
                                                                               <span
                                                                                 style={{
@@ -2863,7 +3375,30 @@ class Mail19 extends Component {
                                                             }}
                                                           >
                                                             FlixMobility GmbH{" "}
-                                                            <a href="https://www.google.com/maps/search/Birketweg+33+M%C3%BCnchen,+Bayern,+80335?entry=gmail&source=g">
+                                                            <a href="https://www.google.com/maps/search/Birketweg+33+M%C3%BCnchen,+Bayern,+80335?entry=gmail&source=g" onMouseEnter={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink22"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseLeave={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    false,
+                                                                                    "InLink22"
+                                                                                  );
+                                                                                }}
+                                                                                onMouseOver={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "InLink22"
+                                                                                  );
+                                                                                }}
+                                                                                onClick={() => {
+                                                                                  this.props.insideEmailInfo(
+                                                                                    true,
+                                                                                    "ClickedLink22"
+                                                                                  );
+                                                                                }}>
                                                               Birketweg 33
                                                               München, Bayern,
                                                               80335

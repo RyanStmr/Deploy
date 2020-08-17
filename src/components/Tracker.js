@@ -34,15 +34,12 @@ class Tracker extends Component {
       browserHeight: 0,
       marginToScreenTop: 0,
       marginToScreenLeft: 0,
-      mouseGeneralField: 0,
-      mouseEmailField: 0,
       inEmailScrollAmount: 0,
       inEmailPositionY: 0,
 
       submitted: false,
 
       //To be sent at end of study
-      visitedLinks: [],
     };
 
     this.resultInbox = { resultInbox: [], userID: 0 };

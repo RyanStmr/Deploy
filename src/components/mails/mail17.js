@@ -872,6 +872,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dda0f8e2d1eeb810b46b71a4c46f62d11acb4786eea2cd825151c4864976e437e35138f31c9d27e45b61b31ff2d3e1d89b"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dda0f8e2d1eeb810b46b71a4c46f62d11acb4786eea2cd825151c4864976e437e35138f31c9d27e45b61b31ff2d3e1d89b&source=gmail&ust=1597148808374000&usg=AFQjCNGljxBv6agistoJfsZTr9NRhTbJag"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink5"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink5"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink5"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink5"
+                                                        );
+                                                      }}
                                                     >
                                                       <span
                                                         style={{
@@ -986,6 +1010,30 @@ class Mail17 extends Component {
                                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dda0f8e2d1eeb810b46b71a4c46f62d11acb4786eea2cd825151c4864976e437e35138f31c9d27e45b61b31ff2d3e1d89b"
                                                                       target="_blank"
                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dda0f8e2d1eeb810b46b71a4c46f62d11acb4786eea2cd825151c4864976e437e35138f31c9d27e45b61b31ff2d3e1d89b&source=gmail&ust=1597148808374000&usg=AFQjCNGljxBv6agistoJfsZTr9NRhTbJag"
+                                                                      onMouseEnter={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          true,
+                                                                          "InLink6"
+                                                                        );
+                                                                      }}
+                                                                      onMouseLeave={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          false,
+                                                                          "InLink6"
+                                                                        );
+                                                                      }}
+                                                                      onMouseOver={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          true,
+                                                                          "InLink7"
+                                                                        );
+                                                                      }}
+                                                                      onClick={() => {
+                                                                        this.props.insideEmailInfo(
+                                                                          true,
+                                                                          "ClickedLink8"
+                                                                        );
+                                                                      }}
                                                                     >
                                                                       <span className="m_3452812782107377922button-link2">
                                                                         <span
@@ -1467,6 +1515,30 @@ class Mail17 extends Component {
                                                                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009"
                                                                                                       target="_blank"
                                                                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009&source=gmail&ust=1597148808374000&usg=AFQjCNEYMnyxYqb-6qAn-wyrw0KrJ8ym0A"
+                                                                                                      onMouseEnter={() => {
+                                                                                                        this.props.insideEmailInfo(
+                                                                                                          true,
+                                                                                                          "InLink7"
+                                                                                                        );
+                                                                                                      }}
+                                                                                                      onMouseLeave={() => {
+                                                                                                        this.props.insideEmailInfo(
+                                                                                                          false,
+                                                                                                          "InLink7"
+                                                                                                        );
+                                                                                                      }}
+                                                                                                      onMouseOver={() => {
+                                                                                                        this.props.insideEmailInfo(
+                                                                                                          true,
+                                                                                                          "InLink7"
+                                                                                                        );
+                                                                                                      }}
+                                                                                                      onClick={() => {
+                                                                                                        this.props.insideEmailInfo(
+                                                                                                          true,
+                                                                                                          "ClickedLink7"
+                                                                                                        );
+                                                                                                      }}
                                                                                                     >
                                                                                                       <span
                                                                                                         style={{
@@ -1567,6 +1639,30 @@ class Mail17 extends Component {
                                                                                                           href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009"
                                                                                                           target="_blank"
                                                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009&source=gmail&ust=1597148808374000&usg=AFQjCNEYMnyxYqb-6qAn-wyrw0KrJ8ym0A"
+                                                                                                          onMouseEnter={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "InLink8"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onMouseLeave={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              false,
+                                                                                                              "InLink8"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onMouseOver={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "InLink8"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onClick={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "ClickedLink8"
+                                                                                                            );
+                                                                                                          }}
                                                                                                         >
                                                                                                           <span
                                                                                                             style={{
@@ -1663,6 +1759,30 @@ class Mail17 extends Component {
                                                                                                                   href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009"
                                                                                                                   target="_blank"
                                                                                                                   data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd623f34ed0628371bce084dd7f2f5e013caf26128c85793cad7e2502d851cc5f42ff755c7dae75929f13f89722f59f009&source=gmail&ust=1597148808374000&usg=AFQjCNEYMnyxYqb-6qAn-wyrw0KrJ8ym0A"
+                                                                                                                  onMouseEnter={() => {
+                                                                                                                    this.props.insideEmailInfo(
+                                                                                                                      true,
+                                                                                                                      "InLink9"
+                                                                                                                    );
+                                                                                                                  }}
+                                                                                                                  onMouseLeave={() => {
+                                                                                                                    this.props.insideEmailInfo(
+                                                                                                                      false,
+                                                                                                                      "InLink9"
+                                                                                                                    );
+                                                                                                                  }}
+                                                                                                                  onMouseOver={() => {
+                                                                                                                    this.props.insideEmailInfo(
+                                                                                                                      true,
+                                                                                                                      "InLink9"
+                                                                                                                    );
+                                                                                                                  }}
+                                                                                                                  onClick={() => {
+                                                                                                                    this.props.insideEmailInfo(
+                                                                                                                      true,
+                                                                                                                      "ClickedLink9"
+                                                                                                                    );
+                                                                                                                  }}
                                                                                                                 >
                                                                                                                   <span
                                                                                                                     style={{
@@ -2064,6 +2184,30 @@ class Mail17 extends Component {
                                                                                                           href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000"
                                                                                                           target="_blank"
                                                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000&source=gmail&ust=1597148808374000&usg=AFQjCNF_OqkxMr1I7A42ivSbMHzaNmCA-w"
+                                                                                                          onMouseEnter={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "InLink10"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onMouseLeave={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              false,
+                                                                                                              "InLink10"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onMouseOver={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "InLink10"
+                                                                                                            );
+                                                                                                          }}
+                                                                                                          onClick={() => {
+                                                                                                            this.props.insideEmailInfo(
+                                                                                                              true,
+                                                                                                              "ClickedLink10"
+                                                                                                            );
+                                                                                                          }}
                                                                                                         >
                                                                                                           <span
                                                                                                             style={{
@@ -2169,6 +2313,30 @@ class Mail17 extends Component {
                                                                                                             href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000"
                                                                                                             target="_blank"
                                                                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000&source=gmail&ust=1597148808374000&usg=AFQjCNF_OqkxMr1I7A42ivSbMHzaNmCA-w"
+                                                                                                            onMouseEnter={() => {
+                                                                                                              this.props.insideEmailInfo(
+                                                                                                                true,
+                                                                                                                "InLink11"
+                                                                                                              );
+                                                                                                            }}
+                                                                                                            onMouseLeave={() => {
+                                                                                                              this.props.insideEmailInfo(
+                                                                                                                false,
+                                                                                                                "InLink11"
+                                                                                                              );
+                                                                                                            }}
+                                                                                                            onMouseOver={() => {
+                                                                                                              this.props.insideEmailInfo(
+                                                                                                                true,
+                                                                                                                "InLink11"
+                                                                                                              );
+                                                                                                            }}
+                                                                                                            onClick={() => {
+                                                                                                              this.props.insideEmailInfo(
+                                                                                                                true,
+                                                                                                                "ClickedLink11"
+                                                                                                              );
+                                                                                                            }}
                                                                                                           >
                                                                                                             <span
                                                                                                               style={{
@@ -2272,6 +2440,30 @@ class Mail17 extends Component {
                                                                                                                     href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000"
                                                                                                                     target="_blank"
                                                                                                                     data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd8fe97debe24237db76d9c725904138395e0921a2816c17260b8f1cdc8941aa8eecc9c15c9e86fdc12ceb9e02acbaf000&source=gmail&ust=1597148808374000&usg=AFQjCNF_OqkxMr1I7A42ivSbMHzaNmCA-w"
+                                                                                                                    onMouseEnter={() => {
+                                                                                                                      this.props.insideEmailInfo(
+                                                                                                                        true,
+                                                                                                                        "InLink12"
+                                                                                                                      );
+                                                                                                                    }}
+                                                                                                                    onMouseLeave={() => {
+                                                                                                                      this.props.insideEmailInfo(
+                                                                                                                        false,
+                                                                                                                        "InLink12"
+                                                                                                                      );
+                                                                                                                    }}
+                                                                                                                    onMouseOver={() => {
+                                                                                                                      this.props.insideEmailInfo(
+                                                                                                                        true,
+                                                                                                                        "InLink12"
+                                                                                                                      );
+                                                                                                                    }}
+                                                                                                                    onClick={() => {
+                                                                                                                      this.props.insideEmailInfo(
+                                                                                                                        true,
+                                                                                                                        "ClickedLink12"
+                                                                                                                      );
+                                                                                                                    }}
                                                                                                                   >
                                                                                                                     <span
                                                                                                                       style={{
@@ -2678,6 +2870,30 @@ class Mail17 extends Component {
                                                           href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd0ad08abb50d10a07a32cccbe2290113c8a960459ef0f379636ec5bd0bdb5746dd0c252e9557c8e88402aa42011478199"
                                                           target="_blank"
                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd0ad08abb50d10a07a32cccbe2290113c8a960459ef0f379636ec5bd0bdb5746dd0c252e9557c8e88402aa42011478199&source=gmail&ust=1597148808374000&usg=AFQjCNHAlyluupjU8Ib-v7rg_S9OXTQr2w"
+                                                          onMouseEnter={() => {
+                                                            this.props.insideEmailInfo(
+                                                              true,
+                                                              "InLink13"
+                                                            );
+                                                          }}
+                                                          onMouseLeave={() => {
+                                                            this.props.insideEmailInfo(
+                                                              false,
+                                                              "InLink13"
+                                                            );
+                                                          }}
+                                                          onMouseOver={() => {
+                                                            this.props.insideEmailInfo(
+                                                              true,
+                                                              "InLink13"
+                                                            );
+                                                          }}
+                                                          onClick={() => {
+                                                            this.props.insideEmailInfo(
+                                                              true,
+                                                              "ClickedLink13"
+                                                            );
+                                                          }}
                                                         >
                                                           typische
                                                           Planungsfehler und
@@ -2927,6 +3143,30 @@ class Mail17 extends Component {
                                                                           href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd97c6b6d0ac4f49a26d02ed0bc56a63bc400232032975e44e95f59cb03920687a399d48b9bb4a4fb86327bc0d9820eb30"
                                                                           target="_blank"
                                                                           data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd97c6b6d0ac4f49a26d02ed0bc56a63bc400232032975e44e95f59cb03920687a399d48b9bb4a4fb86327bc0d9820eb30&source=gmail&ust=1597148808374000&usg=AFQjCNE6Wem5WAJWquo1TY_mIhaMBOT9RQ"
+                                                                          onMouseEnter={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onMouseLeave={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              false,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onMouseOver={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "InLink14"
+                                                                            );
+                                                                          }}
+                                                                          onClick={() => {
+                                                                            this.props.insideEmailInfo(
+                                                                              true,
+                                                                              "ClickedLink14"
+                                                                            );
+                                                                          }}
                                                                         >
                                                                           <span
                                                                             style={{
@@ -3007,6 +3247,30 @@ class Mail17 extends Component {
                                                                             href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936ddaee88b7e6762291b062b303e171369bef8c00fdd0ca7eba63a8fe6c1379a20c0cb02243b6fcb123edc5189340de7b2ac"
                                                                             target="_blank"
                                                                             data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936ddaee88b7e6762291b062b303e171369bef8c00fdd0ca7eba63a8fe6c1379a20c0cb02243b6fcb123edc5189340de7b2ac&source=gmail&ust=1597148808375000&usg=AFQjCNEtpSBC9Ny5ShGkfEVoLt6vvNz2Yg"
+                                                                            onMouseEnter={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink15"
+                                                                              );
+                                                                            }}
+                                                                            onMouseLeave={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                false,
+                                                                                "InLink15"
+                                                                              );
+                                                                            }}
+                                                                            onMouseOver={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "InLink15"
+                                                                              );
+                                                                            }}
+                                                                            onClick={() => {
+                                                                              this.props.insideEmailInfo(
+                                                                                true,
+                                                                                "ClickedLink15"
+                                                                              );
+                                                                            }}
                                                                           >
                                                                             <span
                                                                               style={{
@@ -3387,6 +3651,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936ddea8b52ab098a16b60494837f7adc6371ef6b51dba417c6ffd3aca16929753a26d5269f621438bd6b878be06487f3d39c"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936ddea8b52ab098a16b60494837f7adc6371ef6b51dba417c6ffd3aca16929753a26d5269f621438bd6b878be06487f3d39c&source=gmail&ust=1597148808375000&usg=AFQjCNHgJkPD5b_wL1hS-Q4lBz0r5fS5-Q"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink16"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink16"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink16"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink16"
+                                                        );
+                                                      }}
                                                     >
                                                       <b>
                                                         <span
@@ -3405,6 +3693,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936ddf961dad443f2e6dbe1df19ef7c7a75dfb3a877c2ca23784befc488cbcee4684968d8e1ff372a3caab8a6cbee7644f260"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936ddf961dad443f2e6dbe1df19ef7c7a75dfb3a877c2ca23784befc488cbcee4684968d8e1ff372a3caab8a6cbee7644f260&source=gmail&ust=1597148808375000&usg=AFQjCNGgWi4aan5v2wguHoE5jAjYyvAKxA"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink17"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink17"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink17"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink17"
+                                                        );
+                                                      }}
                                                     >
                                                       <b>
                                                         <span
@@ -3423,6 +3735,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd4796175dc40a3b9da7abf35b38b31754c3bf0a70d4d2bb2a514e31f4339d596783dfc427123476dc86f347ba25829130"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd4796175dc40a3b9da7abf35b38b31754c3bf0a70d4d2bb2a514e31f4339d596783dfc427123476dc86f347ba25829130&source=gmail&ust=1597148808375000&usg=AFQjCNF0uEKC51BqULLe2YGCvFd1K1oqSw"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink18"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink18"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink18"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink18"
+                                                        );
+                                                      }}
                                                     >
                                                       <b>
                                                         <span
@@ -3482,6 +3818,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd32a4a83c2767fe1a7dc3649985b4a545beb0e2e9b46f26a435771336c759e280df2598c4ade75c0abddab1ad63d1b0f80ea27daeba482dcc"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd32a4a83c2767fe1a7dc3649985b4a545beb0e2e9b46f26a435771336c759e280df2598c4ade75c0abddab1ad63d1b0f80ea27daeba482dcc&source=gmail&ust=1597148808375000&usg=AFQjCNG5Gw-1zUQC9KSSZMPMBPk5E6bFmA"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink19"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink19"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink19"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink19"
+                                                        );
+                                                      }}
                                                     >
                                                       <span className="m_3452812782107377922footer">
                                                         hier abmelden
@@ -3536,6 +3896,30 @@ class Mail17 extends Component {
                                                       href="https://click.mail.immobilienscout24.de/?qs=00af7ffc4ed936dd2dceeb1fe2e5cfd319f5318b9b38f72dd87c3ffe447b70831a0197c6efe33607a8ca37667416ef1284e66231ea61127e"
                                                       target="_blank"
                                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://click.mail.immobilienscout24.de/?qs%3D00af7ffc4ed936dd2dceeb1fe2e5cfd319f5318b9b38f72dd87c3ffe447b70831a0197c6efe33607a8ca37667416ef1284e66231ea61127e&source=gmail&ust=1597148808375000&usg=AFQjCNHlfpeS6o8Z8rPAwemohZnqK4XdlQ"
+                                                      onMouseEnter={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink20"
+                                                        );
+                                                      }}
+                                                      onMouseLeave={() => {
+                                                        this.props.insideEmailInfo(
+                                                          false,
+                                                          "InLink20"
+                                                        );
+                                                      }}
+                                                      onMouseOver={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "InLink20"
+                                                        );
+                                                      }}
+                                                      onClick={() => {
+                                                        this.props.insideEmailInfo(
+                                                          true,
+                                                          "ClickedLink20"
+                                                        );
+                                                      }}
                                                     >
                                                       <span
                                                         style={{

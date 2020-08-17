@@ -46,6 +46,21 @@ class Mail20 extends Component {
                                 href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KI_Re86f4VEiVanjQDpBJX_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ=="
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KI_Re86f4VEiVanjQDpBJX_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ%3D%3D&source=gmail&ust=1597146657011000&usg=AFQjCNElxTlpwV3ikVEwqQdGhC9qKOm4vQ"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink1");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink1");
+                                }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink1"
+                                  );
+                                }}
                               >
                                 Wir haben die perfekten Rabatte für eure
                                 Fitness-Träume{" "}
@@ -80,6 +95,21 @@ class Mail20 extends Component {
                                 href="https://email.myunidays.com/campaign/view/_7MvmjkQ2Uy8uqeNAOnXNacaP9Yt92tAjUw4xK9jgPQjhPI5FWSzRLuSyNhBn1lT/A/eyJSRUNJUElFTlRJRCI6ImQ2M2YxYWE3LWY3MmQtNDA2Yi04ZDRjLTM4YzRhZjYzODBmNCIsIkZJUlNUTkFNRSI6IlJ5YW4iLCJMQVNUTkFNRSI6IlN0ZWltZXIiLCJSRUZFUlJBTENPREUiOiJDNW9jTzljOW9rdyIsIlNIQVJFVVJMIjoiaHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9yL0M1b2NPOWM5b2t3IiwiRkFDRUJPT0tVUkwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vc2hhcmVyLnBocD91PWh0dHBzJTNhJTJmJTJmd3d3Lm15dW5pZGF5cy5jb20lMmZyJTJmQzVvY085Yzlva3cmdD1BbmdlYm90ZStmJWMzJWJjcitTdHVkZW50ZW4rJWUyJTgwJTkzK3NjaG5lbGwlMmMra29zdGVubG9zK3VuZCtleGtsdXNpdiIsIlRXSVRURVJVUkwiOiJodHRwczovL3R3aXR0ZXIuY29tL2hvbWU_c3RhdHVzPUFscyUyMFN0dWRlbnQlMjBrYW5uc3QlMjBkdSUyMGJlaSUyMCU0ME15VU5pREFZUyUyMGRhcyUyMGdhbnplJTIwSmFociUyMFJhYmF0dGUlMjBnZW5pZSVjMyU5ZmVuLiUyME1lbGRlJTIwZGljaCUyMGpldHp0JTIwYW4lM2ElMjAlMjBodHRwcyUzYSUyZiUyZnd3dy5teXVuaWRheXMuY29tJTJmciUyZkM1b2NPOWM5b2t3IiwiV0hBVFNBUFBVUkwiOiJ3aGF0c2FwcDovL3NlbmQ_dGV4dD1IZXkhJTIwSGFzdCUyMGR1JTIwc2Nob24lMjB2b24lMjBVTmlEQVlTJTIwZ2VoJWMzJWI2cnQlM2YlMjBNZWxkJTIwZGljaCUyMGpldHp0JTIwa29zdGVubG9zJTIwYW4lMjB1bmQlMjBmYW5nJTIwc29mb3J0JTIwYW4lMjB6dSUyMHNwYXJlbi4lMjAlMjBodHRwcyUzYSUyZiUyZnd3dy5teXVuaWRheXMuY29tJTJmciUyZkM1b2NPOWM5b2t3IiwiRU1BSUwiOiJyeWFuLnNAaG90bWFpbC5kZSIsIlVOU1VCU0NSSUJFIjoiaHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9hY2NvdW50L3NldHRpbmdzL3Vuc3Vic2NyaWJlL3B4b18xaTMzYTBDTlREakVyMk9BOUNPRThqa1ZaTE5FdTVMSTJFR2ZXVlBfc3ktYU9SRFpUTHk2cDQwQTZkYzEvMSJ9/eyJIQVZFTkFNRSI6dHJ1ZSwiTk9OQU1FIjpmYWxzZX0=/uY9uGOJHXtC7XqnVrL0vOEHl1YsYSrMrBfeAG3Jn59-oy2fsYcGbFK6TEjTE-X_IkcCDBpzUMcMgKd4RR9_L3g=="
                                 target="_blank"
                                 data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/view/_7MvmjkQ2Uy8uqeNAOnXNacaP9Yt92tAjUw4xK9jgPQjhPI5FWSzRLuSyNhBn1lT/A/eyJSRUNJUElFTlRJRCI6ImQ2M2YxYWE3LWY3MmQtNDA2Yi04ZDRjLTM4YzRhZjYzODBmNCIsIkZJUlNUTkFNRSI6IlJ5YW4iLCJMQVNUTkFNRSI6IlN0ZWltZXIiLCJSRUZFUlJBTENPREUiOiJDNW9jTzljOW9rdyIsIlNIQVJFVVJMIjoiaHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9yL0M1b2NPOWM5b2t3IiwiRkFDRUJPT0tVUkwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vc2hhcmVyLnBocD91PWh0dHBzJTNhJTJmJTJmd3d3Lm15dW5pZGF5cy5jb20lMmZyJTJmQzVvY085Yzlva3cmdD1BbmdlYm90ZStmJWMzJWJjcitTdHVkZW50ZW4rJWUyJTgwJTkzK3NjaG5lbGwlMmMra29zdGVubG9zK3VuZCtleGtsdXNpdiIsIlRXSVRURVJVUkwiOiJodHRwczovL3R3aXR0ZXIuY29tL2hvbWU_c3RhdHVzPUFscyUyMFN0dWRlbnQlMjBrYW5uc3QlMjBkdSUyMGJlaSUyMCU0ME15VU5pREFZUyUyMGRhcyUyMGdhbnplJTIwSmFociUyMFJhYmF0dGUlMjBnZW5pZSVjMyU5ZmVuLiUyME1lbGRlJTIwZGljaCUyMGpldHp0JTIwYW4lM2ElMjAlMjBodHRwcyUzYSUyZiUyZnd3dy5teXVuaWRheXMuY29tJTJmciUyZkM1b2NPOWM5b2t3IiwiV0hBVFNBUFBVUkwiOiJ3aGF0c2FwcDovL3NlbmQ_dGV4dD1IZXkhJTIwSGFzdCUyMGR1JTIwc2Nob24lMjB2b24lMjBVTmlEQVlTJTIwZ2VoJWMzJWI2cnQlM2YlMjBNZWxkJTIwZGljaCUyMGpldHp0JTIwa29zdGVubG9zJTIwYW4lMjB1bmQlMjBmYW5nJTIwc29mb3J0JTIwYW4lMjB6dSUyMHNwYXJlbi4lMjAlMjBodHRwcyUzYSUyZiUyZnd3dy5teXVuaWRheXMuY29tJTJmciUyZkM1b2NPOWM5b2t3IiwiRU1BSUwiOiJyeWFuLnNAaG90bWFpbC5kZSIsIlVOU1VCU0NSSUJFIjoiaHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9hY2NvdW50L3NldHRpbmdzL3Vuc3Vic2NyaWJlL3B4b18xaTMzYTBDTlREakVyMk9BOUNPRThqa1ZaTE5FdTVMSTJFR2ZXVlBfc3ktYU9SRFpUTHk2cDQwQTZkYzEvMSJ9/eyJIQVZFTkFNRSI6dHJ1ZSwiTk9OQU1FIjpmYWxzZX0%3D/uY9uGOJHXtC7XqnVrL0vOEHl1YsYSrMrBfeAG3Jn59-oy2fsYcGbFK6TEjTE-X_IkcCDBpzUMcMgKd4RR9_L3g%3D%3D&source=gmail&ust=1597146657012000&usg=AFQjCNHVHiqzTateIpALyj3KhAMMhok6Ew"
+                                onMouseEnter={() => {
+                                  this.props.insideEmailInfo(true, "InLink2");
+                                }}
+                                onMouseLeave={() => {
+                                  this.props.insideEmailInfo(false, "InLink2");
+                                }}
+                                onMouseOver={() => {
+                                  this.props.insideEmailInfo(true, "InLink2");
+                                }}
+                                onClick={() => {
+                                  this.props.insideEmailInfo(
+                                    true,
+                                    "ClickedLink2"
+                                  );
+                                }}
                               >
                                 <span style={{ color: "#383641" }}>
                                   web-browser
@@ -158,6 +188,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9PD89ppiOQlFrxynjQDpBJX_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ=="
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9PD89ppiOQlFrxynjQDpBJX_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ%3D%3D&source=gmail&ust=1597146657012000&usg=AFQjCNF73cxu_GbnVcf0VjPEgay13Yoh1A"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink3");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink3");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink3");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink3"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -240,6 +285,30 @@ class Mail20 extends Component {
                                       href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9GkzvjbMtxdMk9WnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3VuaWRheXM="
                                       target="_blank"
                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9GkzvjbMtxdMk9WnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3VuaWRheXM%3D&source=gmail&ust=1597146657012000&usg=AFQjCNETyEk5ioSwwSwyNUd5oQDESYFIuw"
+                                      onMouseEnter={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink4"
+                                        );
+                                      }}
+                                      onMouseLeave={() => {
+                                        this.props.insideEmailInfo(
+                                          false,
+                                          "InLink4"
+                                        );
+                                      }}
+                                      onMouseOver={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink4"
+                                        );
+                                      }}
+                                      onClick={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "ClickedLink4"
+                                        );
+                                      }}
                                     >
                                       <span
                                         style={{
@@ -294,6 +363,30 @@ class Mail20 extends Component {
                                       href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9Jn4Kjl8DdpGhxmnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly90d2l0dGVyLmNvbS9VTmlEQVlTX0RF"
                                       target="_blank"
                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9Jn4Kjl8DdpGhxmnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly90d2l0dGVyLmNvbS9VTmlEQVlTX0RF&source=gmail&ust=1597146657012000&usg=AFQjCNF56Iag4kDCAnLu8pJQ_44xe_y74g"
+                                      onMouseEnter={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink5"
+                                        );
+                                      }}
+                                      onMouseLeave={() => {
+                                        this.props.insideEmailInfo(
+                                          false,
+                                          "InLink5"
+                                        );
+                                      }}
+                                      onMouseOver={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink5"
+                                        );
+                                      }}
+                                      onClick={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "ClickedLink5"
+                                        );
+                                      }}
                                     >
                                       <span
                                         style={{
@@ -348,6 +441,30 @@ class Mail20 extends Component {
                                       href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9CPGekrLPjNNtPCnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cDovL3d3dy5waW50ZXJlc3QuY29tL3VuaWRheXM="
                                       target="_blank"
                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9CPGekrLPjNNtPCnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cDovL3d3dy5waW50ZXJlc3QuY29tL3VuaWRheXM%3D&source=gmail&ust=1597146657012000&usg=AFQjCNEwh3e28pynKI7XDBGhRLk-9VanAQ"
+                                      onMouseEnter={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink6"
+                                        );
+                                      }}
+                                      onMouseLeave={() => {
+                                        this.props.insideEmailInfo(
+                                          false,
+                                          "InLink6"
+                                        );
+                                      }}
+                                      onMouseOver={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink7"
+                                        );
+                                      }}
+                                      onClick={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "ClickedLink8"
+                                        );
+                                      }}
                                     >
                                       <span
                                         style={{
@@ -402,6 +519,30 @@ class Mail20 extends Component {
                                       href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9FLEVTIq68VBlyunjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cDovL2luc3RhZ3JhbS5jb20vbXl1bmlkYXlz"
                                       target="_blank"
                                       data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9FLEVTIq68VBlyunjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cDovL2luc3RhZ3JhbS5jb20vbXl1bmlkYXlz&source=gmail&ust=1597146657012000&usg=AFQjCNGZO3R33IFAcIWRQGdAlMSIL-i1jw"
+                                      onMouseEnter={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink7"
+                                        );
+                                      }}
+                                      onMouseLeave={() => {
+                                        this.props.insideEmailInfo(
+                                          false,
+                                          "InLink7"
+                                        );
+                                      }}
+                                      onMouseOver={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "InLink7"
+                                        );
+                                      }}
+                                      onClick={() => {
+                                        this.props.insideEmailInfo(
+                                          true,
+                                          "ClickedLink7"
+                                        );
+                                      }}
                                     >
                                       <span
                                         style={{
@@ -515,6 +656,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9E3hYhgJxctImBmnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ=="
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9E3hYhgJxctImBmnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ%3D%3D&source=gmail&ust=1597146657012000&usg=AFQjCNFZEBmtrHun_Z7RCqKUkftcIs3w5A"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink8");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink8");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink8");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink8"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -558,6 +714,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KneHPYTgrpHt7enjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9teXByb3RlaW4vdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxOCZ1dG1fY29udGVudD00Mjg5NS1NeVByb3RlaW4mdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy"
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KneHPYTgrpHt7enjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9teXByb3RlaW4vdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxOCZ1dG1fY29udGVudD00Mjg5NS1NeVByb3RlaW4mdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy&source=gmail&ust=1597146657012000&usg=AFQjCNFET7sPLIJ2pZlhidIhCGf9eKXpUg"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink9");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink9");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink9");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink9"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -598,6 +769,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9FsT2I4ql0JApBunjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9hZGlkYXMvdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1hZGlkYXMmdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy"
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9FsT2I4ql0JApBunjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9hZGlkYXMvdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1hZGlkYXMmdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy&source=gmail&ust=1597146657012000&usg=AFQjCNGNAAGgrgAFWmQMiOUv1QLwLAb18A"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink10");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink10");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink10");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink10"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -638,6 +824,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9P8r2B5Hl0pNsrWnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9yZWVib2svdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1SZWVib2smdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy"
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9P8r2B5Hl0pNsrWnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy9yZWVib2svdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1SZWVib2smdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy&source=gmail&ust=1597146657012000&usg=AFQjCNGbvQXbCigklkhzkEW-4C-VLNi9fQ"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink11");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink11");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink11");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink11"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -678,6 +879,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9O05VKkCP4pMh3KnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy90aGVwcm90ZWlud29ya3Mvdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1UUFcmdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy"
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9O05VKkCP4pMh3KnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9wYXJ0bmVycy90aGVwcm90ZWlud29ya3Mvdmlldy9vbmxpbmU_dXRtX2NhbXBhaWduPUp1bmVfMjAxNyZ1dG1fY29udGVudD00Mjg5NC1UUFcmdXRtX21lZGl1bT11bl9jcm0mdXRtX3NvdXJjZT1uZXdzbGV0dGVy&source=gmail&ust=1597146657012000&usg=AFQjCNGPXTURja0WWWfUM4E_RA_EuhxwXg"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink12");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink12");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink12");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink12"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -721,6 +937,21 @@ class Mail20 extends Component {
                               href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9AAx10ON5lBBmvGnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ=="
                               target="_blank"
                               data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9AAx10ON5lBBmvGnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_dXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ%3D%3D&source=gmail&ust=1597146657013000&usg=AFQjCNFh144pfjvUZaqxrbaXWyJrAs-9hQ"
+                              onMouseEnter={() => {
+                                this.props.insideEmailInfo(true, "InLink13");
+                              }}
+                              onMouseLeave={() => {
+                                this.props.insideEmailInfo(false, "InLink13");
+                              }}
+                              onMouseOver={() => {
+                                this.props.insideEmailInfo(true, "InLink13");
+                              }}
+                              onClick={() => {
+                                this.props.insideEmailInfo(
+                                  true,
+                                  "ClickedLink13"
+                                );
+                              }}
                             >
                               <span
                                 style={{
@@ -774,6 +1005,18 @@ class Mail20 extends Component {
                         href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KGs76eF51VFplCnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_bG9naW4mdXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ=="
                         target="_blank"
                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9KGs76eF51VFplCnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS8_bG9naW4mdXRtX2NhbXBhaWduPWp1bmVfMjAxNyZ1dG1fY29udGVudD0wMS4wNi4xN19GaXRuZXNzX0RFX00mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW9ubGluZQ%3D%3D&source=gmail&ust=1597146657013000&usg=AFQjCNGv0DW3vBpV16tR6h5rkQpplm8O4w"
+                        onMouseEnter={() => {
+                          this.props.insideEmailInfo(true, "InLink14");
+                        }}
+                        onMouseLeave={() => {
+                          this.props.insideEmailInfo(false, "InLink14");
+                        }}
+                        onMouseOver={() => {
+                          this.props.insideEmailInfo(true, "InLink14");
+                        }}
+                        onClick={() => {
+                          this.props.insideEmailInfo(true, "ClickedLink14");
+                        }}
                       >
                         myunidays.com
                       </a>
@@ -783,12 +1026,38 @@ class Mail20 extends Component {
                         href="https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9OfblOFfXGVCjUWnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9hY2NvdW50L3NldHRpbmdzL3Vuc3Vic2NyaWJlL3B4b18xaTMzYTBDTlREakVyMk9BOUNPRThqa1ZaTE5FdTVMSTJFR2ZXVlBfc3ktYU9SRFpUTHk2cDQwQTZkYzEvMT91dG1fY2FtcGFpZ249anVuZV8yMDE3JnV0bV9jb250ZW50PTAxLjA2LjE3X0ZpdG5lc3NfREVfTSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b25saW5l"
                         target="_blank"
                         data-saferedirecturl="https://www.google.com/url?hl=de&q=https://email.myunidays.com/campaign/clicked/pxo_1i33a0CNTDjEr2OA9OfblOFfXGVCjUWnjQDpBJr_sy-aORDZTLy6p40A6dc1aHR0cHM6Ly93d3cubXl1bmlkYXlzLmNvbS9hY2NvdW50L3NldHRpbmdzL3Vuc3Vic2NyaWJlL3B4b18xaTMzYTBDTlREakVyMk9BOUNPRThqa1ZaTE5FdTVMSTJFR2ZXVlBfc3ktYU9SRFpUTHk2cDQwQTZkYzEvMT91dG1fY2FtcGFpZ249anVuZV8yMDE3JnV0bV9jb250ZW50PTAxLjA2LjE3X0ZpdG5lc3NfREVfTSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b25saW5l&source=gmail&ust=1597146657013000&usg=AFQjCNG1v9kJ86rgVUswtSavFtQPg5pElg"
+                        onMouseEnter={() => {
+                          this.props.insideEmailInfo(true, "InLink15");
+                        }}
+                        onMouseLeave={() => {
+                          this.props.insideEmailInfo(false, "InLink15");
+                        }}
+                        onMouseOver={() => {
+                          this.props.insideEmailInfo(true, "InLink15");
+                        }}
+                        onClick={() => {
+                          this.props.insideEmailInfo(true, "ClickedLink15");
+                        }}
                       >
                         hier
                       </a>
                       . UNiDAYS ist in England und Wales unter der folgenden
                       Adresse registriert:{" "}
-                      <a href="https://www.google.com/maps/search/2+Castle+Boulevard,+Nottingham,+NG7+1FB,+Gro%C3%9Fbritannien?entry=gmail&source=g">
+                      <a
+                        href="https://www.google.com/maps/search/2+Castle+Boulevard,+Nottingham,+NG7+1FB,+Gro%C3%9Fbritannien?entry=gmail&source=g"
+                        onMouseEnter={() => {
+                          this.props.insideEmailInfo(true, "InLink16");
+                        }}
+                        onMouseLeave={() => {
+                          this.props.insideEmailInfo(false, "InLink16");
+                        }}
+                        onMouseOver={() => {
+                          this.props.insideEmailInfo(true, "InLink16");
+                        }}
+                        onClick={() => {
+                          this.props.insideEmailInfo(true, "ClickedLink16");
+                        }}
+                      >
                         2 Castle Boulevard, Nottingham, NG7 1FB, Großbritannien
                       </a>
                       .<u />

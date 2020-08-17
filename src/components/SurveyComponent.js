@@ -48,7 +48,7 @@ class SurveyComponent extends Component {
       },
       {
         type: "dropdown",
-        name: "car",
+        name: "socialMediaTime",
         title:
           "How much time to you spend on Social Media per day? (eg. Facebook, Instagram, Snapchat, TikTok)",
         isRequired: true,

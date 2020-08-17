@@ -1831,7 +1831,7 @@ class Mail19 extends Component {
                                                                                         "ClickedLink9"
                                                                                       );
                                                                                     }}
-                                                                                 >
+                                                                                  >
                                                                                     <span
                                                                                       style={{
                                                                                         fontSize:
@@ -2128,51 +2128,50 @@ class Mail19 extends Component {
                                                                                         textDecoration:
                                                                                           "none",
                                                                                       }}
-                                                                                  >
-                                                                                    <span
-                                                                                      style={{
-                                                                                        fontSize:
-                                                                                          "10.5pt",
-                                                                                        fontFamily:
-                                                                                          '"Arial",sans-serif',
-                                                                                        textDecoration:
-                                                                                          "none",
-                                                                                      }}
                                                                                     >
-                                                                                      <img
+                                                                                      <span
                                                                                         style={{
-                                                                                          width:
-                                                                                            "1.8333in",
-                                                                                          height:
-                                                                                            "1.8333in",
+                                                                                          fontSize:
+                                                                                            "10.5pt",
+                                                                                          fontFamily:
+                                                                                            '"Arial",sans-serif',
+                                                                                          textDecoration:
+                                                                                            "none",
                                                                                         }}
-                                                                                        id="m_-6478484151937468075_x0000_i1035"
-                                                                                        src="https://ci4.googleusercontent.com/proxy/oHwlNMmMNQtmomwKhkqVQH5vnL0zcvuttLfHoMASFbs-mkuGmWfKW7Kl5lyL3yARu3ILs7GpOgvPNFzqcNkgxZTPhleuOaQzjt8ZAUARauYs1bYxbuDYVfeMxpzbtLJaFMUYyMZJEXCIBzVlttetRE3fo2YcyhIL5g=s0-d-e1-ft#http://image.email.flixbus.com/lib/fe3f15707564047c731173/m/1/90a68297-0eee-4885-a624-49f906411c24.jpg"
-                                                                                        width={
-                                                                                          176
-                                                                                        }
-                                                                                        height={
-                                                                                          176
-                                                                                        }
-                                                                                        border={
-                                                                                          0
-                                                                                        }
-                                                                                      />
+                                                                                      >
+                                                                                        <img
+                                                                                          style={{
+                                                                                            width:
+                                                                                              "1.8333in",
+                                                                                            height:
+                                                                                              "1.8333in",
+                                                                                          }}
+                                                                                          id="m_-6478484151937468075_x0000_i1035"
+                                                                                          src="https://ci4.googleusercontent.com/proxy/oHwlNMmMNQtmomwKhkqVQH5vnL0zcvuttLfHoMASFbs-mkuGmWfKW7Kl5lyL3yARu3ILs7GpOgvPNFzqcNkgxZTPhleuOaQzjt8ZAUARauYs1bYxbuDYVfeMxpzbtLJaFMUYyMZJEXCIBzVlttetRE3fo2YcyhIL5g=s0-d-e1-ft#http://image.email.flixbus.com/lib/fe3f15707564047c731173/m/1/90a68297-0eee-4885-a624-49f906411c24.jpg"
+                                                                                          width={
+                                                                                            176
+                                                                                          }
+                                                                                          height={
+                                                                                            176
+                                                                                          }
+                                                                                          border={
+                                                                                            0
+                                                                                          }
+                                                                                        />
+                                                                                      </span>
+
+                                                                                      <span
+                                                                                        style={{
+                                                                                          fontSize:
+                                                                                            "10.5pt",
+                                                                                          fontFamily:
+                                                                                            '"Arial",sans-serif',
+                                                                                          color:
+                                                                                            "#444444",
+                                                                                        }}
+                                                                                      ></span>
                                                                                     </span>
                                                                                   </a>
-                                                                                  <span
-                                                                                    style={{
-                                                                                      fontSize:
-                                                                                        "10.5pt",
-                                                                                      fontFamily:
-                                                                                        '"Arial",sans-serif',
-                                                                                      color:
-                                                                                        "#444444",
-                                                                                    }}
-                                                                                  >
-                                                                                    <u />
-                                                                                    <u />
-                                                                                  </span>
                                                                                 </p>
                                                                               </td>
                                                                             </tr>
@@ -2832,7 +2831,7 @@ class Mail19 extends Component {
                                                                               "ClickedLink17"
                                                                             );
                                                                           }}
-                                                                       >
+                                                                        >
                                                                           <span
                                                                             style={{
                                                                               textDecoration:
@@ -3199,44 +3198,14 @@ class Mail19 extends Component {
                                                                                 "#757575",
                                                                             }}
                                                                           >
-                                                                            <a
-                                                                              href="http://click.email.flixbus.com/?qs=e2d5a8d5406d8689228fc2a5f4d6dd385ce33f305a618d919f5530a8ea3843df9c0ff0928e5b65018e9b5ea89e19a1563f96a7a3357044e1602654429075a35c"
-                                                                              target="_blank"
-                                                                              data-saferedirecturl="https://www.google.com/url?hl=de&q=http://click.email.flixbus.com/?qs%3De2d5a8d5406d8689228fc2a5f4d6dd385ce33f305a618d919f5530a8ea3843df9c0ff0928e5b65018e9b5ea89e19a1563f96a7a3357044e1602654429075a35c&source=gmail&ust=1597146993199000&usg=AFQjCNG1xHdisMFReCLgj_VjhlmTGpOAsQ"
-                                                                              onMouseEnter={() => {
-                                                                                this.props.insideEmailInfo(
-                                                                                  true,
-                                                                                  "InLink21"
-                                                                                );
-                                                                              }}
-                                                                              onMouseLeave={() => {
-                                                                                this.props.insideEmailInfo(
-                                                                                  false,
-                                                                                  "InLink21"
-                                                                                );
-                                                                              }}
-                                                                              onMouseOver={() => {
-                                                                                this.props.insideEmailInfo(
-                                                                                  true,
-                                                                                  "InLink21"
-                                                                                );
-                                                                              }}
-                                                                              onClick={() => {
-                                                                                this.props.insideEmailInfo(
-                                                                                  true,
-                                                                                  "ClickedLink21"
-                                                                                );
+                                                                            <span
+                                                                              style={{
+                                                                                color:
+                                                                                  "black",
                                                                               }}
                                                                             >
-                                                                              <span
-                                                                                style={{
-                                                                                  color:
-                                                                                    "black",
-                                                                                }}
-                                                                              >
-                                                                                Impressum
-                                                                              </span>
-                                                                            </a>
+                                                                              Impressum
+                                                                            </span>
                                                                             &nbsp;
                                                                           </span>
                                                                         </b>
@@ -3375,30 +3344,7 @@ class Mail19 extends Component {
                                                             }}
                                                           >
                                                             FlixMobility GmbH{" "}
-                                                            <a href="https://www.google.com/maps/search/Birketweg+33+M%C3%BCnchen,+Bayern,+80335?entry=gmail&source=g" onMouseEnter={() => {
-                                                                                  this.props.insideEmailInfo(
-                                                                                    true,
-                                                                                    "InLink22"
-                                                                                  );
-                                                                                }}
-                                                                                onMouseLeave={() => {
-                                                                                  this.props.insideEmailInfo(
-                                                                                    false,
-                                                                                    "InLink22"
-                                                                                  );
-                                                                                }}
-                                                                                onMouseOver={() => {
-                                                                                  this.props.insideEmailInfo(
-                                                                                    true,
-                                                                                    "InLink22"
-                                                                                  );
-                                                                                }}
-                                                                                onClick={() => {
-                                                                                  this.props.insideEmailInfo(
-                                                                                    true,
-                                                                                    "ClickedLink22"
-                                                                                  );
-                                                                                }}>
+                                                            <a href="https://www.google.com/maps/search/Birketweg+33+M%C3%BCnchen,+Bayern,+80335?entry=gmail&source=g">
                                                               Birketweg 33
                                                               München, Bayern,
                                                               80335

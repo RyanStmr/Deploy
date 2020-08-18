@@ -12,25 +12,32 @@ const StartPage = (props) => {
       <hr></hr>
       <h2>Lets get started!</h2>
       <p>
-        Welcome to our study, please make sure you have about{" "}
-        <strong>30 minutes</strong> of time spare. Due to the serious situation
-        of Corona, the study will be held online and consists of{" "}
-        <strong> 5 stages.</strong>
+        Welcome to our study. Please make sure you have about{" "}
+        <strong>30 minutes</strong> of spare time. The study will be held online
+        and consists of <strong> 5 stages.</strong>, all of which are online.
         <p>
-          You can exit the study at any time. You will be reimbursed with 5
-          Euros (PayPal or Amazon Voucher) or 0.5 MMI points (Only valid LMU
-          students).{" "}
+          You can abort the study at any time. You will be reimbursed with 5
+          Euros (PayPal or Amazon Voucher) or 0.5 MMI points (Only possible for
+          LMU students).{" "}
         </p>
-        Please note that the reward will be obtained at the end of study, more
-        information will be provided at the end.
+        More information on the reimbursement will be provided at the end of the
+        study.
       </p>
       <p>
         <br></br>
         <strong>
           This study is a joint research project between the Media Informatics
           Department of the LMU Munich, the Research Institute for Cyber Defense
-          (CODE) of the Bundeswehr University and Ruhr University Bochum.
+          (CODE) of the Bundeswehr University and the Ruhr University Bochum.
         </strong>
+      </p>
+      <p>
+        Only persons of the age of 18 and older are eligible to participate in
+        the study.
+      </p>
+      <p>
+        All collected data will be used for the purpose of research and teaching
+        only.
       </p>
       <hr></hr>
       <h2>Stages</h2>
@@ -55,9 +62,9 @@ const StartPage = (props) => {
       <h2>Requirements</h2>
       <br></br>
       <ol style={{ listStyleType: "clear" }}>
-        <li>Laptop or PC with a decent Webcam</li>
+        <li>Laptop or PC with a decent webcam</li>
         <li>
-          Good room lighting (Make sure there is no strong light behind you)
+          Good room lighting (Make sure there is no strong light behind you.)
         </li>
         <li>18 years or older</li>
         <li>No glasses if possible, preferably contact lenses</li>

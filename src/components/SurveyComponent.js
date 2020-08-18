@@ -35,13 +35,13 @@ class SurveyComponent extends Component {
       {
         type: "text",
         name: "emailClient",
-        title: "Which email-clients do you use? (eg. Gmail, Outlook etc.)",
+        title: "Which email clients are you using? (eg. Gmail, Outlook etc.)",
         isRequired: true,
       },
       {
         type: "checkbox",
         name: "email device",
-        title: "Which device do you use to check your Emails?",
+        title: "Which device(s) are you using to check your emails?",
         isRequired: true,
         colCount: 5,
         choices: ["Desktop", "Laptop", "Smartphone", "Tablet", "other"],
@@ -50,7 +50,7 @@ class SurveyComponent extends Component {
         type: "dropdown",
         name: "socialMediaTime",
         title:
-          "How much time to you spend on Social Media per day? (eg. Facebook, Instagram, Snapchat, TikTok)",
+          "How much time do you spend on Social Media per day? (eg. Facebook, Instagram, Snapchat, TikTok)",
         isRequired: true,
         colCount: 0,
         choices: [
@@ -93,32 +93,32 @@ class SurveyComponent extends Component {
         rows: [
           {
             value: "Experience IT Security",
-            text: "I have experience with IT Security ",
+            text: "I have experience with IT Security. ",
           },
           {
             value: "Experience Eye Tracking",
-            text: "I have experience with Eye Tracking",
+            text: "I have experience with Eye Tracking.",
           },
           {
             value: "Eye Tracking - Eye fatigue",
-            text: "My eyes felt tired after or during doing the study",
+            text: "My eyes felt tired after or during the study.",
           },
           {
             value: "Information presented enough",
             text:
-              "I used information provided in the interface to categorize the emails.",
+              "I used information provided in the interface to categorize the emails. (e.g. email subject)",
           },
           {
             value: "Categorize Important",
-            text: " I found it easy to categorize the emails as 'important'",
+            text: " I found it easy to categorize the emails as 'important'.",
           },
           {
             value: "Categorize Spam",
-            text: "I found it easy to categorize the emails as 'spam'",
+            text: "I found it easy to categorize the emails as 'spam.'.",
           },
           {
             value: "Categorize Bin",
-            text: "I found it easy to categorize the emails as 'bin'",
+            text: "I found it easy to categorize the emails as 'bin'.",
           },
         ],
       },
@@ -148,7 +148,7 @@ class SurveyComponent extends Component {
         type: "radiogroup",
         name: "Reimbursement",
         title:
-          "How to you want to reimbursed? (Any information given here will not be connected to the study data, also you will receive your reimbursement within two weeks.) ",
+          "How do you want to get reimbursed? (Any information given here will not be connected to the study data. Also you will receive your reimbursement within two weeks.) ",
         isRequired: true,
         colCount: 4,
         choices: ["MMI-Points", "5€ PayPal", "5€ Amazon", "None"],
@@ -156,18 +156,11 @@ class SurveyComponent extends Component {
       {
         name: "email",
         type: "text",
-        inputType: "email",
         isRequired: true,
         visibleIf:
           "{Reimbursement}='MMI-Points' or {Reimbursement}='5€ PayPal' or {Reimbursement}='5€ Amazon' ",
         title: "Your E-mail:",
         placeHolder: "your-email@domain.org",
-
-        validators: [
-          {
-            type: "email",
-          },
-        ],
       },
       {
         type: "text",
@@ -188,7 +181,7 @@ class SurveyComponent extends Component {
         name: "PayPal account",
         isRequired: true,
         visibleIf: "{Reimbursement}='5€ PayPal'",
-        title: "Please insert your PayPal.Me-Link here",
+        title: "Please insert your PayPal.Me-Link here.",
       },
     ],
   };

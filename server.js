@@ -94,13 +94,12 @@ app.post("/data", (req, res) => {
 });
 
 app.post("/SurveyData", (req, res) => {
-  //userData Array of Json Objects
   let userData = req.body;
   console.log(userData);
-  let jsonObject = JSON.stringify(userData);
+  let jsonObjectS = JSON.stringify(userData);
 
   pool.query(
-    `INSERT INTO USER${userData.userID} (USERSURVEYINFO) VALUES ('${jsonObject}')`,
+    `INSERT INTO USER${userData.userID} (USERSURVEYINFO) VALUES ('${jsonObjectS}')`,
     (error, results) => {
       if (error) {
         console.log(`error when inserting surveyData ${error}`);
@@ -114,14 +113,14 @@ app.post("/SurveyData", (req, res) => {
 app.post("/accuracyInfo", (req, res) => {
   //userData Array of Json Objects
   let userAccData = req.body;
-  console.log(`Number of sccuracy samples received: ${userAccData.length}`);
+  console.log(`Number of accuracy samples received: ${userAccData.length}`);
   let jsonObjectAcc = JSON.stringify(userAccData);
 
   pool.query(
     `INSERT INTO USER${userAccData[0][0]} (USERACCINFO) VALUES ('${jsonObjectAcc}')`,
     (error, results) => {
       if (error) {
-        console.log(`error when inserting surveyData ${error}`);
+        console.log(`error when inserting Accuracy Data ${error}`);
       }
     }
   );

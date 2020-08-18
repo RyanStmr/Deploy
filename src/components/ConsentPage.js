@@ -42,8 +42,8 @@ const ConsentPage = (props) => {
       <h1>The study</h1>
       <br></br>
       <p>
-        In this study we are trying to understand how users experience and
-        evaluate emails in a natural environment, such as an email client.{" "}
+        In this study we are trying to investigate how users experience and
+        evaluate emails in an email client.{" "}
       </p>
       <br></br>
       <p>
@@ -59,20 +59,20 @@ const ConsentPage = (props) => {
       </p>
       <p>
         You might see your webcam footage pop up, if the webcam is having
-        trouble tracking you. It will disappear once it has tracked you again.
+        trouble tracking you. It will disappear once it can track you again.
       </p>
       <br></br>
       <img src={Cam} alt="CamFaulty" width="250" height="150"></img>
       <hr></hr>
       <p>
-        <strong>Your task: </strong>Pretend you are working as a secretary in an
-        important start-up called Global-Connect. Your job is to go through your
-        and your bosses custom email-client as your first task in the morning.
+        <strong>Your task: </strong>Pretend you are working as a secretary in a
+        start-up called Global-Connect. Your job is to go through your and your
+        bosses custom emails as your first task in the morning.
       </p>
       <p>
-        Your boss is off on holidays for the week, after having many meetings
-        with a company called "Imotion" last week. Therefore your inbox and your
-        bosses have been joined together.
+        Your boss is off on holidays for the week, after having had several
+        meetings with a company called "Imotion" last week. Therefore, your
+        inbox and your bosses have been joined together.
       </p>
       <p>
         Go through <strong>all the emails </strong>and{" "}
@@ -134,8 +134,8 @@ const ConsentPage = (props) => {
       <hr></hr>
       <p style={{ color: "red" }}>
         <strong>
-          Choose any name and email which will be used to address you throughout
-          the study (does not have to be your real email or name):
+          Choose a name and email which will be used to address you throughout
+          the study. (This does not have to be your real email or name.):
         </strong>
       </p>
       <br></br>
@@ -180,16 +180,18 @@ const ConsentPage = (props) => {
       <p>
         2. I agree that my following data are processed: a) demographics b) Gaze
         data and mouse movements, c) feedback questionnaires. The webcam video
-        feed is not stored. Only gaze coordinates will be interpreted and saved.
+        feed is not stored. Only gaze coordinates will be extracted and saved.
       </p>
       <br></br>
       <p>
-        3. I agree that my data will be collected, processed, used and stored by
-        Bundeswehr University Munich for the following purposes: a) published by
-        the Bundeswehr University Munich as a scientific publication. The data
-        is published completely anonymously, i.e., the collected data cannot be
-        related to respective participants. b) The anonymized data is stored for
-        an indefinite period of time.
+        3. I agree that the above mentioned data will be collected, processed,
+        stored and used by Bundeswehr University Munich for the following
+        purposes: a) analysis of the data for reporting in scientific
+        publications. The data is published completely anonymously, i.e., the
+        collected data cannot be related to respective participants. b)
+        Publication of dataset on the university website. c) The anonymized data
+        is stored for an indefinite period of time. Due to the anonymization,
+        data cannot be deleted after the study.
       </p>
       <br></br>
       <p>
@@ -199,12 +201,12 @@ const ConsentPage = (props) => {
       </p>
       <br></br>
       <p>
-        5. I am aware that I can only participate in this study once, and will
+        5. I am aware that I can only participate in this study once and will
         only be reimbursed once. In addition, finishing the study is mandatory
         for receiving any reimbursement.
       </p>
       <p>
-        If you have questiones or concerns please contact:
+        If you have questiones or concerns, please contact:
         <strong> ryan.steimer@campus.lmu.de </strong>or{" "}
         <strong>yasmeen.essam@unibw.de</strong>
       </p>

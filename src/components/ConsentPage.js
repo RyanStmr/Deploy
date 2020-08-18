@@ -200,7 +200,8 @@ const ConsentPage = (props) => {
       <br></br>
       <p>
         5. I am aware that I can only participate in this study once, and will
-        only be reimbursed once.
+        only be reimbursed once. In addition, finishing the study is mandatory
+        for receiving any reimbursement.
       </p>
       <p>
         If you have questiones or concerns please contact:

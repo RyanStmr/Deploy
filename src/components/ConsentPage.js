@@ -199,6 +199,10 @@ const ConsentPage = (props) => {
       </p>
       <br></br>
       <p>
+        5. I am aware that I can only participate in this study once, and will
+        only be reimbursed once.
+      </p>
+      <p>
         If you have questiones or concerns please contact:
         <strong> ryan.steimer@campus.lmu.de </strong>or{" "}
         <strong>yasmeen.essam@unibw.de</strong>

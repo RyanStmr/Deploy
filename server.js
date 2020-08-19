@@ -68,7 +68,7 @@ app.get("/connect", (req, res) => {
 app.post("/data", (req, res) => {
   //userData Array of Json Objects
   let userData = req.body;
-  console.log(`receiving data from ${userData[0].userId} `);
+  //console.log(`receiving data from ${userData[0].userId} `);
   userData.forEach((element) => {
     if (element.userId === 0 || element.userId === undefined) return;
     let jsonObject = JSON.stringify(element);

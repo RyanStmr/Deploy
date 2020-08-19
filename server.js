@@ -4,6 +4,7 @@ const path = require("path"); //Navigate to build folder
 const bodyParser = require("body-parser");
 const { pool } = require("./config");
 const helmet = require("helmet");
+const { stringify } = require("querystring");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -85,20 +86,23 @@ app.post("/data", (req, res) => {
 });
 
 app.post("/SurveyData", (req, res) => {
-  let userData = req.body;
-  console.log(userData);
-  let jsonObjectS = JSON.stringify(userData);
-
-  pool.query(
-    `INSERT INTO USER${userData.userID} (USERSURVEYINFO) VALUES ('${jsonObjectS}')`,
-    (error, results) => {
-      if (error) {
-        console.log(`error when inserting surveyData ${error}`);
+  let userDataS = req.body;
+  let jsonObjectS = JSON.stringify(userDataS);
+  console.log(userDataS);
+  setTimeout(function () {
+    pool.query(
+      `INSERT INTO USER${userDataS.userID} (USERSURVEYINFO) VALUES ('${jsonObjectS}')`,
+      (error, results) => {
+        if (error) {
+          console.log(`error when inserting surveyData ${error}`);
+        } else {
+          console.log("Entered Survey Data");
+        }
       }
-    }
-  );
+    );
+  }, 1000);
 
-  res.send(userData);
+  res.send(userDataS);
 });
 
 app.post("/accuracyInfo", (req, res) => {

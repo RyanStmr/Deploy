@@ -26,7 +26,7 @@ class Tracker extends Component {
       gazeY: 0,
       gazeXTransform: 0,
       gazeYTransform: 0,
-      validationGaze: 0,
+      validationGaze: 0, // 0: valid gaze, 1 : face tracking lost, 1 : gaze data uncalibrated!
       userId: 0,
       userNickname: "",
       pageScrollY: 0,

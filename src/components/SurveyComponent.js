@@ -160,7 +160,7 @@ class SurveyComponent extends Component {
         visibleIf:
           "{Reimbursement}='MMI-Points' or {Reimbursement}='5€ PayPal' or {Reimbursement}='5€ Amazon' ",
         title: "Your E-mail:",
-        placeHolder: "your-email@domain.org",
+        placeHolder: "youremail@domain.org",
       },
       {
         type: "text",

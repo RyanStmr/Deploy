@@ -5,11 +5,6 @@ const bodyParser = require("body-parser");
 const { pool } = require("./config");
 const helmet = require("helmet");
 
-const fs = require("fs");
-const { json } = require("express");
-const data = fs.readFileSync("users.json");
-const users = JSON.parse(data);
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
@@ -25,52 +20,48 @@ app.listen(port, () => {
 });
 
 app.get("/connect", (req, res) => {
+  //Create Table On connection
+
+  pool.query(
+    `SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES`,
+    (error, results) => {
+      if (error) {
+        console.log(error);
+      } else {
+        let number = parseInt(results.rows[0].count, 10);
+        let newUser = number + 1;
+        createTable(newUser);
+        let newUserObj = {
+          userID: newUser,
+        };
+        res.send(newUserObj);
+      }
+    }
+  );
+
   //API logic
   console.log(req.headers["user-agent"]);
-  let newId = users.allUsers.length + 1;
-  let browser = req.headers["user-agent"];
-  const newUser = createNewUser(newId, browser);
 
-  //Create Table On connection
-  pool.query(
-    `CREATE TABLE USER${newUser.userID}(
+  function createTable(newUser) {
+    //Create Table On connection
+    pool.query(
+      `CREATE TABLE USER${newUser}(
       ID SERIAL PRIMARY KEY NOT NULL, 
       USERINFO json,
       USERSURVEYINFO json,
       USERACCINFO json,
       RESULTINBOX json
       )`,
-    (error, results) => {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("created table for user" + newUser.userID);
+      (error, results) => {
+        if (error) {
+          console.log(error);
+        } else {
+          console.log("created table for user" + newUser);
+        }
       }
-    }
-  );
-  res.send(newUser);
+    );
+  }
 });
-
-function createNewUser(id, browser) {
-  let newUser = {
-    userID: id,
-    browserInfo: browser,
-  };
-
-  users.allUsers.push(newUser);
-  var usersEnc = JSON.stringify(users);
-  fs.writeFile("users.json", usersEnc, newUserAddedToJson);
-
-  console.log(
-    "Added new User. User: " + users.allUsers[newUser.userID - 1].userID
-  );
-
-  return newUser;
-}
-
-function newUserAddedToJson() {
-  console.log("user added to json");
-}
 
 //API post request also before serving React
 app.post("/data", (req, res) => {
